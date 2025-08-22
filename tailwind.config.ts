@@ -73,10 +73,14 @@ export default {
         },
       },
       fontFamily: {
-        'fraktion': ['PP Fraktion Sans', 'system-ui', 'sans-serif'],
-        'avant-garde': ['ITC Avant Garde Gothic Pro', 'system-ui', 'sans-serif'],
-        'body': ['PP Fraktion Sans', 'system-ui', 'sans-serif'],
-        'display': ['ITC Avant Garde Gothic Pro', 'system-ui', 'sans-serif'],
+        fraktion: ["PP Fraktion Sans", "system-ui", "sans-serif"],
+        "avant-garde": [
+          "ITC Avant Garde Gothic Pro",
+          "system-ui",
+          "sans-serif",
+        ],
+        body: ["PP Fraktion Sans", "system-ui", "sans-serif"],
+        display: ["ITC Avant Garde Gothic Pro", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

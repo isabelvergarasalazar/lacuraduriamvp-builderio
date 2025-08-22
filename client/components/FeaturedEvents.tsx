@@ -38,12 +38,12 @@ export const FeaturedEvents = ({
       };
 
       updateScrollInfo();
-      container.addEventListener('scroll', updateScrollInfo);
-      window.addEventListener('resize', updateScrollInfo);
+      container.addEventListener("scroll", updateScrollInfo);
+      window.addEventListener("resize", updateScrollInfo);
 
       return () => {
-        container.removeEventListener('scroll', updateScrollInfo);
-        window.removeEventListener('resize', updateScrollInfo);
+        container.removeEventListener("scroll", updateScrollInfo);
+        window.removeEventListener("resize", updateScrollInfo);
       };
     }
   }, [events]);
@@ -68,7 +68,10 @@ export const FeaturedEvents = ({
       const rect = track.getBoundingClientRect();
       const clickX = e.clientX - rect.left;
       const trackWidth = rect.width;
-      const scrollPercent = Math.max(0, Math.min(1, (clickX - 81) / (trackWidth - 162))); // Center indicator
+      const scrollPercent = Math.max(
+        0,
+        Math.min(1, (clickX - 81) / (trackWidth - 162)),
+      ); // Center indicator
       container.scrollLeft = scrollPercent * maxScroll;
     }
   };
@@ -84,19 +87,22 @@ export const FeaturedEvents = ({
         const rect = track.getBoundingClientRect();
         const moveX = moveEvent.clientX - rect.left;
         const trackWidth = rect.width;
-        const scrollPercent = Math.max(0, Math.min(1, (moveX - 81) / (trackWidth - 162)));
+        const scrollPercent = Math.max(
+          0,
+          Math.min(1, (moveX - 81) / (trackWidth - 162)),
+        );
         container.scrollLeft = scrollPercent * maxScroll;
       }
     };
 
     const handleMouseUp = () => {
       setIsDragging(false);
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
     };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseup', handleMouseUp);
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
   };
 
   const handleIndicatorTouchStart = (e: React.TouchEvent) => {
@@ -110,19 +116,22 @@ export const FeaturedEvents = ({
         const rect = track.getBoundingClientRect();
         const moveX = moveEvent.touches[0].clientX - rect.left;
         const trackWidth = rect.width;
-        const scrollPercent = Math.max(0, Math.min(1, (moveX - 81) / (trackWidth - 162)));
+        const scrollPercent = Math.max(
+          0,
+          Math.min(1, (moveX - 81) / (trackWidth - 162)),
+        );
         container.scrollLeft = scrollPercent * maxScroll;
       }
     };
 
     const handleTouchEnd = () => {
       setIsDragging(false);
-      document.removeEventListener('touchmove', handleTouchMove);
-      document.removeEventListener('touchend', handleTouchEnd);
+      document.removeEventListener("touchmove", handleTouchMove);
+      document.removeEventListener("touchend", handleTouchEnd);
     };
 
-    document.addEventListener('touchmove', handleTouchMove, { passive: false });
-    document.addEventListener('touchend', handleTouchEnd);
+    document.addEventListener("touchmove", handleTouchMove, { passive: false });
+    document.addEventListener("touchend", handleTouchEnd);
   };
 
   return (
@@ -135,9 +144,7 @@ export const FeaturedEvents = ({
         </h2>
 
         {/* View Complete Button */}
-        <LinkButton onClick={onViewComplete}>
-          VER CARTELERA COMPLETA
-        </LinkButton>
+        <LinkButton onClick={onViewComplete}>VER CARTELERA COMPLETA</LinkButton>
       </div>
 
       {/* Events Container - Full width overflow */}
@@ -173,11 +180,11 @@ export const FeaturedEvents = ({
           onClick={handleScrollTrackClick}
         >
           <div
-            className={`absolute h-2 rounded-lg bg-[#098CB1] transition-all duration-150 ease-out cursor-grab ${isDragging ? 'cursor-grabbing' : 'hover:bg-[#0A7A99]'}`}
+            className={`absolute h-2 rounded-lg bg-[#098CB1] transition-all duration-150 ease-out cursor-grab ${isDragging ? "cursor-grabbing" : "hover:bg-[#0A7A99]"}`}
             style={{
               width: `${scrollIndicatorWidth}px`,
               left: `${indicatorPosition}px`,
-              transform: 'translateY(0)'
+              transform: "translateY(0)",
             }}
             onMouseDown={handleIndicatorMouseDown}
             onTouchStart={handleIndicatorTouchStart}
