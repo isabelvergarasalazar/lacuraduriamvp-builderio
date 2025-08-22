@@ -1,34 +1,35 @@
 export const Footer = () => {
   return (
-    <footer className="bg-coral-primary relative min-h-[466px]">
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-[18px] py-6 sm:py-8 md:py-12 lg:py-16">
+    <footer className="bg-coral-primary relative min-h-[428px] md:min-h-[428px] lg:min-h-[466px]">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[48px] py-6 sm:py-8 md:py-12 lg:py-16">
 
-        {/* Top Row: Navigation Links + Contact Info */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 gap-4 sm:gap-6 md:gap-8 lg:gap-0">
-          {/* Left Navigation Links */}
-          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 px-1.5 py-1.5 rounded-full">
+        {/* Mobile & Tablet: Column Layout | Desktop: Row Layout */}
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 gap-4 sm:gap-6 md:gap-3 lg:gap-0">
+
+          {/* Navigation Links */}
+          <div className="flex flex-col sm:flex-row items-start md:items-center gap-2 sm:gap-4 px-1.5 py-1.5 rounded-full">
             <a
               href="/cartelera"
-              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
+              className="text-dark-green font-fraktion text-base md:text-base lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[24px] lg:leading-[30px] px-2 py-1 rounded uppercase"
             >
               CARTELERA
             </a>
             <a
               href="/como-publicar"
-              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
+              className="text-dark-green font-fraktion text-base md:text-base lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[24px] lg:leading-[30px] px-2 py-1 rounded uppercase"
             >
               CÓMO PUBLICAR
             </a>
           </div>
 
-          {/* Divider - Medium screens and up */}
-          <div className="hidden md:block w-[200px] lg:w-[333px] h-px bg-coral-secondary"></div>
+          {/* Divider - Tablet and Desktop */}
+          <div className="hidden md:block w-full lg:w-[333px] h-px bg-coral-secondary"></div>
 
-          {/* Right Contact Information */}
-          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 px-1.5 py-1.5 rounded-full flex-wrap justify-center">
+          {/* Contact Information */}
+          <div className="flex flex-col sm:flex-row items-start md:items-center gap-2 sm:gap-4 px-1.5 py-1.5 rounded-full flex-wrap">
             <a
               href="mailto:contacto@lacuraduria.net"
-              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded text-center"
+              className="text-dark-green font-fraktion text-base md:text-base lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[24px] lg:leading-[30px] px-2 py-1 rounded text-left uppercase"
             >
               CONTACTO@LACURADURIA.NET
             </a>
@@ -41,28 +42,28 @@ export const Footer = () => {
               <svg
                 width="24"
                 height="24"
-                viewBox="0 0 24 24"
+                viewBox="0 0 24 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="flex-shrink-0"
               >
-                <path d="M9.12661 7.45553C9.29857 7.46249 9.48906 7.47064 9.67008 7.87276C9.79339 8.14713 10.0007 8.65803 10.1663 9.06609C10.2889 9.36843 10.3887 9.61431 10.4144 9.6657C10.4749 9.78642 10.5149 9.92778 10.4345 10.0887C10.4222 10.1134 10.4108 10.1368 10.3999 10.159C10.34 10.2816 10.2957 10.3721 10.1933 10.4914C10.1524 10.539 10.1101 10.5904 10.0679 10.6418C9.98517 10.7424 9.90262 10.8427 9.83088 10.9144C9.70976 11.0347 9.58364 11.1655 9.72473 11.4071C9.86583 11.6487 10.3504 12.4393 11.0684 13.0795C11.8411 13.7685 12.5121 14.0594 12.8518 14.2067C12.9178 14.2353 12.9713 14.2585 13.0106 14.2781C13.2523 14.3988 13.393 14.3786 13.5339 14.2174C13.6749 14.0562 14.1372 13.5125 14.2984 13.2707C14.4596 13.029 14.6205 13.0691 14.8418 13.1498C15.0632 13.2304 16.2504 13.8146 16.4921 13.9355C16.5397 13.9592 16.5841 13.9807 16.6252 14.0005C16.7933 14.0815 16.9068 14.1362 16.9552 14.2174C17.0155 14.3184 17.0154 14.8016 16.8142 15.3656C16.6131 15.9295 15.6272 16.4735 15.1842 16.5137C15.1416 16.5176 15.0992 16.5226 15.0556 16.5277C14.6462 16.5758 14.1297 16.6365 12.286 15.9094C10.0152 15.014 8.51853 12.7939 8.2114 12.3383C8.18651 12.3014 8.16943 12.276 8.16038 12.2639L8.15752 12.2601C8.02674 12.0852 7.17432 10.9454 7.17432 9.76619C7.17432 8.65453 7.72061 8.07156 7.97217 7.8031C7.9895 7.78461 8.00543 7.76761 8.01969 7.75203C8.24091 7.51031 8.5026 7.44988 8.66366 7.44988L9.12661 7.45553Z" fill="#171C14"/>
-                <path fillRule="evenodd" clipRule="evenodd" d="M2.33887 21.75L3.71024 16.743C2.86302 15.2741 2.41801 13.6079 2.42005 11.9122C2.42229 6.58441 6.75801 2.25 12.086 2.25C14.6715 2.25131 17.0983 3.25747 18.9234 5.08391C20.7485 6.91034 21.7527 9.33805 21.7518 11.92C21.7494 17.2474 17.413 21.5826 12.0858 21.5826H12.0816C10.4641 21.582 8.87464 21.1762 7.46281 20.4063L2.33887 21.75ZM12.0889 3.88227C7.65737 3.88227 4.0535 7.48482 4.05193 11.9129C4.04974 13.425 4.47554 14.9068 5.2801 16.187L5.47125 16.4909L4.65951 19.4543L7.7002 18.657L7.99381 18.831C9.22697 19.5628 10.6409 19.9498 12.0828 19.9506H12.0858C16.5139 19.9506 20.1178 16.3477 20.1195 11.9193C20.1228 10.8639 19.9168 9.8182 19.5133 8.8429C19.1097 7.8676 18.5167 6.98203 17.7686 6.23746C17.0247 5.48882 16.1396 4.89519 15.1647 4.49091C14.1897 4.08664 13.1443 3.87977 12.0889 3.88227Z" fill="#171C14"/>
+                <path d="M9.12661 7.8901C9.29857 7.89706 9.48906 7.90521 9.67008 8.30733C9.79339 8.5817 10.0007 9.0926 10.1663 9.50066C10.2889 9.803 10.3887 10.0489 10.4144 10.1003C10.4749 10.221 10.5149 10.3623 10.4345 10.5233C10.4222 10.548 10.4108 10.5713 10.3999 10.5936C10.34 10.7161 10.2957 10.8066 10.1933 10.9259C10.1524 10.9736 10.1101 11.025 10.0679 11.0764C9.98517 11.1769 9.90262 11.2773 9.83088 11.3489C9.70976 11.4693 9.58364 11.6001 9.72473 11.8417C9.86583 12.0833 10.3504 12.8739 11.0684 13.514C11.8411 14.203 12.5121 14.494 12.8518 14.6413C12.9178 14.6699 12.9713 14.693 13.0106 14.7127C13.2523 14.8334 13.393 14.8132 13.5339 14.652C13.6749 14.4908 14.1372 13.947 14.2984 13.7053C14.4596 13.4636 14.6205 13.5037 14.8418 13.5843C15.0632 13.665 16.2504 14.2492 16.4921 14.37C16.5397 14.3938 16.5841 14.4152 16.6252 14.4351C16.7933 14.5161 16.9068 14.5708 16.9552 14.652C17.0155 14.753 17.0154 15.2362 16.8142 15.8001C16.6131 16.3641 15.6272 16.9081 15.1842 16.9483C15.1416 16.9522 15.0992 16.9572 15.0556 16.9623C14.6462 17.0104 14.1297 17.0711 12.286 16.344C10.0152 15.4485 8.51853 13.2284 8.2114 12.7729C8.18651 12.7359 8.16943 12.7106 8.16038 12.6985L8.15752 12.6947C8.02674 12.5198 7.17432 11.38 7.17432 10.2008C7.17432 9.0891 7.72061 8.50613 7.97217 8.23767C7.9895 8.21918 8.00543 8.20218 8.01969 8.1866C8.24091 7.94488 8.5026 7.88445 8.66366 7.88445L9.12661 7.8901Z" fill="#171C14"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M2.33887 22.1846L3.71024 17.1775C2.86302 15.7087 2.41801 14.0425 2.42005 12.3468C2.42229 7.01898 6.75801 2.68457 12.086 2.68457C14.6715 2.68588 17.0983 3.69204 18.9234 5.51848C20.7485 7.34491 21.7527 9.77262 21.7518 12.3546C21.7494 17.682 17.413 22.0172 12.0858 22.0172H12.0816C10.4641 22.0165 8.87464 21.6107 7.46281 20.8409L2.33887 22.1846ZM12.0889 4.31684C7.65737 4.31684 4.0535 7.91939 4.05193 12.3475C4.04974 13.8595 4.47554 15.3413 5.2801 16.6216L5.47125 16.9254L4.65951 19.8889L7.7002 19.0916L7.99381 19.2655C9.22697 19.9974 10.6409 20.3844 12.0828 20.3852H12.0858C16.5139 20.3852 20.1178 16.7822 20.1195 12.3539C20.1228 11.2984 19.9168 10.2528 19.5133 9.27747C19.1097 8.30217 18.5167 7.4166 17.7686 6.67203C17.0247 5.92339 16.1396 5.32976 15.1647 4.92548C14.1897 4.52121 13.1443 4.31434 12.0889 4.31684Z" fill="#171C14"/>
               </svg>
-              <span className="text-black font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] whitespace-nowrap leading-[30px]">
+              <span className="text-black font-fraktion text-base md:text-base lg:text-[22px] whitespace-nowrap leading-[24px] lg:leading-[30px] uppercase">
                 (+57) 304 413 8497
               </span>
             </a>
 
             <a
               href="https://instagram.com"
-              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
+              className="text-dark-green font-fraktion text-base md:text-base lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[24px] lg:leading-[30px] px-2 py-1 rounded uppercase"
             >
               INSTAGRAM
             </a>
             <a
               href="https://linkedin.com"
-              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
+              className="text-dark-green font-fraktion text-base md:text-base lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[24px] lg:leading-[30px] px-2 py-1 rounded uppercase"
             >
               LINKEDIN
             </a>
