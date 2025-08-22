@@ -98,8 +98,8 @@ export const EventBanner = ({
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="w-full max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
+        {/* Divider - Hidden on mobile */}
+        <div className="hidden md:block w-full max-w-[324px] md:max-w-[324px] lg:max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
 
         {/* CTA Button */}
         <Button
