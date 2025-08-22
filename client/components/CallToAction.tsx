@@ -20,23 +20,24 @@ export const CallToAction = ({
 }: CallToActionProps) => {
   return (
     <section
-      className={`bg-neutral-100 px-4 md:px-8 xl:px-[48px] py-8 md:py-8 xl:py-[64px] pt-16 md:pt-20 xl:pt-[84px] relative ${className}`}
+      className={`bg-neutral-100 p-8 md:p-8 xl:px-[48px] xl:py-[64px] xl:pt-[84px] relative overflow-hidden ${className}`}
       aria-labelledby="cta-heading"
     >
-      <div className="flex flex-col gap-4 md:gap-3 xl:gap-4 max-w-2xl relative z-10">
+      <div className="flex flex-col items-start gap-3 md:gap-3 xl:gap-4 self-stretch relative z-10">
         <h2
           id="cta-heading"
-          className="font-display text-neutral-900 font-bold whitespace-nowrap
+          className="font-display text-neutral-900 font-bold self-stretch
                      text-[30px] leading-[38px] tracking-[-0.6px]
-                     xl:text-5xl xl:leading-[60px] xl:tracking-[-0.96px]"
+                     xl:text-5xl xl:leading-[60px] xl:tracking-[-0.96px] xl:whitespace-nowrap"
         >
           {title}
         </h2>
-        <p className="font-body text-neutral-900 font-normal max-w-[456px]
-                      text-[24px] leading-[32px]">
+        <p className="font-body text-neutral-900 font-normal self-stretch
+                      text-[24px] leading-[32px]
+                      xl:max-w-[456px]">
           {subtitle}
         </p>
-        <div className="pt-2 md:pt-1">
+        <div className="mt-0 md:mt-0 xl:pt-2">
           <Button
             icon={Calendar}
             size="lg"
@@ -48,19 +49,20 @@ export const CallToAction = ({
         </div>
       </div>
 
-      {/* Q Glass Image - Responsive positioning for tablet vs desktop */}
+      {/* Q Glass Image - Positioned exactly as in Figma */}
       {showImage && (
         <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/3b68cf450df4a94e56dd749b4b5e44ed6ec83b27?width=641"
+          src="https://api.builder.io/api/v1/image/assets/TEMP/78a928d4fd744c7d1f54e348000924b857d5507c?width=279"
           alt="Q Glass - Decorative element"
           className="absolute pointer-events-none
-            md:w-[139.525px] md:h-[111.995px] md:top-4 md:right-4
-            xl:w-[320.741px] xl:h-[257.453px]"
+                     w-[139.525px] h-[111.995px]
+                     md:w-[139.525px] md:h-[111.995px]
+                     xl:w-[320.741px] xl:h-[257.453px]"
           style={{
             transform: "rotate(-4.356deg)",
             transformOrigin: "center center",
-            right: "28.631px",
-            top: "-58px",
+            right: "-2.034px",
+            top: "-59.421px",
           }}
           loading="lazy"
         />
