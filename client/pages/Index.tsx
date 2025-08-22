@@ -170,12 +170,13 @@ const HeroSection = () => {
   );
 };
 
-const FeaturedEvents = () => {
+const FeaturedEventsSection = () => {
   const events = [
     {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/69e0617227523aeb762b59ab8c7455d8ba08c103?width=710",
       title: "Nombre de evento a dos líneas de texto",
+      eventType: "[TIPO EVENTO]",
       location: "Video Club",
       date: "[Día, 00 Mes, Año]",
       time: "[00:00 P.M]",
@@ -184,6 +185,7 @@ const FeaturedEvents = () => {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/d1e42315b34e9dcde2fd9f3e2554d35ace942a1c?width=710",
       title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
+      eventType: "[TIPO EVENTO]",
       location: "[Nombre del lugar]",
       date: "[Día, 00 Mes, Año]",
       time: "[00:00 P.M]",
@@ -192,6 +194,7 @@ const FeaturedEvents = () => {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/2f4a4172abba2c915490e76ada44f4d977421f94?width=710",
       title: "Contrafrecuencias",
+      eventType: "[TIPO EVENTO]",
       location: "[Nombre del lugar]",
       date: "[Día, 00 Mes, Año]",
       time: "[00:00 P.M]",
@@ -200,6 +203,7 @@ const FeaturedEvents = () => {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/9bba6c09601ca4ffc49a67280a9ff89f2e201888?width=710",
       title: "Curado x Valesuchi + Julianna + DJ+1",
+      eventType: "[TIPO EVENTO]",
       location: "[Nombre del lugar]",
       date: "[Día, 00 Mes, Año]",
       time: "[00:00 P.M]",
@@ -207,20 +211,11 @@ const FeaturedEvents = () => {
   ];
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-        <h2 className="text-dark-green font-display font-bold text-[30px] leading-[38px] tracking-[-0.6px] lg:text-5xl lg:leading-[60px] lg:tracking-[-0.96px]">
-          EVENTOS DESTACADOS
-        </h2>
-        <LinkButton href="/cartelera">VER CARTELERA COMPLETA</LinkButton>
-      </div>
-
-      <div className="flex gap-6 lg:gap-12 overflow-x-auto pb-4">
-        {events.map((event, index) => (
-          <FeaturedEventCard key={index} {...event} />
-        ))}
-      </div>
-    </div>
+    <FeaturedEvents
+      events={events}
+      onViewComplete={() => console.log("Navigate to cartelera")}
+      onEventClick={(event) => console.log("Event clicked:", event)}
+    />
   );
 };
 
