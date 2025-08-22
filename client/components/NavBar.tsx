@@ -9,7 +9,7 @@ interface NavBarProps {
 export const NavBar = ({ className = "", activePage }: NavBarProps) => {
   return (
     <header className={`bg-dark-green w-screen ${className}`}>
-      <div className="px-4 sm:px-8 lg:px-12 py-4 lg:py-4">
+      <div className="px-4 md:px-8 lg:px-12 py-4 lg:py-4">
         <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center gap-6 md:gap-6 lg:gap-6">
           {/* Logo */}
           <div className="flex items-center justify-center lg:justify-start">
@@ -21,7 +21,7 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
                 viewBox="0 0 343 47"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-full max-w-[343px] h-auto md:hidden"
+                className="w-full h-auto md:hidden"
                 aria-label="La Curaduría Logo"
               >
                 <path
@@ -85,7 +85,7 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
                 viewBox="0 0 680 93"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="hidden md:block w-full max-w-[680px] lg:max-w-80 xl:max-w-96 h-auto"
+                className="hidden md:block w-full h-auto"
                 aria-label="La Curaduría Logo"
               >
                 <path
