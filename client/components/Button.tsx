@@ -45,7 +45,7 @@ export const Button = ({
   const baseClasses = `
     relative overflow-hidden transition-all duration-200 flex items-center justify-between gap-2 group
     focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green
-    shadow-lg hover:shadow-xl transform hover:-translate-y-0.5
+    shadow-lg hover:shadow-xl
     ${fullWidth ? 'w-full' : 'w-auto'}
     ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
     ${isClicked ? 'futuristic-effect' : ''}
