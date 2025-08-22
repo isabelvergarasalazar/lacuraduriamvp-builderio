@@ -5,7 +5,7 @@ interface NavBarProps {
   activePage?: 'cartelera' | 'como-publicar';
 }
 
-export const NavBar = ({ className = "" }: NavBarProps) => {
+export const NavBar = ({ className = "", activePage }: NavBarProps) => {
   return (
     <header className={`bg-dark-green ${className}`}>
       <div className="container mx-auto px-4 md:px-8 py-6 sm:py-6 md:py-4 lg:py-4">
