@@ -89,11 +89,11 @@ const HeroSection = () => {
         <div className="relative w-full overflow-hidden">
           <div className="flex justify-center">
             <div
-              className="flex transition-transform duration-1000 ease-in-out gap-5"
+              className={`flex gap-5 ${isTransitioning ? 'transition-transform duration-1000 ease-in-out' : ''}`}
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
-              {events.map((event, index) => (
-                <div key={index} className="flex-shrink-0 w-[1271px] flex justify-center">
+              {extendedEvents.map((event, index) => (
+                <div key={`${event.title}-${index}`} className="flex-shrink-0 w-[1271px] flex justify-center">
                   <EventCard
                     image={event.image}
                     title={event.title}
@@ -115,9 +115,12 @@ const HeroSection = () => {
             {events.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index)}
+                onClick={() => {
+                  setIsTransitioning(true);
+                  setCurrentIndex(events.length + index);
+                }}
                 className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                  index === currentIndex ? 'bg-coral-primary' : 'bg-neutral-200'
+                  (currentIndex - events.length) % events.length === index ? 'bg-coral-primary' : 'bg-neutral-200'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
