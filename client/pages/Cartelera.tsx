@@ -149,7 +149,7 @@ const Cartelera = () => {
 
         {/* Events Grid */}
         <section className="px-4 md:px-8 xl:px-[48px] pb-16 md:pb-20 lg:pb-[80px]">
-          <div className="flex flex-col md:grid md:grid-cols-2 md:gap-12 lg:grid lg:grid-cols-4 lg:gap-x-10 lg:gap-y-12 justify-items-center">
+          <div className="flex flex-col gap-12 md:grid md:auto-rows-auto md:gap-12 lg:gap-x-10 lg:gap-y-12 justify-items-center dynamic-events-grid">
             {sampleEvents.map((event) => (
               <EventCard
                 key={event.id}
