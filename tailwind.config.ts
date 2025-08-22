@@ -14,6 +14,20 @@ export default {
     },
     extend: {
       colors: {
+        // La Curaduría Brand Colors
+        cream: "#FFFFF6",
+        "dark-green": "#171C14",
+        "coral-primary": "#FF736C",
+        "coral-secondary": "#BC4945",
+        "coral-dark": "#9E3A37",
+        "blue-accent": "#75E6F9",
+        "neutral-75": "#F4F5EC",
+        "neutral-100": "#E5E6DD",
+        "neutral-200": "#CBCDC4",
+        "neutral-600": "#64685F",
+        "neutral-800": "#31352D",
+
+        // Existing shadcn colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -56,6 +70,10 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        fontFamily: {
+          'fraktion': ['PP Fraktion Sans', 'system-ui', 'sans-serif'],
+          'avant-garde': ['ITC Avant Garde Gothic Pro', 'system-ui', 'sans-serif'],
         },
       },
       borderRadius: {
