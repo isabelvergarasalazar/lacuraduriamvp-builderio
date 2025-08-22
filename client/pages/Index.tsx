@@ -214,35 +214,6 @@ const MissionSection = () => {
   );
 };
 
-const CallToAction = () => {
-  return (
-    <div className="bg-neutral-100 px-4 md:px-8 xl:px-[48px] py-8 md:py-12 xl:py-[64px] relative overflow-hidden">
-      <div className="flex flex-col gap-4 max-w-2xl relative z-10">
-        <h2 className="text-display-lg-bold whitespace-nowrap">
-          SÚMATE A LA CARTELERA DE EVENTOS
-        </h2>
-        <p className="text-display-xs-regular max-w-[456px]">
-          Publica tu evento y sé parte de una guía amplia, diversa y selecta.
-        </p>
-        <div className="pt-2">
-          <Button icon={Calendar} size="lg">
-            PUBLICAR EVENTO
-          </Button>
-        </div>
-      </div>
-
-      {/* Q Glass Image - Floating effect with exact positioning */}
-      <img
-        src="https://api.builder.io/api/v1/image/assets/TEMP/3b68cf450df4a94e56dd749b4b5e44ed6ec83b27?width=641"
-        alt="Q Glass"
-        className="absolute bottom-0 right-0 w-[320px] h-[257px] transform -rotate-[4.356deg] translate-x-[-28px] translate-y-[58px] opacity-90"
-        style={{
-          transformOrigin: 'center center'
-        }}
-      />
-    </div>
-  );
-};
 
 
 export default function Index() {
