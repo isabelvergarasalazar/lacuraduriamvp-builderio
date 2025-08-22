@@ -138,18 +138,18 @@ const EventDetails = () => {
             </nav>
 
             {/* Event Content */}
-            <div className="flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-[100px] w-full">
+            <div className="flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-12 xl:gap-16 w-full">
               {/* Left Column - Event Image */}
               <div className="w-full lg:w-auto lg:flex-shrink-0 lg:sticky lg:top-8 lg:self-start">
                 <img
                   src={eventData.image}
                   alt={`${eventData.title} Event Poster`}
-                  className="w-full lg:w-[644px] lg:h-[805px] aspect-[4/5] rounded-md object-cover"
+                  className="w-full lg:max-w-[500px] xl:max-w-[580px] aspect-[4/5] rounded-md object-cover"
                 />
               </div>
 
               {/* Right Column - Event Info */}
-              <div className="flex flex-col items-start gap-10 w-full lg:w-[732px] lg:flex-shrink-0">
+              <div className="flex flex-col items-start gap-10 w-full lg:flex-1 lg:min-w-0">
                 {/* Event Title and CTA */}
                 <div className="flex flex-col items-start gap-3 w-full">
                   <Badge>{eventData.eventType}</Badge>
