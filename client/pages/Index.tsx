@@ -39,16 +39,38 @@ const HeroSection = () => {
     }
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Create extended array for infinite scrolling
+  const extendedEvents = [...events, ...events, ...events];
+  const [currentIndex, setCurrentIndex] = useState(events.length); // Start at first set of cloned items
+  const [isTransitioning, setIsTransitioning] = useState(true);
 
-  // Auto-rotate carousel every 7 seconds for better slider experience
+  // Auto-rotate carousel every 3 seconds for continuous rotation
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % events.length);
-    }, 7000);
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, [events.length]);
+  }, []);
+
+  // Handle infinite loop transition
+  useEffect(() => {
+    if (currentIndex >= events.length * 2) {
+      // If we're at the end of the extended array, jump back to the beginning
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(events.length);
+        setTimeout(() => setIsTransitioning(true), 50);
+      }, 1000); // Wait for transition to complete
+    } else if (currentIndex < events.length) {
+      // If we're before the main content, jump to the end
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(events.length * 2 - 1);
+        setTimeout(() => setIsTransitioning(true), 50);
+      }, 1000);
+    }
+  }, [currentIndex, events.length]);
 
   return (
     <div className="relative flex flex-col items-start gap-8 self-stretch">
