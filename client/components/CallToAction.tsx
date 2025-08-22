@@ -52,21 +52,36 @@ export const CallToAction = ({
 
       {/* Q Glass Image - Responsive positioning for mobile, tablet, desktop */}
       {showImage && (
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/c406c88f3601ccc226f6ee02dbd7d565615185f6?width=279"
-          alt="Q Glass - Decorative element"
-          className="absolute pointer-events-none
-                     w-[139.525px] h-[111.995px]
-                     md:w-[139.525px] md:h-[111.995px]
-                     xl:w-[320.741px] xl:h-[257.453px]"
-          style={{
-            transform: "rotate(-4.356deg)",
-            transformOrigin: "center center",
-            right: "3.372px",
-            top: "-59.421px",
-          }}
-          loading="lazy"
-        />
+        <>
+          {/* Mobile Image */}
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/c406c88f3601ccc226f6ee02dbd7d565615185f6?width=279"
+            alt="Q Glass - Decorative element"
+            className="absolute pointer-events-none w-[139.525px] h-[111.995px] md:hidden"
+            style={{
+              transform: "rotate(-4.356deg)",
+              transformOrigin: "center center",
+              right: "3.372px",
+              top: "-59.421px",
+            }}
+            loading="lazy"
+          />
+          {/* Tablet/Desktop Image */}
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/78a928d4fd744c7d1f54e348000924b857d5507c?width=279"
+            alt="Q Glass - Decorative element"
+            className="absolute pointer-events-none hidden md:block
+                       md:w-[139.525px] md:h-[111.995px]
+                       xl:w-[320.741px] xl:h-[257.453px]"
+            style={{
+              transform: "rotate(-4.356deg)",
+              transformOrigin: "center center",
+              right: "-2.034px",
+              top: "-59.421px",
+            }}
+            loading="lazy"
+          />
+        </>
       )}
     </section>
   );
