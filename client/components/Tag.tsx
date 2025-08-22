@@ -52,20 +52,27 @@ const tagVariants = {
   },
 } as const;
 
-export const Tag = ({ children, variant, className = "", onClick }: TagProps) => {
+export const Tag = ({
+  children,
+  variant,
+  className = "",
+  onClick,
+}: TagProps) => {
   const variantConfig = tagVariants[variant];
   const IconComponent = variantConfig.icon;
 
   const baseClasses = `
     flex items-center gap-1 px-1.5 py-1 rounded-sm bg-neutral-100 hover:bg-neutral-200
     transition-colors duration-200 ease-in-out
-    ${onClick ? 'cursor-pointer' : 'cursor-default'}
+    ${onClick ? "cursor-pointer" : "cursor-default"}
     ${className}
   `.trim();
 
   const content = (
     <>
-      <div className={`flex p-1 items-center rounded-sm ${variantConfig.iconBg}`}>
+      <div
+        className={`flex p-1 items-center rounded-sm ${variantConfig.iconBg}`}
+      >
         <IconComponent />
       </div>
       <span className="text-dark-green font-body text-lg font-medium leading-7">
