@@ -215,27 +215,29 @@ const MissionSection = () => {
 
 const CallToAction = () => {
   return (
-    <div className="bg-neutral-100 px-4 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 relative overflow-hidden">
-      <div className="space-y-4 max-w-2xl relative z-10">
-        <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
+    <div className="bg-neutral-100 px-4 md:px-8 xl:px-[48px] py-8 md:py-12 xl:py-[64px] relative overflow-hidden">
+      <div className="flex flex-col gap-4 max-w-2xl relative z-10">
+        <h2 className="text-display-lg-bold whitespace-nowrap">
           SÚMATE A LA CARTELERA DE EVENTOS
         </h2>
-        <p className="text-dark-green font-fraktion text-lg sm:text-2xl lg:text-3xl leading-relaxed tracking-tight max-w-[456px]">
+        <p className="text-display-xs-regular max-w-[456px]">
           Publica tu evento y sé parte de una guía amplia, diversa y selecta.
         </p>
-        <button className="bg-coral-primary hover:bg-coral-secondary transition-colors rounded-xl px-3 sm:px-5 py-1.5 flex items-center gap-2">
-          <span className="text-cream text-sm sm:text-lg font-fraktion font-medium uppercase">PUBLICAR EVENTO</span>
-          <div className="bg-coral-secondary rounded-full p-1.5 sm:p-2">
-            <Calendar className="w-4 h-4 sm:w-6 sm:h-6 text-cream" />
-          </div>
-        </button>
+        <div className="pt-2">
+          <Button icon={Calendar} size="lg">
+            PUBLICAR EVENTO
+          </Button>
+        </div>
       </div>
 
-      {/* Q Glass Image */}
+      {/* Q Glass Image - Floating effect with exact positioning */}
       <img
         src="https://api.builder.io/api/v1/image/assets/TEMP/3b68cf450df4a94e56dd749b4b5e44ed6ec83b27?width=641"
         alt="Q Glass"
-        className="absolute bottom-0 right-2 sm:right-8 w-48 h-32 sm:w-64 sm:h-48 lg:w-80 lg:h-64 -rotate-1 transform opacity-80"
+        className="absolute bottom-0 right-0 w-[320px] h-[257px] transform -rotate-[4.356deg] translate-x-[-28px] translate-y-[58px] opacity-90"
+        style={{
+          transformOrigin: 'center center'
+        }}
       />
     </div>
   );
