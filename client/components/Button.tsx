@@ -54,7 +54,7 @@ export const Button = ({
   const variantClasses = {
     primary:
       "bg-coral-primary hover:bg-coral-secondary focus:bg-coral-secondary",
-    secondary: "bg-coral-secondary hover:bg-coral-dark focus:bg-coral-dark",
+    secondary: "bg-cream border border-coral-primary hover:bg-neutral-50 focus:bg-neutral-50",
   };
 
   const sizeClasses = {
