@@ -43,11 +43,12 @@ export const Button = ({
     setTimeout(() => setIsClicked(false), 600);
   };
   const baseClasses = `
-    transition-all duration-200 flex items-center justify-between gap-2 group 
-    focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green 
+    relative overflow-hidden transition-all duration-200 flex items-center justify-between gap-2 group
+    focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green
     shadow-lg hover:shadow-xl transform hover:-translate-y-0.5
     ${fullWidth ? 'w-full' : 'w-auto'}
     ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
+    ${isClicked ? 'futuristic-effect' : ''}
   `;
 
   const variantClasses = {
