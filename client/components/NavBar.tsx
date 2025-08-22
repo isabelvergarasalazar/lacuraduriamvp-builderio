@@ -78,8 +78,6 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
 
               {/* Tablet/Desktop Logo */}
               <svg
-                width="680"
-                height="93"
                 viewBox="0 0 680 93"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
