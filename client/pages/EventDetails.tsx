@@ -159,61 +159,61 @@ const EventDetails = () => {
                 <div className="flex flex-col items-start gap-4 w-full">
                   <div className="grid grid-cols-2 gap-4 w-full">
                     {/* Date */}
-                    <div className="flex flex-col items-start gap-0.5">
+                    <div className="flex flex-col items-start gap-0">
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         FECHA
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                         {eventData.date}
                       </span>
                     </div>
 
                     {/* Time */}
-                    <div className="flex flex-col items-start gap-0.5">
+                    <div className="flex flex-col items-start gap-0">
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         HORA INICIO
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                         {eventData.time}
                       </span>
                     </div>
 
                     {/* Price */}
-                    <div className="flex flex-col items-start gap-0.5">
+                    <div className="flex flex-col items-start gap-0">
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         PRECIO
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                         {eventData.price}
                       </span>
                     </div>
 
                     {/* Age Limit */}
-                    <div className="flex flex-col items-start gap-0.5">
+                    <div className="flex flex-col items-start gap-0">
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         MAYORÍA DE EDAD?
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                         {eventData.ageLimit}
                       </span>
                     </div>
 
                     {/* Location */}
-                    <div className="flex flex-col items-start gap-0.5">
+                    <div className="flex flex-col items-start gap-0">
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         DÓNDE?
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                         {eventData.location}
                       </span>
                     </div>
 
                     {/* Address */}
-                    <div className="flex flex-col items-start gap-0.5">
+                    <div className="flex flex-col items-start gap-0">
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         DIRECCIÓN
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                         {eventData.address}
                       </span>
                     </div>
@@ -223,7 +223,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         CIUDAD
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                         {eventData.city}
                       </span>
                     </div>
@@ -233,7 +233,7 @@ const EventDetails = () => {
                   <div className="w-full h-px bg-neutral-200"></div>
 
                   {/* Description */}
-                  <p className="text-dark-green font-body text-lg font-normal leading-normal w-full">
+                  <p className="text-dark-green font-body text-lg font-normal leading-8 w-full">
                     {eventData.description}
                   </p>
 
@@ -241,7 +241,7 @@ const EventDetails = () => {
                   <div className="w-full h-px bg-neutral-200"></div>
 
                   {/* Artists Tags */}
-                  <div className="flex flex-col items-start gap-0.5 w-full">
+                  <div className="flex flex-col items-start gap-0 w-full">
                     <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       ARTISTAS
                     </span>
@@ -275,7 +275,7 @@ const EventDetails = () => {
                   </div>
 
                   {/* Promoters Tags */}
-                  <div className="flex flex-col items-start gap-0.5 w-full">
+                  <div className="flex flex-col items-start gap-0 w-full">
                     <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       PROMOTORES / COLECTIVO
                     </span>
@@ -309,11 +309,11 @@ const EventDetails = () => {
                   </div>
 
                   {/* Organizer Link */}
-                  <div className="flex flex-col items-start gap-0.5 w-full">
+                  <div className="flex flex-col items-start gap-0 w-full">
                     <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       CONOCE MÁS SOBRE EL ORGANIZADOR
                     </span>
-                    <span className="text-dark-green font-body text-lg font-normal">
+                    <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
                       [LINK]
                     </span>
                   </div>
