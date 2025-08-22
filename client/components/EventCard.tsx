@@ -27,18 +27,21 @@ export const EventCard = ({
       case "sm":
         return {
           container: "w-[254px] md:w-[320px] lg:w-[320px]",
-          image: "w-[254px] h-[318px] md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px]"
+          image:
+            "w-[254px] h-[318px] md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px]",
         };
       case "md":
         return {
           container: "w-[280px] md:w-[320px] lg:w-[320px]",
-          image: "w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px]"
+          image:
+            "w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px]",
         };
       case "lg":
       default:
         return {
           container: "w-full md:w-[320px] lg:w-[320px]",
-          image: "w-full md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px] aspect-[4/5]"
+          image:
+            "w-full md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px] aspect-[4/5]",
         };
     }
   };
