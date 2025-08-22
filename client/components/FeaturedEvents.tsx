@@ -163,6 +163,7 @@ export const FeaturedEvents = ({
                 location={event.location}
                 date={event.date}
                 time={event.time}
+                size="sm"
                 onClick={() => onEventClick?.(event)}
               />
             </div>
