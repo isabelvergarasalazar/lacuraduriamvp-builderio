@@ -10,12 +10,14 @@
     grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
   }
 
-  @media (min-width: 768px) {
+  /* Tablet: 2-column layout as per Figma design */
+  @media (min-width: 768px) and (max-width: 1023px) {
     .events-grid {
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
+  /* Desktop: auto-fit with minimum 355px cards */
   @media (min-width: 1024px) {
     .events-grid {
       grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
