@@ -39,37 +39,37 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="flex flex-col items-start gap-8 self-stretch">
+    <div className="relative flex flex-col items-start gap-8 self-stretch">
       {/* Hero Background */}
-      <div className="relative w-[calc(100vw)] h-[400px] sm:h-[500px] lg:h-[734px] -ml-4 sm:-ml-8 lg:-ml-12">
+      <div className="relative w-screen h-[734px] -mx-4 sm:-mx-8 lg:-mx-12">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/a484871b74618d95268be70f8b1c7c96e03d4040?width=3024"
           alt="Hero background"
-          className="w-full h-full absolute left-0 top-0 object-cover"
+          className="w-full h-[716px] absolute left-0 top-[18px] object-cover"
         />
-        <div className="w-full h-full absolute left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-cream opacity-80"></div>
+        <div className="w-full h-full absolute left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-cream" style={{ background: 'linear-gradient(180deg, rgba(255, 255, 246, 0.00) 35.28%, #FFFFF6 80%)' }}></div>
       </div>
 
-      {/* Event Cards Carousel */}
-      <div className="flex justify-center items-center gap-5 self-stretch overflow-x-auto px-4 sm:px-8 lg:px-12 pb-4">
-        {events.map((event, index) => (
+      {/* Event Cards Carousel - Positioned over background */}
+      <div className="relative -mt-[200px] sm:-mt-[250px] lg:-mt-[300px] flex justify-center items-center gap-5 self-stretch px-4 sm:px-8 lg:px-12 z-10">
+        <div className="flex justify-center items-center gap-5">
+          {/* Show only the first event card as the main featured card */}
           <EventCard
-            key={index}
-            image={event.image}
-            title={event.title}
-            eventType={event.eventType}
-            location={event.location}
-            organizer={event.organizer}
-            date={event.date}
-            time={event.time}
-            price={event.price}
-            onViewEvent={() => console.log(`View event: ${event.title}`)}
+            image={events[0].image}
+            title={events[0].title}
+            eventType={events[0].eventType}
+            location={events[0].location}
+            organizer={events[0].organizer}
+            date={events[0].date}
+            time={events[0].time}
+            price={events[0].price}
+            onViewEvent={() => console.log(`View event: ${events[0].title}`)}
           />
-        ))}
+        </div>
       </div>
 
       {/* Tagline */}
-      <div className="flex justify-between items-center self-stretch py-5">
+      <div className="flex flex-col sm:flex-row justify-between items-center self-stretch py-5 gap-4 sm:gap-0">
         <div className="flex items-center gap-1.5">
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
           <span className="text-dark-green font-fraktion text-lg">UN LENTE PARA EL ARTE</span>
