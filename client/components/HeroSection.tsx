@@ -47,13 +47,13 @@ export const HeroSection = () => {
       {/* Content Container */}
       <div className="relative z-10 h-full flex flex-col justify-end items-center px-4 sm:px-8 lg:px-12 pt-8 pb-6 lg:pb-8 gap-8">
         {/* Event Banner Section */}
-        <div className="flex h-[635px] justify-center items-center w-full">
-          <div className="flex w-full max-w-[1271px] p-6 items-end gap-11 rounded-lg bg-[#F4F5EC]">
+        <div className="flex min-h-[500px] md:min-h-[450px] lg:min-h-[635px] justify-center items-center w-full">
+          <div className="flex w-full max-w-[1271px] p-4 md:p-6 items-end gap-6 md:gap-11 rounded-lg bg-[#F4F5EC]">
             {/* Event Poster */}
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/56fad6f7408648d64c7bf2bf9968b75dc6cc59de?width=938"
               alt="Event Poster"
-              className="w-[469px] h-[587px] flex-shrink-0 rounded-lg object-cover"
+              className="w-[300px] h-[375px] md:w-[400px] md:h-[500px] lg:w-[469px] lg:h-[587px] flex-shrink-0 rounded-lg object-cover"
             />
 
             {/* Event Info */}
