@@ -20,7 +20,7 @@ export const FeaturedEventCard = ({
   onBadgeClick
 }: FeaturedEventCardProps) => {
   return (
-    <div className="flex flex-col items-start gap-0 self-stretch flex-shrink-0">
+    <div className="flex flex-col items-start gap-0 self-stretch flex-shrink-0 group cursor-pointer transition-all duration-200 ease-in-out">
       {/* Event Poster */}
       <img
         src={image}
@@ -30,7 +30,7 @@ export const FeaturedEventCard = ({
       />
 
       {/* Event Info */}
-      <div className="flex w-[355px] px-2 pt-3 pb-2 flex-col items-start gap-2">
+      <div className="flex w-[355px] px-2 pt-3 pb-2 flex-col items-start gap-2 transition-colors duration-200 ease-in-out group-hover:bg-[#E5E6DD]">
         {/* Badge */}
         <Badge onClick={onBadgeClick}>
           {eventType}
