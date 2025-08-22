@@ -84,7 +84,6 @@ export const FeaturedEvents = ({
             location={event.location}
             date={event.date}
             time={event.time}
-            size="lg" // Desktop size by default
             onClick={() => onEventClick?.(event)}
           />
         ))}
