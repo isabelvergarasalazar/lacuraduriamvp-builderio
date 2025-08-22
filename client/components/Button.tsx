@@ -54,7 +54,8 @@ export const Button = ({
   const variantClasses = {
     primary:
       "bg-coral-primary hover:bg-coral-secondary focus:bg-coral-secondary",
-    secondary: "bg-cream border border-coral-primary hover:bg-neutral-50 focus:bg-neutral-50",
+    secondary:
+      "bg-cream border border-coral-primary hover:bg-neutral-50 focus:bg-neutral-50",
   };
 
   const sizeClasses = {
@@ -86,17 +87,19 @@ export const Button = ({
     <>
       <span
         className={`font-fraktion font-medium uppercase tracking-wide ${
-          variant === 'secondary' ? 'text-coral-primary' : 'text-cream'
+          variant === "secondary" ? "text-coral-primary" : "text-cream"
         } ${textSizeClasses[size]}`}
       >
         {children}
       </span>
       {Icon && (
-        <div className={`${
-          variant === 'secondary'
-            ? 'bg-coral-primary group-hover:bg-coral-secondary group-focus:bg-coral-secondary'
-            : 'bg-coral-secondary group-hover:bg-coral-dark group-focus:bg-coral-dark'
-        } transition-colors duration-200 rounded-full p-2 sm:p-2`}>
+        <div
+          className={`${
+            variant === "secondary"
+              ? "bg-coral-primary group-hover:bg-coral-secondary group-focus:bg-coral-secondary"
+              : "bg-coral-secondary group-hover:bg-coral-dark group-focus:bg-coral-dark"
+          } transition-colors duration-200 rounded-full p-2 sm:p-2`}
+        >
           <Icon
             className={`${iconSizeClasses[size]} text-cream`}
             aria-hidden="true"

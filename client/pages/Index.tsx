@@ -52,7 +52,10 @@ const FeaturedEventsSection = () => {
 
   const handleEventClick = (event: any) => {
     // Generate a slug from the event title and add an ID
-    const slug = event.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    const slug = event.title
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]/g, "");
     navigate(`/cartelera/${slug}-1`);
   };
 

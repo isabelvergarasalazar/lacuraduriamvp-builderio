@@ -133,7 +133,10 @@ const Cartelera = () => {
 
   const handleEventClick = (event: any) => {
     // Generate a slug from the event title
-    const slug = event.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    const slug = event.title
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]/g, "");
     navigate(`/cartelera/${slug}-${event.id}`);
   };
 

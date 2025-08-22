@@ -191,7 +191,6 @@ export const FeaturedEvents = ({
           />
         </div>
       </div>
-
     </section>
   );
 };
