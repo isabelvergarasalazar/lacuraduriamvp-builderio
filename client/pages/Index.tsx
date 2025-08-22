@@ -232,12 +232,18 @@ const MissionSection = () => {
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-cream overflow-x-hidden">
+    <div className="min-h-screen bg-cream">
       <NavBar />
-      <main className="px-4 sm:px-8 lg:px-12 pb-8 sm:pb-12 lg:pb-16 pt-8 space-y-32">
-        <HeroSection />
-        <FeaturedEventsSection />
-        <MissionSection />
+      <main className="pb-8 sm:pb-12 lg:pb-16 pt-8 space-y-32">
+        <div className="px-4 sm:px-8 lg:px-12">
+          <HeroSection />
+        </div>
+        <div className="px-4 sm:px-8 lg:px-12">
+          <FeaturedEventsSection />
+        </div>
+        <div className="px-4 sm:px-8 lg:px-12">
+          <MissionSection />
+        </div>
       </main>
       <CallToAction />
       <Footer />
