@@ -1,40 +1,43 @@
 export const Footer = () => {
   return (
-    <footer className="bg-coral-primary relative h-[466px]">
-      <div className="w-full max-w-[1416px] mx-auto px-4 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16">
+    <footer className="bg-coral-primary relative min-h-[466px]">
+      <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-6 sm:py-8 md:py-12 lg:py-16">
 
         {/* Top Row: Navigation Links + Contact Info */}
-        <div className="flex flex-col lg:flex-row justify-between items-center mb-8 sm:mb-12 lg:mb-16 gap-6 lg:gap-0">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 gap-4 sm:gap-6 md:gap-8 lg:gap-0">
           {/* Left Navigation Links */}
-          <div className="flex items-center gap-4 px-1.5 py-1.5">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 px-1.5 py-1.5 rounded-full">
             <a
               href="/cartelera"
-              className="text-dark-green font-fraktion text-lg sm:text-xl lg:text-[22px] hover:text-neutral-800 transition-colors leading-[30px]"
+              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
             >
               CARTELERA
             </a>
             <a
               href="/como-publicar"
-              className="text-dark-green font-fraktion text-lg sm:text-xl lg:text-[22px] hover:text-neutral-800 transition-colors leading-[30px]"
+              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
             >
               CÓMO PUBLICAR
             </a>
           </div>
 
-          {/* Divider - Desktop only */}
-          <div className="hidden lg:block w-[333px] h-px bg-coral-secondary"></div>
+          {/* Divider - Medium screens and up */}
+          <div className="hidden md:block w-[200px] lg:w-[333px] h-px bg-coral-secondary"></div>
 
           {/* Right Contact Information */}
-          <div className="flex items-center gap-4 px-1.5 py-1.5">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 px-1.5 py-1.5 rounded-full flex-wrap justify-center">
             <a
               href="mailto:contacto@lacuraduria.net"
-              className="text-dark-green font-fraktion text-lg sm:text-xl lg:text-[22px] hover:text-neutral-800 transition-colors leading-[30px]"
+              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded text-center"
             >
               CONTACTO@LACURADURIA.NET
             </a>
 
             {/* WhatsApp */}
-            <div className="flex items-center gap-1.5">
+            <a
+              href="tel:+573044138497"
+              className="flex items-center gap-1.5 hover:scale-105 transition-all duration-200 px-2 py-1 rounded"
+            >
               <svg
                 width="24"
                 height="24"
@@ -46,23 +49,20 @@ export const Footer = () => {
                 <path d="M9.12661 7.45553C9.29857 7.46249 9.48906 7.47064 9.67008 7.87276C9.79339 8.14713 10.0007 8.65803 10.1663 9.06609C10.2889 9.36843 10.3887 9.61431 10.4144 9.6657C10.4749 9.78642 10.5149 9.92778 10.4345 10.0887C10.4222 10.1134 10.4108 10.1368 10.3999 10.159C10.34 10.2816 10.2957 10.3721 10.1933 10.4914C10.1524 10.539 10.1101 10.5904 10.0679 10.6418C9.98517 10.7424 9.90262 10.8427 9.83088 10.9144C9.70976 11.0347 9.58364 11.1655 9.72473 11.4071C9.86583 11.6487 10.3504 12.4393 11.0684 13.0795C11.8411 13.7685 12.5121 14.0594 12.8518 14.2067C12.9178 14.2353 12.9713 14.2585 13.0106 14.2781C13.2523 14.3988 13.393 14.3786 13.5339 14.2174C13.6749 14.0562 14.1372 13.5125 14.2984 13.2707C14.4596 13.029 14.6205 13.0691 14.8418 13.1498C15.0632 13.2304 16.2504 13.8146 16.4921 13.9355C16.5397 13.9592 16.5841 13.9807 16.6252 14.0005C16.7933 14.0815 16.9068 14.1362 16.9552 14.2174C17.0155 14.3184 17.0154 14.8016 16.8142 15.3656C16.6131 15.9295 15.6272 16.4735 15.1842 16.5137C15.1416 16.5176 15.0992 16.5226 15.0556 16.5277C14.6462 16.5758 14.1297 16.6365 12.286 15.9094C10.0152 15.014 8.51853 12.7939 8.2114 12.3383C8.18651 12.3014 8.16943 12.276 8.16038 12.2639L8.15752 12.2601C8.02674 12.0852 7.17432 10.9454 7.17432 9.76619C7.17432 8.65453 7.72061 8.07156 7.97217 7.8031C7.9895 7.78461 8.00543 7.76761 8.01969 7.75203C8.24091 7.51031 8.5026 7.44988 8.66366 7.44988L9.12661 7.45553Z" fill="#171C14"/>
                 <path fillRule="evenodd" clipRule="evenodd" d="M2.33887 21.75L3.71024 16.743C2.86302 15.2741 2.41801 13.6079 2.42005 11.9122C2.42229 6.58441 6.75801 2.25 12.086 2.25C14.6715 2.25131 17.0983 3.25747 18.9234 5.08391C20.7485 6.91034 21.7527 9.33805 21.7518 11.92C21.7494 17.2474 17.413 21.5826 12.0858 21.5826H12.0816C10.4641 21.582 8.87464 21.1762 7.46281 20.4063L2.33887 21.75ZM12.0889 3.88227C7.65737 3.88227 4.0535 7.48482 4.05193 11.9129C4.04974 13.425 4.47554 14.9068 5.2801 16.187L5.47125 16.4909L4.65951 19.4543L7.7002 18.657L7.99381 18.831C9.22697 19.5628 10.6409 19.9498 12.0828 19.9506H12.0858C16.5139 19.9506 20.1178 16.3477 20.1195 11.9193C20.1228 10.8639 19.9168 9.8182 19.5133 8.8429C19.1097 7.8676 18.5167 6.98203 17.7686 6.23746C17.0247 5.48882 16.1396 4.89519 15.1647 4.49091C14.1897 4.08664 13.1443 3.87977 12.0889 3.88227Z" fill="#171C14"/>
               </svg>
-              <a
-                href="tel:+573044138497"
-                className="text-black font-fraktion text-lg sm:text-xl lg:text-[22px] whitespace-nowrap leading-[30px]"
-              >
+              <span className="text-black font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] whitespace-nowrap leading-[30px]">
                 (+57) 304 413 8497
-              </a>
-            </div>
+              </span>
+            </a>
 
             <a
               href="https://instagram.com"
-              className="text-dark-green font-fraktion text-lg sm:text-xl lg:text-[22px] hover:text-neutral-800 transition-colors leading-[30px]"
+              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
             >
               INSTAGRAM
             </a>
             <a
               href="https://linkedin.com"
-              className="text-dark-green font-fraktion text-lg sm:text-xl lg:text-[22px] hover:text-neutral-800 transition-colors leading-[30px]"
+              className="text-dark-green font-fraktion text-base sm:text-lg md:text-xl lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[30px] px-2 py-1 rounded"
             >
               LINKEDIN
             </a>
@@ -70,15 +70,15 @@ export const Footer = () => {
         </div>
 
         {/* Middle: Large Responsive Logo */}
-        <div className="flex justify-center mb-8 sm:mb-12 lg:mb-16">
-          <div className="w-full max-w-[1414px] flex justify-center">
+        <div className="flex justify-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+          <div className="w-full flex justify-center px-4">
             <svg
               width="1414"
               height="193"
               viewBox="0 0 1414 193"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-full max-w-xs sm:max-w-md lg:max-w-6xl h-auto"
+              className="w-full max-w-[250px] sm:max-w-[350px] md:max-w-[500px] lg:max-w-[800px] xl:max-w-[1200px] h-auto"
             >
               <path d="M166.103 55.2592H66.9107C60.5271 55.2592 55.3632 60.4264 55.3632 66.7851V110.518H99.8017C105.848 110.518 110.739 115.414 110.739 121.436V165.791H55.3762C24.7817 165.791 0 141.055 0 110.531V55.2722C0 24.7352 24.7947 0 55.3632 0H166.103C196.671 0 221.466 24.7482 221.466 55.2592H166.09H166.103ZM221.232 55.3887H221.479V110.648C190.91 110.648 166.116 135.396 166.116 165.907H110.623C110.623 104.872 160.095 55.4924 221.245 55.3758L221.232 55.3887Z" fill="#171C14"/>
               <path d="M217.807 192.21C234.353 192.21 247.766 178.822 247.766 162.307C247.766 145.793 234.353 132.405 217.807 132.405C201.261 132.405 187.848 145.793 187.848 162.307C187.848 178.822 201.261 192.21 217.807 192.21Z" fill="#171C14"/>
@@ -98,11 +98,11 @@ export const Footer = () => {
         </div>
 
         {/* Bottom: Copyright and Tagline */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-4 lg:gap-0">
-          <p className="text-dark-green font-fraktion uppercase text-sm sm:text-base lg:text-[18px] leading-[24px]">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-6 lg:gap-8">
+          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] sm:leading-[24px] order-2 md:order-1">
             © 2025 La Curaduría. Todos los derechos reservados.
           </p>
-          <p className="text-dark-green font-fraktion uppercase text-right text-sm sm:text-base lg:text-[18px] leading-[24px] max-w-md lg:max-w-lg">
+          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] sm:leading-[24px] text-left md:text-right max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl order-1 md:order-2">
             CREAMOS UN LENTE PARA FILTRAR LO ESENCIAL JUNTO A MEDIOS, ARTISTAS Y GESTORES.
           </p>
         </div>
