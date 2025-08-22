@@ -318,8 +318,8 @@ const EventDetails = () => {
         </section>
 
         {/* Featured Events Section */}
-        <section className="pb-16 md:pb-0">
-          <div className="w-full max-w-none md:max-w-[744px] md:mx-auto">
+        <section className="pb-16 md:pb-0 lg:pb-[80px]">
+          <div className="w-full md:max-w-[744px] md:mx-auto lg:max-w-none lg:mx-0">
             <FeaturedEvents
               events={featuredEvents}
               onViewComplete={handleViewCompleteSchedule}
@@ -330,14 +330,10 @@ const EventDetails = () => {
       </main>
 
       {/* Call to Action */}
-      <div className="w-full max-w-none md:max-w-[744px] md:mx-auto">
-        <CallToAction />
-      </div>
+      <CallToAction />
 
       {/* Footer */}
-      <div className="w-full max-w-none md:max-w-[744px] md:mx-auto">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };
