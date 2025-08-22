@@ -93,9 +93,12 @@ const EventDetails = () => {
           <div className="flex flex-col items-start gap-4 lg:gap-4 w-full">
             {/* Breadcrumbs */}
             <nav className="flex items-center gap-2">
-              <span className="text-neutral-700 font-body text-sm font-normal leading-[18px] uppercase">
+              <button
+                onClick={() => navigate('/cartelera')}
+                className="text-neutral-700 font-body text-sm font-normal leading-[18px] uppercase hover:text-dark-green transition-colors"
+              >
                 CARTELERA
-              </span>
+              </button>
               <span className="text-neutral-700 font-body text-sm font-normal leading-[18px]">
                 /
               </span>
