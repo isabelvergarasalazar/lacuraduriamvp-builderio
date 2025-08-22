@@ -100,11 +100,11 @@ const EventDetails = () => {
             <nav className="flex items-center gap-2">
               <button
                 onClick={() => navigate("/cartelera")}
-                className="text-neutral-700 font-body text-sm font-normal leading-[18px] uppercase hover:text-dark-green transition-colors"
+                className="text-neutral-600 font-body text-sm font-normal leading-[18px] uppercase hover:text-dark-green transition-colors"
               >
                 CARTELERA
               </button>
-              <span className="text-neutral-700 font-body text-sm font-normal leading-[18px]">
+              <span className="text-neutral-600 font-body text-sm font-normal leading-[18px]">
                 /
               </span>
               <span className="text-dark-green font-body text-sm font-medium leading-[18px] uppercase">
@@ -160,7 +160,7 @@ const EventDetails = () => {
                   <div className="grid grid-cols-2 gap-4 w-full">
                     {/* Date */}
                     <div className="flex flex-col items-start gap-0.5">
-                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                      <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         FECHA
                       </span>
                       <span className="text-dark-green font-body text-lg font-normal uppercase">
@@ -170,7 +170,7 @@ const EventDetails = () => {
 
                     {/* Time */}
                     <div className="flex flex-col items-start gap-0.5">
-                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                      <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         HORA INICIO
                       </span>
                       <span className="text-dark-green font-body text-lg font-normal uppercase">
@@ -180,7 +180,7 @@ const EventDetails = () => {
 
                     {/* Price */}
                     <div className="flex flex-col items-start gap-0.5">
-                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                      <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         PRECIO
                       </span>
                       <span className="text-dark-green font-body text-lg font-normal uppercase">
@@ -190,7 +190,7 @@ const EventDetails = () => {
 
                     {/* Age Limit */}
                     <div className="flex flex-col items-start gap-0.5">
-                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                      <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         MAYORÍA DE EDAD?
                       </span>
                       <span className="text-dark-green font-body text-lg font-normal uppercase">
@@ -200,7 +200,7 @@ const EventDetails = () => {
 
                     {/* Location */}
                     <div className="flex flex-col items-start gap-0.5">
-                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                      <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         DÓNDE?
                       </span>
                       <span className="text-dark-green font-body text-lg font-normal uppercase">
@@ -210,7 +210,7 @@ const EventDetails = () => {
 
                     {/* Address */}
                     <div className="flex flex-col items-start gap-0.5">
-                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                      <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         DIRECCIÓN
                       </span>
                       <span className="text-dark-green font-body text-lg font-normal">
@@ -220,7 +220,7 @@ const EventDetails = () => {
 
                     {/* City */}
                     <div className="flex flex-col items-start gap-0.5 col-span-2">
-                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                      <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         CIUDAD
                       </span>
                       <span className="text-dark-green font-body text-lg font-normal">
@@ -242,7 +242,7 @@ const EventDetails = () => {
 
                   {/* Artists Tags */}
                   <div className="flex flex-col items-start gap-0.5 w-full">
-                    <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       ARTISTAS
                     </span>
                     <div className="flex flex-wrap items-start gap-3 w-full">
@@ -276,7 +276,7 @@ const EventDetails = () => {
 
                   {/* Promoters Tags */}
                   <div className="flex flex-col items-start gap-0.5 w-full">
-                    <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       PROMOTORES / COLECTIVO
                     </span>
                     <div className="flex flex-wrap items-start gap-3 w-full">
@@ -310,7 +310,7 @@ const EventDetails = () => {
 
                   {/* Organizer Link */}
                   <div className="flex flex-col items-start gap-0.5 w-full">
-                    <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       CONOCE MÁS SOBRE EL ORGANIZADOR
                     </span>
                     <span className="text-dark-green font-body text-lg font-normal">
