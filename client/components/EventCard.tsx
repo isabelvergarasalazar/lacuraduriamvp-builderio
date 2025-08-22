@@ -51,18 +51,18 @@ export const EventCard = ({
         {/* Location - Responsive typography */}
         <div className="
           text-[18px] md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px]
-          font-fraktion font-normal text-neutral-800 w-[230px]
+          font-body font-normal text-neutral-800 w-[230px]
         ">
           {location}
         </div>
 
         {/* Date */}
-        <div className="text-[18px] font-fraktion font-normal text-neutral-800 w-[230px]">
+        <div className="text-[18px] font-body font-normal text-neutral-800 w-[230px]">
           {date}
         </div>
 
         {/* Time */}
-        <div className="text-[18px] font-fraktion font-normal text-neutral-800">
+        <div className="text-[18px] font-body font-normal text-neutral-800">
           {time}
         </div>
       </div>
