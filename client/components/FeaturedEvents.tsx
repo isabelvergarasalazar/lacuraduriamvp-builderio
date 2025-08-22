@@ -115,11 +115,15 @@ export const FeaturedEvents = ({
       </div>
 
       {/* Events Container - Horizontal scroll with proper overflow */}
-      <div className="w-full">
+      <div className="w-full overflow-hidden">
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex items-center gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
+          className="flex items-center gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4 px-1"
+          style={{
+            width: 'calc(100vw - 2rem)',
+            maxWidth: '100%',
+          }}
         >
           {events.map((event, index) => (
             <div key={`featured-event-${index}`} className="flex-shrink-0">
@@ -134,15 +138,26 @@ export const FeaturedEvents = ({
               />
             </div>
           ))}
+          {/* Add extra space at the end to prevent cutting */}
+          <div className="flex-shrink-0 w-4"></div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Interactive Scroll Indicator */}
       <div className="flex flex-col items-center gap-2.5 w-full">
-        <div className="flex w-[500px] max-w-full flex-col items-center gap-2.5 rounded-[24px] bg-neutral-100 p-0">
-          <div 
-            className="h-2 rounded-lg bg-[#098CB1] transition-all duration-300 ease-out"
-            style={{ width: `${scrollIndicatorWidth}px` }}
+        <div
+          ref={scrollTrackRef}
+          className="flex w-[500px] max-w-full flex-col items-center gap-2.5 rounded-[24px] bg-neutral-100 p-0 cursor-pointer relative h-2"
+          onClick={handleScrollTrackClick}
+        >
+          <div
+            className={`absolute h-2 rounded-lg bg-[#098CB1] transition-all duration-150 ease-out cursor-grab ${isDragging ? 'cursor-grabbing' : 'hover:bg-[#0A7A99]'}`}
+            style={{
+              width: `${scrollIndicatorWidth}px`,
+              left: `${indicatorPosition}px`,
+              transform: 'translateY(0)'
+            }}
+            onMouseDown={handleIndicatorMouseDown}
           />
         </div>
       </div>
