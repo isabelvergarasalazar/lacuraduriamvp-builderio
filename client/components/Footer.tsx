@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer className="bg-coral-primary relative min-h-[466px]">
-      <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-6 sm:py-8 md:py-12 lg:py-16">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-[18px] py-6 sm:py-8 md:py-12 lg:py-16">
 
         {/* Top Row: Navigation Links + Contact Info */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 gap-4 sm:gap-6 md:gap-8 lg:gap-0">
@@ -71,14 +71,14 @@ export const Footer = () => {
 
         {/* Middle: Large Responsive Logo */}
         <div className="flex justify-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
-          <div className="w-full flex justify-center px-4">
+          <div className="w-full flex justify-center">
             <svg
               width="1414"
               height="193"
               viewBox="0 0 1414 193"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-full max-w-[250px] sm:max-w-[350px] md:max-w-[500px] lg:max-w-[800px] xl:max-w-[1200px] h-auto"
+              className="w-full h-auto"
             >
               <path d="M166.103 55.2592H66.9107C60.5271 55.2592 55.3632 60.4264 55.3632 66.7851V110.518H99.8017C105.848 110.518 110.739 115.414 110.739 121.436V165.791H55.3762C24.7817 165.791 0 141.055 0 110.531V55.2722C0 24.7352 24.7947 0 55.3632 0H166.103C196.671 0 221.466 24.7482 221.466 55.2592H166.09H166.103ZM221.232 55.3887H221.479V110.648C190.91 110.648 166.116 135.396 166.116 165.907H110.623C110.623 104.872 160.095 55.4924 221.245 55.3758L221.232 55.3887Z" fill="#171C14"/>
               <path d="M217.807 192.21C234.353 192.21 247.766 178.822 247.766 162.307C247.766 145.793 234.353 132.405 217.807 132.405C201.261 132.405 187.848 145.793 187.848 162.307C187.848 178.822 201.261 192.21 217.807 192.21Z" fill="#171C14"/>
