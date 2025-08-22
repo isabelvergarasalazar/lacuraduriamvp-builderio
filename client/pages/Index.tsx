@@ -1,5 +1,6 @@
-import { ChevronRight, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { NavBar } from "@/components/NavBar";
+import { EventCard } from "@/components/EventCard";
 
 const HeroSection = () => {
   return (
