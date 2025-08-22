@@ -19,8 +19,8 @@ export const CallToAction = ({
   showImage = true,
 }: CallToActionProps) => {
   return (
-    <section 
-      className={`bg-neutral-100 px-4 md:px-8 xl:px-[48px] py-8 md:py-12 xl:py-[64px] relative overflow-hidden ${className}`}
+    <section
+      className={`bg-neutral-100 px-4 md:px-8 xl:px-[48px] py-8 md:py-12 xl:py-[64px] pt-16 md:pt-20 xl:pt-[84px] relative ${className}`}
       aria-labelledby="cta-heading"
     >
       <div className="flex flex-col gap-4 max-w-2xl relative z-10">
