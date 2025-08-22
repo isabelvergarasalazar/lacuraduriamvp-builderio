@@ -24,7 +24,7 @@ const ClickIcon = ({ className = "", ...props }) => (
 
 export const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-[800px] md:min-h-[750px] lg:min-h-[900px] overflow-hidden">
+    <section className="relative w-full overflow-hidden">
       {/* Hero Background - Full size absolute positioned */}
       <div className="absolute inset-0 w-full h-full">
         {/* Background Image */}
