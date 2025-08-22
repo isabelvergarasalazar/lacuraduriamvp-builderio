@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -104,11 +104,16 @@
 
   body {
     @apply bg-cream text-dark-green;
-    font-family: 'PP Fraktion Sans', 'Inter', system-ui, sans-serif;
+    font-family: "PP Fraktion Sans", "Inter", system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'ITC Avant Garde Gothic Pro', 'Inter', system-ui, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "ITC Avant Garde Gothic Pro", "Inter", system-ui, sans-serif;
     font-weight: 700;
   }
 }
@@ -130,27 +135,34 @@
   }
 
   @keyframes glow-pulse {
-    0%, 100% {
-      box-shadow: 0 0 5px #75E6F9, 0 0 10px #75E6F9, 0 0 15px #75E6F9;
+    0%,
+    100% {
+      box-shadow:
+        0 0 5px #75e6f9,
+        0 0 10px #75e6f9,
+        0 0 15px #75e6f9;
     }
     50% {
-      box-shadow: 0 0 10px #75E6F9, 0 0 20px #75E6F9, 0 0 30px #75E6F9;
+      box-shadow:
+        0 0 10px #75e6f9,
+        0 0 20px #75e6f9,
+        0 0 30px #75e6f9;
     }
   }
 
   .futuristic-effect {
-    border: 2px solid #75E6F9;
+    border: 2px solid #75e6f9;
     animation: glow-pulse 0.6s ease-in-out;
   }
 
   .futuristic-effect::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, transparent, #75E6F9, transparent);
+    background: linear-gradient(90deg, transparent, #75e6f9, transparent);
     animation: scan-border 0.6s ease-in-out;
     z-index: 1;
     pointer-events: none;
