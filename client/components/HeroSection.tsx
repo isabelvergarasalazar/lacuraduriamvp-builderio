@@ -26,75 +26,20 @@ export const HeroSection = () => {
       <div className="relative z-10 h-full flex flex-col justify-end items-center px-4 sm:px-8 lg:px-12 pt-8 pb-0 gap-8">
         {/* Event Banner Section */}
         <div className="flex justify-center items-center w-full">
-          <div className="flex w-full max-w-[1271px] p-4 md:p-6 items-end gap-6 md:gap-11 rounded-lg bg-[#F4F5EC]">
-            {/* Event Poster */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/56fad6f7408648d64c7bf2bf9968b75dc6cc59de?width=938"
-              alt="Event Poster"
-              className="w-[300px] h-[375px] md:w-[400px] md:h-[500px] lg:w-[469px] lg:h-[587px] flex-shrink-0 rounded-lg object-cover"
-            />
-
-            {/* Event Info */}
-            <div className="flex flex-col items-start gap-4 flex-1">
-              {/* Event Type and Title */}
-              <div className="flex flex-col items-start gap-4">
-                <Badge>[TIPO EVENTO]</Badge>
-                <h1 className="text-dark-green font-display text-2xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-[50px] lg:leading-[60px] tracking-[-0.48px] md:tracking-[-0.8px] lg:tracking-[-0.96px]">
-                  Decibelio: Mariposa
-                </h1>
-              </div>
-
-              {/* Divider */}
-              <div className="w-full max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
-
-              {/* Event Details */}
-              <div className="flex flex-col items-start gap-2 w-full">
-                {/* Location and Organizer */}
-                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-8 w-full">
-                  <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px] md:w-[300px]">
-                    Carrera 13A # 22-54
-                  </span>
-                  <div className="flex items-end gap-2">
-                    <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Organiza</span>
-                    <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">Mariposa</span>
-                  </div>
-                </div>
-
-                {/* Date and Time */}
-                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-8 w-full">
-                  <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px] md:w-[300px]">
-                    Vie, 15 Ago 2025
-                  </span>
-                  <div className="flex items-end gap-2">
-                    <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Desde</span>
-                    <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">08:00 PM</span>
-                  </div>
-                </div>
-
-                {/* Price */}
-                <div className="flex items-end gap-2">
-                  <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Desde</span>
-                  <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">40.000 COP</span>
-                </div>
-              </div>
-
-              {/* Divider */}
-              <div className="w-full max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
-
-              {/* CTA Button */}
-              <Button
-                icon={ClickIcon}
-                onClick={() => {
-                  // Handle event view action
-                  console.log('Ver evento clicked');
-                }}
-                variant="primary"
-                size="lg"
-              >
-                VER EVENTO
-              </Button>
-            </div>
-          </div>
+          <EventBanner
+            image="https://api.builder.io/api/v1/image/assets/TEMP/56fad6f7408648d64c7bf2bf9968b75dc6cc59de?width=938"
+            eventType="[TIPO EVENTO]"
+            title="Decibelio: Mariposa"
+            location="Carrera 13A # 22-54"
+            organizer="Mariposa"
+            date="Vie, 15 Ago 2025"
+            time="08:00 PM"
+            price="40.000 COP"
+            onViewEvent={() => {
+              // Handle event view action
+              console.log('Ver evento clicked');
+            }}
+          />
         </div>
 
         {/* Tagline Section */}
