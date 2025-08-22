@@ -9,6 +9,7 @@ const FeaturedEventsSection = () => {
 
   const events = [
     {
+      id: 1,
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/69e0617227523aeb762b59ab8c7455d8ba08c103?width=710",
       title: "Nombre de evento a dos líneas de texto",
@@ -18,6 +19,7 @@ const FeaturedEventsSection = () => {
       time: "[00:00 P.M]",
     },
     {
+      id: 2,
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/d1e42315b34e9dcde2fd9f3e2554d35ace942a1c?width=710",
       title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
@@ -27,6 +29,7 @@ const FeaturedEventsSection = () => {
       time: "[00:00 P.M]",
     },
     {
+      id: 3,
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/2f4a4172abba2c915490e76ada44f4d977421f94?width=710",
       title: "Contrafrecuencias",
@@ -36,6 +39,7 @@ const FeaturedEventsSection = () => {
       time: "[00:00 P.M]",
     },
     {
+      id: 4,
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/9bba6c09601ca4ffc49a67280a9ff89f2e201888?width=710",
       title: "Curado x Valesuchi + Julianna + DJ+1",
