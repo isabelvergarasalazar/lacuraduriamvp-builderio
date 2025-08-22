@@ -46,7 +46,7 @@ const FeaturedEventsSection = () => {
   return (
     <FeaturedEvents
       events={events}
-      onViewComplete={() => console.log("Navigate to cartelera")}
+      onViewComplete={() => window.location.href = "/cartelera"}
       onEventClick={(event) => console.log("Event clicked:", event)}
     />
   );
