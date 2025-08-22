@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { NavBar } from "@/components/NavBar";
+import { HeroSection } from "@/components/HeroSection";
 import { FeaturedEvents } from "@/components/FeaturedEvents";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
