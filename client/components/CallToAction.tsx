@@ -28,7 +28,7 @@ export const CallToAction = ({
           id="cta-heading"
           className="font-display text-neutral-900 font-bold self-stretch
                      text-[30px] leading-[38px] tracking-[-0.6px]
-                     xl:text-5xl xl:leading-[60px] xl:tracking-[-0.96px] xl:whitespace-nowrap"
+                     lg:text-5xl lg:leading-[60px] lg:tracking-[-0.96px] lg:whitespace-nowrap"
         >
           {title}
         </h2>
