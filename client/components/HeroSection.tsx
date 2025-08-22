@@ -1,3 +1,6 @@
+import { Badge } from "./Badge";
+import { Button } from "./Button";
+
 export const HeroSection = () => {
   return (
     <section className="relative w-full h-[683px] md:h-[521px] lg:h-[734px] overflow-hidden">
