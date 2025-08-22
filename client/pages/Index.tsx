@@ -2,11 +2,11 @@ import { Calendar, ChevronRight } from "lucide-react";
 
 const NavBar = () => {
   return (
-    <div className="bg-dark-green px-12 py-4">
-      <div className="flex justify-between items-center">
+    <div className="bg-dark-green px-4 sm:px-8 lg:px-12 py-4">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
         {/* Logo */}
         <div className="flex items-center">
-          <svg width="383" height="52" viewBox="0 0 383 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="383" height="52" viewBox="0 0 383 52" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-64 sm:w-80 lg:w-96 h-auto">
             <path d="M44.9371 14.9497H18.1019C16.3749 14.9497 14.9779 16.3477 14.9779 18.0679V29.8995H27.0002C28.6359 29.8995 29.9592 31.2238 29.9592 32.853V44.8527H14.9814C6.70441 44.8527 0 38.1609 0 29.903V14.9532C0 6.69182 6.70792 0 14.9779 0H44.9371C53.207 0 59.915 6.69532 59.915 14.9497H44.9336H44.9371ZM59.8518 14.9848H59.9185V29.9345C51.6485 29.9345 44.9406 36.6298 44.9406 44.8842H29.9276C29.9276 28.3719 43.3119 15.0128 59.8553 14.9813L59.8518 14.9848Z" fill="#FF736C"/>
             <path d="M58.9253 52C63.4015 52 67.0302 48.3781 67.0302 43.9103C67.0302 39.4425 63.4015 35.8206 58.9253 35.8206C54.449 35.8206 50.8203 39.4425 50.8203 43.9103C50.8203 48.3781 54.449 52 58.9253 52Z" fill="#FF736C"/>
             <path d="M91.0221 24.7038H74.7139V0.290894H82.868V16.5685H107.33C107.33 21.0636 103.68 24.7073 99.1762 24.7073H91.0221V24.7038Z" fill="#FFFFF6"/>
@@ -24,20 +24,20 @@ const NavBar = () => {
         </div>
 
         {/* Navigation */}
-        <div className="flex items-center gap-8">
-          <nav className="flex items-center gap-8">
-            <a href="/cartelera" className="text-cream text-lg font-fraktion uppercase tracking-wide hover:text-coral-primary transition-colors">
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+          <nav className="flex items-center gap-4 sm:gap-8">
+            <a href="/cartelera" className="text-cream text-base sm:text-lg font-fraktion uppercase tracking-wide hover:text-coral-primary transition-colors">
               CARTELERA
             </a>
-            <a href="/como-publicar" className="text-cream text-lg font-fraktion uppercase tracking-wide hover:text-coral-primary transition-colors">
+            <a href="/como-publicar" className="text-cream text-base sm:text-lg font-fraktion uppercase tracking-wide hover:text-coral-primary transition-colors">
               CÓMO PUBLICAR
             </a>
           </nav>
-          
-          <button className="bg-coral-primary hover:bg-coral-secondary transition-colors rounded-xl px-5 py-1.5 flex items-center gap-2">
-            <span className="text-cream text-lg font-fraktion font-medium uppercase">PUBLICAR EVENTO</span>
-            <div className="bg-coral-secondary rounded-full p-2">
-              <Calendar className="w-6 h-6 text-cream" />
+
+          <button className="bg-coral-primary hover:bg-coral-secondary transition-colors rounded-xl px-3 sm:px-5 py-1.5 flex items-center gap-2">
+            <span className="text-cream text-sm sm:text-lg font-fraktion font-medium uppercase">PUBLICAR EVENTO</span>
+            <div className="bg-coral-secondary rounded-full p-1.5 sm:p-2">
+              <Calendar className="w-4 h-4 sm:w-6 sm:h-6 text-cream" />
             </div>
           </button>
         </div>
