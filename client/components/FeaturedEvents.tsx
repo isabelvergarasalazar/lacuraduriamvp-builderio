@@ -65,28 +65,33 @@ export const FeaturedEvents = ({
         </LinkButton>
       </div>
 
-      {/* Events Container - Horizontal scroll */}
-      <div 
-        ref={scrollContainerRef}
-        onScroll={handleScroll}
-        className="flex items-center gap-5 md:gap-8 lg:gap-12 w-full overflow-x-auto scrollbar-hide scroll-smooth"
-        style={{
-          scrollbarWidth: 'none',
-          msOverflowStyle: 'none',
-        }}
-      >
-        {events.map((event, index) => (
-          <EventCard
-            key={`featured-event-${index}`}
-            image={event.image}
-            title={event.title}
-            eventType={event.eventType}
-            location={event.location}
-            date={event.date}
-            time={event.time}
-            onClick={() => onEventClick?.(event)}
-          />
-        ))}
+      {/* Events Container - Horizontal scroll with proper overflow */}
+      <div className="w-full overflow-hidden">
+        <div
+          ref={scrollContainerRef}
+          onScroll={handleScroll}
+          className="flex items-center gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
+          style={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            width: 'calc(100vw - 2rem)', // Account for page padding
+            maxWidth: '100%',
+          }}
+        >
+          {events.map((event, index) => (
+            <div key={`featured-event-${index}`} className="flex-shrink-0">
+              <EventCard
+                image={event.image}
+                title={event.title}
+                eventType={event.eventType}
+                location={event.location}
+                date={event.date}
+                time={event.time}
+                onClick={() => onEventClick?.(event)}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Scroll Indicator */}
