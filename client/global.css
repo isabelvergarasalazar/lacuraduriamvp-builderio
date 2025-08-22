@@ -119,6 +119,56 @@
 }
 
 @layer components {
+  /* Typography Classes */
+  .text-display-lg-bold {
+    font-family: var(--Font-family-font-family-display, "ITC Avant Garde Gothic Pro");
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+    letter-spacing: -0.96px;
+    color: var(--Neutrals-900---Main, #171C14);
+  }
+
+  .text-display-xs-regular {
+    font-family: var(--Font-family-font-family-body, "PP Fraktion Sans");
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 390;
+    line-height: 32px; /* 114.286% */
+    letter-spacing: -0.56px;
+    color: var(--Neutrals-900---Main, #171C14);
+  }
+
+  /* Responsive variants for smaller screens */
+  @media (max-width: 768px) {
+    .text-display-lg-bold {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.64px;
+    }
+
+    .text-display-xs-regular {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.4px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .text-display-lg-bold {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.48px;
+    }
+
+    .text-display-xs-regular {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.36px;
+    }
+  }
+
   /* Futuristic Button Click Effect */
   @keyframes scan-border {
     0% {
