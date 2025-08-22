@@ -81,7 +81,7 @@ const HeroSection = () => {
   return (
     <div className="relative flex flex-col items-start gap-8 self-stretch">
       {/* Hero Background */}
-      <div className="relative w-screen h-[734px] -mx-4 sm:-mx-8 lg:-mx-12">
+      <div className="relative w-full h-[734px]">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/a484871b74618d95268be70f8b1c7c96e03d4040?width=3024"
           alt="Hero background"
