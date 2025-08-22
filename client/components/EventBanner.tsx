@@ -81,13 +81,13 @@ export const EventBanner = ({
           </div>
 
           {/* Date and Time */}
-          <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-8 w-full">
-            <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px] md:w-[300px]">
+          <div className="flex flex-col md:flex-col lg:flex-row lg:items-center gap-2 lg:gap-8 w-full">
+            <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px] lg:w-[300px]">
               {date}
             </span>
             <div className="flex items-end gap-2">
-              <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Desde</span>
-              <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">{time}</span>
+              <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">Desde</span>
+              <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">{time}</span>
             </div>
           </div>
 
