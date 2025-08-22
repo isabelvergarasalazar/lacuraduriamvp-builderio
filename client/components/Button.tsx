@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState, useEffect } from "react";
 import { LucideIcon } from "lucide-react";
 
 interface ButtonProps {
