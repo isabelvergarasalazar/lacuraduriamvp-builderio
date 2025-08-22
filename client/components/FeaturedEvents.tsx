@@ -141,15 +141,11 @@ export const FeaturedEvents = ({
       </div>
 
       {/* Events Container - Horizontal scroll with proper overflow */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full">
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex items-center gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4 px-1"
-          style={{
-            width: 'calc(100vw - 2rem)',
-            maxWidth: '100%',
-          }}
+          className="flex items-center gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
         >
           {events.map((event, index) => (
             <div key={`featured-event-${index}`} className="flex-shrink-0">
