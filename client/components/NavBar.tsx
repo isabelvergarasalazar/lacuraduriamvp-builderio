@@ -107,17 +107,13 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
             </nav>
 
             {/* CTA Button - Mobile: Full width, Desktop: Normal width */}
-            <button
-              className="bg-coral-primary hover:bg-coral-secondary focus:bg-coral-secondary transition-all duration-200 rounded-xl md:rounded-lg px-2 sm:px-4 md:px-2 lg:px-5 py-1 sm:py-2 md:py-1 lg:py-1.5 flex items-center justify-between gap-2 group focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 w-full lg:w-auto"
-              aria-label="Publicar un nuevo evento"
+            <Button
+              icon={Calendar}
+              ariaLabel="Publicar un nuevo evento"
+              className="w-full lg:w-auto"
             >
-              <span className="text-cream text-lg sm:text-sm md:text-lg lg:text-lg font-fraktion font-medium uppercase tracking-wide">
-                PUBLICAR EVENTO
-              </span>
-              <div className="bg-coral-secondary group-hover:bg-coral-dark group-focus:bg-coral-dark transition-colors duration-200 rounded-full p-2 sm:p-2">
-                <Calendar className="w-4 h-4 sm:w-4 sm:h-4 md:w-4 md:h-4 lg:w-6 lg:h-6 text-cream" aria-hidden="true" />
-              </div>
-            </button>
+              PUBLICAR EVENTO
+            </Button>
           </div>
         </div>
       </div>
