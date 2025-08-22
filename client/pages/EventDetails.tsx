@@ -27,7 +27,7 @@ const featuredEvents = [
     title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
-    date: "[Día, 00 Mes, Año]",
+    date: "[Día, 00 Mes, A��o]",
     time: "[00:00 P.M]",
   },
   {
@@ -156,7 +156,7 @@ const EventDetails = () => {
                   <div className="flex flex-col items-start gap-3 w-full">
                     <Badge>{eventData.eventType}</Badge>
 
-                    <h1 className="font-display font-bold text-dark-green w-full text-[32px] leading-[40px] tracking-[-0.64px] md:text-[40px] md:leading-[40px] md:tracking-[-0.8px]">
+                    <h1 className="font-display font-bold text-dark-green w-full text-[32px] leading-[40px] tracking-[-0.64px] md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px]">
                       {eventData.title}
                     </h1>
 
@@ -183,9 +183,9 @@ const EventDetails = () => {
                   </div>
 
                   {/* Event Information Container */}
-                  <div className="flex flex-col items-start gap-4 md:gap-4 w-full">
+                  <div className="flex flex-col items-start gap-4 w-full">
                     {/* Info Grid */}
-                    <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:gap-x-4 md:gap-y-8 w-full">
+                    <div className="grid grid-cols-2 gap-4 w-full">
                       {/* Date */}
                       <div className="flex flex-col items-start gap-0">
                         <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
