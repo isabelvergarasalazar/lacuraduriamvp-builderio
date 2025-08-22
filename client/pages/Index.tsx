@@ -51,20 +51,22 @@ const HeroSection = () => {
       </div>
 
       {/* Event Cards Carousel - Positioned over background */}
-      <div className="relative -mt-[200px] sm:-mt-[250px] lg:-mt-[300px] flex justify-center items-center gap-5 self-stretch px-4 sm:px-8 lg:px-12 z-10">
-        <div className="flex justify-center items-center gap-5">
-          {/* Show only the first event card as the main featured card */}
-          <EventCard
-            image={events[0].image}
-            title={events[0].title}
-            eventType={events[0].eventType}
-            location={events[0].location}
-            organizer={events[0].organizer}
-            date={events[0].date}
-            time={events[0].time}
-            price={events[0].price}
-            onViewEvent={() => console.log(`View event: ${events[0].title}`)}
-          />
+      <div className="relative -mt-[100px] sm:-mt-[120px] lg:-mt-[150px] flex justify-center items-center gap-5 self-stretch px-4 sm:px-8 lg:px-12 z-10 overflow-x-auto">
+        <div className="flex items-center gap-5 min-w-max">
+          {events.map((event, index) => (
+            <EventCard
+              key={index}
+              image={event.image}
+              title={event.title}
+              eventType={event.eventType}
+              location={event.location}
+              organizer={event.organizer}
+              date={event.date}
+              time={event.time}
+              price={event.price}
+              onViewEvent={() => console.log(`View event: ${event.title}`)}
+            />
+          ))}
         </div>
       </div>
 
