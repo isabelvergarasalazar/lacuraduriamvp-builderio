@@ -3,7 +3,6 @@ import { FeaturedEvents } from "@/components/FeaturedEvents";
 import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
 
-
 const FeaturedEventsSection = () => {
   const events = [
     {

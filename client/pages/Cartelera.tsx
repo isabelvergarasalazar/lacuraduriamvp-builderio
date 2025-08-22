@@ -7,7 +7,8 @@ import { Footer } from "@/components/Footer";
 const sampleEvents = [
   {
     id: 1,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=640",
     title: "Nombre de evento a dos líneas de texto",
     eventType: "[TIPO EVENTO]",
     location: "Video Club",
@@ -16,7 +17,8 @@ const sampleEvents = [
   },
   {
     id: 2,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=640",
     title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -25,7 +27,8 @@ const sampleEvents = [
   },
   {
     id: 3,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/00d075fecf595690a69b785815d479ff077912f0?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/00d075fecf595690a69b785815d479ff077912f0?width=640",
     title: "Contrafrecuencias",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -34,7 +37,8 @@ const sampleEvents = [
   },
   {
     id: 4,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/8b2d97ec2f6e9c9232696f7f5b7d332d58a20a00?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/8b2d97ec2f6e9c9232696f7f5b7d332d58a20a00?width=640",
     title: "Curado x Valesuchi + Julianna + DJ+1",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -43,7 +47,8 @@ const sampleEvents = [
   },
   {
     id: 5,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=640",
     title: "Nombre de evento a dos líneas de texto",
     eventType: "[TIPO EVENTO]",
     location: "Video Club",
@@ -52,7 +57,8 @@ const sampleEvents = [
   },
   {
     id: 6,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/00d075fecf595690a69b785815d479ff077912f0?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/00d075fecf595690a69b785815d479ff077912f0?width=640",
     title: "Contrafrecuencias",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -61,7 +67,8 @@ const sampleEvents = [
   },
   {
     id: 7,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/8b2d97ec2f6e9c9232696f7f5b7d332d58a20a00?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/8b2d97ec2f6e9c9232696f7f5b7d332d58a20a00?width=640",
     title: "Curado x Valesuchi + Julianna + DJ+1",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -70,7 +77,8 @@ const sampleEvents = [
   },
   {
     id: 8,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=640",
     title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -79,7 +87,8 @@ const sampleEvents = [
   },
   {
     id: 9,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=640",
     title: "Nombre de evento a dos líneas de texto",
     eventType: "[TIPO EVENTO]",
     location: "Video Club",
@@ -88,7 +97,8 @@ const sampleEvents = [
   },
   {
     id: 10,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=640",
     title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -97,7 +107,8 @@ const sampleEvents = [
   },
   {
     id: 11,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/00d075fecf595690a69b785815d479ff077912f0?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/00d075fecf595690a69b785815d479ff077912f0?width=640",
     title: "Contrafrecuencias",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -106,7 +117,8 @@ const sampleEvents = [
   },
   {
     id: 12,
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/8b2d97ec2f6e9c9232696f7f5b7d332d58a20a00?width=640",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/8b2d97ec2f6e9c9232696f7f5b7d332d58a20a00?width=640",
     title: "Curado x Valesuchi + Julianna + DJ+1",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
