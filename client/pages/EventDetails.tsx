@@ -27,7 +27,7 @@ const featuredEvents = [
     title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
-    date: "[Día, 00 Mes, A��o]",
+    date: "[Día, 00 Mes, Año]",
     time: "[00:00 P.M]",
   },
   {
@@ -258,17 +258,17 @@ const EventDetails = () => {
                     </div>
 
                     {/* Divider */}
-                    <div className="w-full h-px bg-neutral-200 md:w-[680px]"></div>
+                    <div className="w-full h-px bg-neutral-200"></div>
 
                     {/* Description */}
                     <div className="w-full">
-                      <p className="text-dark-green font-body text-lg font-normal leading-normal w-full">
+                      <p className="text-dark-green font-body text-[22px] font-normal leading-[30px] w-full">
                         {eventData.description}
                       </p>
                     </div>
 
                     {/* Divider */}
-                    <div className="w-full h-px bg-neutral-200 md:w-[680px]"></div>
+                    <div className="w-full h-px bg-neutral-200"></div>
 
                     {/* Container for Artists, Promoters, and Organizer */}
                     <div className="flex flex-col items-start gap-8 w-full">
