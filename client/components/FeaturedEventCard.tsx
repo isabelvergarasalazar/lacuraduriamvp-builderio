@@ -1,3 +1,5 @@
+import { Badge } from "./Badge";
+
 interface FeaturedEventCardProps {
   image: string;
   title: string;
@@ -5,6 +7,7 @@ interface FeaturedEventCardProps {
   location: string;
   date: string;
   time: string;
+  onBadgeClick?: () => void;
 }
 
 export const FeaturedEventCard = ({
@@ -13,7 +16,8 @@ export const FeaturedEventCard = ({
   eventType = "[TIPO EVENTO]",
   location,
   date,
-  time
+  time,
+  onBadgeClick
 }: FeaturedEventCardProps) => {
   return (
     <div className="flex flex-col items-start gap-0 self-stretch flex-shrink-0">
@@ -28,11 +32,9 @@ export const FeaturedEventCard = ({
       {/* Event Info */}
       <div className="flex w-[355px] px-2 pt-3 pb-2 flex-col items-start gap-2">
         {/* Badge */}
-        <div className="flex px-1 py-1 justify-center items-center gap-2.5 rounded-xs bg-[#75E6F9]">
-          <span className="text-neutral-900 font-body text-sm font-normal leading-[18px] uppercase">
-            {eventType}
-          </span>
-        </div>
+        <Badge onClick={onBadgeClick}>
+          {eventType}
+        </Badge>
 
         {/* Event Title */}
         <h3 className="max-h-[76px] self-stretch text-neutral-900 font-display text-[30px] font-bold leading-[38px] tracking-[-0.6px] overflow-hidden">
