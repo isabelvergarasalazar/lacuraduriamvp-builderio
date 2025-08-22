@@ -102,7 +102,7 @@ export const Footer = () => {
           <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] sm:leading-[24px] order-2 md:order-1">
             © 2025 La Curaduría. Todos los derechos reservados.
           </p>
-          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] sm:leading-[24px] text-left md:text-right max-w-full md:max-w-md lg:max-w-lg xl:max-w-xl order-1 md:order-2">
+          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] sm:leading-[24px] text-left md:text-right w-full md:w-auto order-1 md:order-2">
             CREAMOS UN LENTE PARA FILTRAR LO ESENCIAL JUNTO A MEDIOS, ARTISTAS Y GESTORES.
           </p>
         </div>
