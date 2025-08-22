@@ -41,9 +41,9 @@ export const EventCard = ({
         {/* Event Title - Responsive typography */}
         <h3
           className="
-          text-[28px] leading-[34px] tracking-[-0.56px] md:text-[28px] md:leading-[34px] md:tracking-[-0.56px] lg:text-[30px] lg:leading-[38px] lg:tracking-[-0.6px]
+          text-[28px] leading-[34px] tracking-[-0.56px] md:text-[28px] md:leading-[34px] md:tracking-[-0.56px] lg:text-[28px] lg:leading-[34px] lg:tracking-[-0.56px]
           font-display font-bold text-dark-green
-          max-h-[68px] lg:max-h-[76px] overflow-hidden
+          max-h-[68px] overflow-hidden
           self-stretch
           transition-colors duration-200 ease-in-out
         "
