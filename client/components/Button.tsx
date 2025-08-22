@@ -61,7 +61,7 @@ export const Button = ({
   const sizeClasses = {
     sm: "rounded-lg px-3 py-1 text-sm",
     md: "rounded-lg px-4 py-2 text-base",
-    lg: "rounded-xl md:rounded-lg px-2 sm:px-4 md:px-2 lg:px-5 py-1 sm:py-2 md:py-1 lg:py-1.5",
+    lg: "rounded-xl md:rounded-lg pl-5 pr-2 sm:px-4 md:px-2 lg:px-5 py-1.5 sm:py-2 md:py-1 lg:py-1.5",
   };
 
   const textSizeClasses = {
