@@ -152,7 +152,7 @@ export const FeaturedEvents = ({
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex items-start gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4 pl-4 md:pl-8 lg:pl-12"
+          className="flex items-start gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4 px-4 md:pl-8 lg:pl-12"
         >
           {events.map((event, index) => (
             <div key={`featured-event-${index}`} className="flex-shrink-0">
