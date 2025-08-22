@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { Calendar, Ticket } from "lucide-react";
 import { NavBar } from "@/components/NavBar";
 import { Badge } from "@/components/Badge";
 import { Button } from "@/components/Button";
