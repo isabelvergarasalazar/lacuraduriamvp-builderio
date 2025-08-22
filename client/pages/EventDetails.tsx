@@ -241,11 +241,11 @@ const EventDetails = () => {
                   <div className="w-full h-px bg-neutral-200"></div>
 
                   {/* Artists Tags */}
-                  <div className="flex flex-col items-start gap-0 w-full">
+                  <div className="flex flex-col items-start gap-2 w-full">
                     <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       ARTISTAS
                     </span>
-                    <div className="flex flex-wrap items-start gap-3 w-full">
+                    <div className="flex flex-wrap items-start gap-4 w-full">
                       {[...Array(8)].map((_, index) => (
                         <div
                           key={index}
@@ -275,11 +275,11 @@ const EventDetails = () => {
                   </div>
 
                   {/* Promoters Tags */}
-                  <div className="flex flex-col items-start gap-0 w-full">
+                  <div className="flex flex-col items-start gap-2 w-full">
                     <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                       PROMOTORES / COLECTIVO
                     </span>
-                    <div className="flex flex-wrap items-start gap-3 w-full">
+                    <div className="flex flex-wrap items-start gap-4 w-full">
                       {[...Array(8)].map((_, index) => (
                         <div
                           key={index}
