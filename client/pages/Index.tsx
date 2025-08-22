@@ -63,22 +63,42 @@ const HeroSection = () => {
       </div>
 
       {/* Event Cards Carousel - Positioned over background */}
-      <div className="relative -mt-[100px] sm:-mt-[120px] lg:-mt-[150px] flex justify-center items-center gap-5 self-stretch px-4 sm:px-8 lg:px-12 z-10 overflow-x-auto">
-        <div className="flex items-center gap-5 min-w-max">
-          {events.map((event, index) => (
-            <EventCard
-              key={index}
-              image={event.image}
-              title={event.title}
-              eventType={event.eventType}
-              location={event.location}
-              organizer={event.organizer}
-              date={event.date}
-              time={event.time}
-              price={event.price}
-              onViewEvent={() => console.log(`View event: ${event.title}`)}
-            />
-          ))}
+      <div className="relative -mt-[100px] sm:-mt-[120px] lg:-mt-[150px] flex justify-center items-center self-stretch px-4 sm:px-8 lg:px-12 z-10">
+        <div className="relative w-full max-w-[1271px] overflow-hidden">
+          <div
+            className="flex transition-transform duration-1000 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {events.map((event, index) => (
+              <div key={index} className="min-w-full flex justify-center">
+                <EventCard
+                  image={event.image}
+                  title={event.title}
+                  eventType={event.eventType}
+                  location={event.location}
+                  organizer={event.organizer}
+                  date={event.date}
+                  time={event.time}
+                  price={event.price}
+                  onViewEvent={() => console.log(`View event: ${event.title}`)}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Carousel indicators */}
+          <div className="flex justify-center mt-6 gap-2">
+            {events.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                  index === currentIndex ? 'bg-coral-primary' : 'bg-neutral-200'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -221,7 +241,7 @@ const Footer = () => {
           {/* Left Links */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
             <a href="/cartelera" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">CARTELERA</a>
-            <a href="/como-publicar" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">C��MO PUBLICAR</a>
+            <a href="/como-publicar" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">CÓMO PUBLICAR</a>
           </div>
 
           {/* Divider - Hidden on mobile */}
