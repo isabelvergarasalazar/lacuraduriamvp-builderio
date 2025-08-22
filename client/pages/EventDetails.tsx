@@ -233,7 +233,7 @@ const EventDetails = () => {
                   <div className="w-full h-px bg-neutral-200"></div>
 
                   {/* Description */}
-                  <p className="text-dark-green font-body text-lg font-normal leading-8 w-full">
+                  <p className="text-dark-green font-body text-[22px] font-normal leading-[30px] w-full">
                     {eventData.description}
                   </p>
 
