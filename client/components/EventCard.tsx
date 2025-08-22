@@ -21,68 +21,38 @@ export const EventCard = ({
   size = "lg",
   onClick,
 }: EventCardProps) => {
-  // Responsive sizing based on design specs
-  const sizeClasses = {
-    sm: {
-      container: "w-[276px]",
-      image: "w-[276px] h-[345px]",
-      title: "text-[28px] leading-[34px] tracking-[-0.56px] line-clamp-1",
-      location: "text-[18px]",
-    },
-    md: {
-      container: "w-[320px]",
-      image: "w-[320px] h-[400px]",
-      title: "text-[28px] leading-[34px] tracking-[-0.56px]",
-      location: "text-[22px] leading-[30px]",
-    },
-    lg: {
-      container: "w-[355px]",
-      image: "w-[355px] h-[444px]",
-      title: "text-[30px] leading-[38px] tracking-[-0.6px]",
-      location: "text-[22px] leading-[30px]",
-    },
-  };
-
-  const currentSize = sizeClasses[size];
-
   return (
     <div
-      className={`flex flex-col ${currentSize.container} cursor-pointer`}
+      className="flex flex-col cursor-pointer flex-shrink-0 w-[276px] md:w-[320px] lg:w-[355px]"
       onClick={onClick}
     >
-      {/* Event Poster */}
+      {/* Event Poster - Responsive dimensions */}
       <img
         src={image}
         alt={`${title} Event Poster`}
-        className={`${currentSize.image} aspect-[4/5] rounded-xs object-cover flex-shrink-0`}
+        className="w-[276px] h-[345px] md:w-[320px] md:h-[400px] lg:w-[355px] lg:h-[444px] aspect-[4/5] rounded-xs object-cover flex-shrink-0"
       />
 
-      {/* Event Info */}
-      <div
-        className={`flex flex-col items-start gap-2 ${size === "lg" ? "p-3 pb-2" : "p-3 pb-2"}`}
-      >
+      {/* Event Info - Responsive padding */}
+      <div className="flex flex-col items-start gap-2 p-3 pb-2 lg:px-2 lg:pt-3 lg:pb-2">
         {/* Badge */}
         <Badge>{eventType}</Badge>
 
-        {/* Event Title */}
-        <h3
-          className={`
-          ${currentSize.title}
+        {/* Event Title - Responsive typography */}
+        <h3 className="
+          text-[28px] leading-[34px] tracking-[-0.56px] md:text-[28px] md:leading-[34px] md:tracking-[-0.56px] lg:text-[30px] lg:leading-[38px] lg:tracking-[-0.6px]
           font-avant-garde font-bold text-dark-green
-          ${size === "sm" ? "max-h-[68px] overflow-hidden" : "max-h-[76px]"}
+          max-h-[68px] lg:max-h-[76px] overflow-hidden
           self-stretch
-        `}
-        >
+        ">
           {title}
         </h3>
 
-        {/* Location */}
-        <div
-          className={`
-          ${currentSize.location}
+        {/* Location - Responsive typography */}
+        <div className="
+          text-[18px] md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px]
           font-fraktion font-normal text-neutral-800 w-[230px]
-        `}
-        >
+        ">
           {location}
         </div>
 
