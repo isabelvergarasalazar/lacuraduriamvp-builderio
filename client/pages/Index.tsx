@@ -88,7 +88,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-cream">
       <NavBar />
-      <main className="pb-8 sm:pb-12 lg:pb-16 space-y-32">
+      <main className="mt-8 pb-8 sm:pb-12 lg:pb-16 space-y-32">
         <HeroSection />
         <FeaturedEventsSection />
         <div className="px-4 sm:px-8 lg:px-12">
