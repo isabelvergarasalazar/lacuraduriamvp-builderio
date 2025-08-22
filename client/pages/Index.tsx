@@ -238,9 +238,7 @@ export default function Index() {
         <div className="px-4 sm:px-8 lg:px-12">
           <HeroSection />
         </div>
-        <div className="px-4 sm:px-8 lg:px-12">
-          <FeaturedEventsSection />
-        </div>
+        <FeaturedEventsSection />
         <div className="px-4 sm:px-8 lg:px-12">
           <MissionSection />
         </div>
