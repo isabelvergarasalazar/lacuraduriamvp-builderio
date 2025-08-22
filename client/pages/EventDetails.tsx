@@ -119,39 +119,39 @@ const EventDetails = () => {
       {/* Main Content */}
       <main className="w-full">
         {/* Content Section */}
-        <section className="px-4 md:px-8 pt-12 pb-16 md:pt-12 md:pb-[128px]">
-          {/* Container with max width for tablet design */}
-          <div className="w-full max-w-none md:max-w-[744px] md:mx-auto">
-            <div className="flex flex-col items-start gap-4 md:gap-16 w-full">
+        <section className="px-4 md:px-8 xl:px-[48px] pt-12 pb-32 md:pt-12 md:pb-[128px] lg:pt-[48px] lg:pb-[96px]">
+          {/* Container - tablet specific width, desktop full width */}
+          <div className="w-full md:max-w-[744px] md:mx-auto lg:max-w-none lg:mx-0">
+            <div className="flex flex-col items-start gap-4 md:gap-16 lg:gap-4 w-full">
               {/* Breadcrumbs */}
               <nav className="flex items-center gap-2">
                 <button
                   onClick={() => navigate("/cartelera")}
-                  className="text-cream font-body text-sm font-normal leading-[18px] uppercase hover:text-neutral-200 transition-colors"
+                  className="text-neutral-600 font-body text-sm font-normal leading-[18px] uppercase hover:text-dark-green transition-colors"
                 >
                   CARTELERA
                 </button>
-                <span className="text-cream font-body text-sm font-normal leading-[18px]">
+                <span className="text-neutral-600 font-body text-sm font-normal leading-[18px]">
                   /
                 </span>
-                <span className="text-cream font-body text-sm font-medium leading-[18px] uppercase">
+                <span className="text-dark-green font-body text-sm font-medium leading-[18px] uppercase">
                   NOMBRE EVENTO
                 </span>
               </nav>
 
               {/* Event Content */}
-              <div className="flex flex-col items-start gap-10 md:gap-10 w-full">
-                {/* Event Image */}
-                <div className="w-full">
+              <div className="flex flex-col lg:flex-row justify-start items-start gap-8 md:gap-10 lg:gap-12 xl:gap-16 w-full">
+                {/* Left Column - Event Image */}
+                <div className="w-full lg:w-auto lg:flex-shrink-0 lg:sticky lg:top-8 lg:self-start">
                   <img
                     src={eventData.image}
                     alt={`${eventData.title} Event Poster`}
-                    className="w-full md:h-[850px] aspect-[4/5] rounded-md object-cover"
+                    className="w-full md:h-[850px] lg:max-w-[500px] xl:max-w-[580px] aspect-[4/5] rounded-md object-cover"
                   />
                 </div>
 
-                {/* Event Info Container */}
-                <div className="flex flex-col items-start gap-10 md:gap-10 w-full">
+                {/* Right Column - Event Info */}
+                <div className="flex flex-col items-start gap-10 w-full lg:flex-1 lg:min-w-0">
                   {/* Event Title and CTA */}
                   <div className="flex flex-col items-start gap-3 w-full">
                     <Badge>{eventData.eventType}</Badge>
