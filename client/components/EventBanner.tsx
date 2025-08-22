@@ -59,13 +59,13 @@ export const EventBanner = ({
         {/* Event Type and Title */}
         <div className="flex flex-col items-start gap-4">
           <Badge>{eventType}</Badge>
-          <h1 className="text-dark-green font-display text-2xl md:text-[30px] lg:text-5xl font-bold leading-tight md:leading-[38px] lg:leading-[60px] tracking-[-0.48px] md:tracking-[-0.6px] lg:tracking-[-0.96px]">
+          <h1 className="text-dark-green font-display text-[30px] md:text-[30px] lg:text-5xl font-bold leading-[38px] md:leading-[38px] lg:leading-[60px] tracking-[-0.6px] md:tracking-[-0.6px] lg:tracking-[-0.96px]">
             {title}
           </h1>
         </div>
 
-        {/* Divider */}
-        <div className="w-full max-w-[324px] md:max-w-[324px] lg:max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
+        {/* Divider - Hidden on mobile */}
+        <div className="hidden md:block w-full max-w-[324px] md:max-w-[324px] lg:max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
 
         {/* Event Details */}
         <div className="flex flex-col items-start gap-2 w-full">
