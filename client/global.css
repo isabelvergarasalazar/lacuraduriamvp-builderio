@@ -112,3 +112,61 @@
     font-weight: 700;
   }
 }
+
+@layer components {
+  /* Futuristic Button Click Effect */
+  @keyframes scan-border {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 5px #75E6F9, 0 0 10px #75E6F9, 0 0 15px #75E6F9;
+    }
+    50% {
+      box-shadow: 0 0 10px #75E6F9, 0 0 20px #75E6F9, 0 0 30px #75E6F9;
+    }
+  }
+
+  @keyframes scale-pulse {
+    0%, 100% {
+      transform: scale(1) translateY(-2px);
+    }
+    50% {
+      transform: scale(1.02) translateY(-2px);
+    }
+  }
+
+  .futuristic-effect {
+    border: 2px solid #75E6F9;
+    animation: glow-pulse 0.6s ease-in-out, scale-pulse 0.6s ease-in-out;
+  }
+
+  .futuristic-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, #75E6F9, transparent);
+    animation: scan-border 0.6s ease-in-out;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .futuristic-effect > * {
+    position: relative;
+    z-index: 2;
+  }
+}
