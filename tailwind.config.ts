@@ -24,7 +24,7 @@ export default {
         "neutral-75": "#F4F5EC",
         "neutral-100": "#E5E6DD",
         "neutral-200": "#CBCDC4",
-        "neutral-600": "#64685F",
+        "neutral-600": "#4B4E46",
         "neutral-800": "#31352D",
 
         // Existing shadcn colors
