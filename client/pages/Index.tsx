@@ -107,7 +107,7 @@ const HeroSection = () => {
               {extendedEvents.map((event, index) => (
                 <div
                   key={`${event.title}-${index}`}
-                  className="flex-shrink-0 w-[1271px] flex justify-center"
+                  className="flex-shrink-0 flex justify-center"
                 >
                   <EventCard
                     image={event.image}
