@@ -168,10 +168,7 @@ const Cartelera = () => {
                 location={event.location}
                 date={event.date}
                 time={event.time}
-                onClick={() => {
-                  // Handle event click
-                  console.log("Event clicked:", event.title);
-                }}
+                onClick={() => handleEventClick(event)}
               />
             ))}
           </div>
