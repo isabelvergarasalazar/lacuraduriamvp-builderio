@@ -3,87 +3,80 @@ import { NavBar } from "@/components/NavBar";
 import { EventCard } from "@/components/EventCard";
 
 const HeroSection = () => {
+  // Sample event data - in a real app this would come from an API
+  const events = [
+    {
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/06af181c852a9b694df83cbf3e045b4d8f43172d?width=938",
+      title: "Decibelio: Mariposa",
+      eventType: "[TIPO EVENTO]",
+      location: "Carrera 13A # 22-54",
+      organizer: "Mariposa",
+      date: "Vie, 15 Ago 2025",
+      time: "08:00 PM",
+      price: "40.000 COP"
+    },
+    {
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/56fad6f7408648d64c7bf2bf9968b75dc6cc59de?width=938",
+      title: "Concierto Acústico",
+      eventType: "[MÚSICA]",
+      location: "Calle 85 # 15-20",
+      organizer: "Colectivo Musical",
+      date: "Sáb, 16 Ago 2025",
+      time: "07:30 PM",
+      price: "35.000 COP"
+    },
+    {
+      image: "https://api.builder.io/api/v1/image/assets/TEMP/e62a63b66db832fb69da990ccc9fbabc15e16c64?width=938",
+      title: "Exposición de Arte",
+      eventType: "[ARTE]",
+      location: "Avenida 19 # 104-62",
+      organizer: "Galería Moderna",
+      date: "Dom, 17 Ago 2025",
+      time: "02:00 PM",
+      price: "25.000 COP"
+    }
+  ];
+
   return (
-    <div className="relative">
-      {/* Background Image with Gradient */}
-      <div className="relative h-[400px] sm:h-[500px] lg:h-[734px] -mx-4 sm:-mx-8 lg:-mx-12">
+    <div className="flex flex-col items-start gap-8 self-stretch">
+      {/* Hero Background */}
+      <div className="relative w-[calc(100vw)] h-[734px] -ml-12">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/a484871b74618d95268be70f8b1c7c96e03d4040?width=3024"
           alt="Hero background"
-          className="w-full h-full object-cover absolute top-0"
+          className="w-full h-[716px] absolute left-0 top-[18px] object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-cream opacity-80"></div>
+        <div className="w-full h-[734px] absolute left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-cream opacity-80"></div>
       </div>
 
       {/* Event Cards Carousel */}
-      <div className="relative -mt-16 sm:-mt-24 lg:-mt-32 px-4 sm:px-8 lg:px-12">
-        <div className="flex justify-center items-center">
-          {/* Main Event Card */}
-          <div className="bg-neutral-75 rounded-lg p-4 sm:p-6 flex flex-col lg:flex-row items-start lg:items-end gap-6 lg:gap-11 max-w-full w-full">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/06af181c852a9b694df83cbf3e045b4d8f43172d?width=938"
-              alt="Decibelio: Mariposa Event"
-              className="w-full sm:w-80 lg:w-[469px] h-64 sm:h-80 lg:h-[587px] object-cover rounded-lg flex-shrink-0"
-            />
-
-            <div className="flex-1 space-y-4">
-              <div className="space-y-4">
-                <div className="bg-blue-accent rounded px-2 py-1 inline-block">
-                  <span className="text-dark-green text-xs sm:text-sm font-fraktion uppercase">[TIPO EVENTO]</span>
-                </div>
-                <h1 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
-                  Decibelio: Mariposa
-                </h1>
-              </div>
-
-              <div className="w-full h-px bg-neutral-200"></div>
-
-              <div className="space-y-2">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-8">
-                  <span className="text-neutral-800 font-fraktion text-lg sm:text-xl sm:w-[300px]">Carrera 13A # 22-54</span>
-                  <div className="flex items-end gap-2">
-                    <span className="text-neutral-600 font-fraktion text-sm sm:text-base">Organiza</span>
-                    <span className="text-neutral-800 font-fraktion text-lg sm:text-xl">Mariposa</span>
-                  </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-8">
-                  <span className="text-neutral-800 font-fraktion text-lg sm:text-xl sm:w-[300px]">Vie, 15 Ago 2025</span>
-                  <div className="flex items-end gap-2">
-                    <span className="text-neutral-600 font-fraktion text-sm sm:text-base">Desde</span>
-                    <span className="text-neutral-800 font-fraktion text-lg sm:text-xl">08:00 PM</span>
-                  </div>
-                </div>
-
-                <div className="flex items-end gap-2">
-                  <span className="text-neutral-600 font-fraktion text-sm sm:text-base">Desde</span>
-                  <span className="text-neutral-800 font-fraktion text-lg sm:text-xl">40.000 COP</span>
-                </div>
-              </div>
-
-              <div className="w-full h-px bg-neutral-200"></div>
-
-              <button className="bg-coral-primary hover:bg-coral-secondary transition-colors rounded-xl px-3 sm:px-5 py-1.5 flex items-center gap-2">
-                <span className="text-cream text-sm sm:text-lg font-fraktion font-medium uppercase">VER EVENTO</span>
-                <div className="bg-coral-secondary rounded-full p-1.5 sm:p-2">
-                  <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-cream" />
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className="flex justify-center items-center gap-5 self-stretch overflow-x-auto">
+        {events.map((event, index) => (
+          <EventCard
+            key={index}
+            image={event.image}
+            title={event.title}
+            eventType={event.eventType}
+            location={event.location}
+            organizer={event.organizer}
+            date={event.date}
+            time={event.time}
+            price={event.price}
+            onViewEvent={() => console.log(`View event: ${event.title}`)}
+          />
+        ))}
       </div>
 
       {/* Tagline */}
-      <div className="flex flex-col sm:flex-row justify-between items-center py-5 px-4 sm:px-8 lg:px-12 mt-8 gap-4 sm:gap-0">
+      <div className="flex justify-between items-center self-stretch py-5">
         <div className="flex items-center gap-1.5">
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
-          <span className="text-dark-green font-fraktion text-sm sm:text-lg text-center">UN LENTE PARA EL ARTE</span>
+          <span className="text-dark-green font-fraktion text-lg">UN LENTE PARA EL ARTE</span>
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
         </div>
         <div className="flex items-center gap-1.5">
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
-          <span className="text-dark-green font-fraktion text-sm sm:text-lg text-center">EXPLORA LA CARTELERA DE EVENTOS</span>
+          <span className="text-dark-green font-fraktion text-lg">EXPLORA LA CARTELERA DE EVENTOS</span>
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
         </div>
       </div>
