@@ -99,11 +99,11 @@ export const Footer = () => {
         </div>
 
         {/* Bottom: Copyright and Tagline */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-6 lg:gap-8">
-          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] sm:leading-[24px] order-2 md:order-1">
-            © 2025 La Curaduría. Todos los derechos reservados.
+        <div className="flex flex-col gap-4 md:gap-6">
+          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] md:leading-[24px] lg:leading-[24px]">
+            © 2025 LA CURADURÍA. TODOS LOS DERECHOS RESERVADOS
           </p>
-          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] sm:leading-[24px] text-left md:text-right w-full md:w-auto order-1 md:order-2">
+          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] md:leading-[24px] lg:leading-[24px]">
             CREAMOS UN LENTE PARA FILTRAR LO ESENCIAL JUNTO A MEDIOS, ARTISTAS Y GESTORES.
           </p>
         </div>
