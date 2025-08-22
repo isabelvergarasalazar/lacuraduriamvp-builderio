@@ -48,7 +48,9 @@ export const FeaturedEvents = ({
   };
 
   // Calculate scroll indicator width based on current position
-  const scrollIndicatorWidth = maxScroll > 0 ? Math.max(80, (scrollPosition / maxScroll) * 500) : 162;
+  const scrollIndicatorWidth = maxScroll > 0
+    ? Math.max(162, Math.min(500, 162 + (scrollPosition / maxScroll) * (500 - 162)))
+    : 162;
 
   return (
     <section className="flex flex-col items-start gap-6 w-full">
