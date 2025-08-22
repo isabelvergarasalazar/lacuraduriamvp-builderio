@@ -99,6 +99,32 @@ export const FeaturedEvents = ({
     document.addEventListener('mouseup', handleMouseUp);
   };
 
+  const handleIndicatorTouchStart = (e: React.TouchEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+
+    const handleTouchMove = (moveEvent: TouchEvent) => {
+      const container = scrollContainerRef.current;
+      const track = scrollTrackRef.current;
+      if (container && track && moveEvent.touches[0]) {
+        const rect = track.getBoundingClientRect();
+        const moveX = moveEvent.touches[0].clientX - rect.left;
+        const trackWidth = rect.width;
+        const scrollPercent = Math.max(0, Math.min(1, (moveX - 81) / (trackWidth - 162)));
+        container.scrollLeft = scrollPercent * maxScroll;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      setIsDragging(false);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
+    };
+
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    document.addEventListener('touchend', handleTouchEnd);
+  };
+
   return (
     <section className="flex flex-col items-start gap-6 w-full">
       {/* Header Container - Responsive layout */}
