@@ -126,19 +126,23 @@ const EventDetails = () => {
 
                   {/* CTA Buttons */}
                   <div className="flex flex-col sm:flex-row items-start gap-4 w-full">
-                    <Button variant="primary" className="w-full sm:w-auto">
+                    <div className="flex items-center gap-2 px-5 py-3 bg-coral-primary hover:bg-coral-secondary rounded-xl text-cream font-fraktion font-medium uppercase tracking-wide cursor-pointer transition-colors duration-200 w-full sm:w-auto">
                       <span>COMPRAR TICKETS</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                        <path d="M15.25 7.75V8.25M15.25 11.75V12.25M15.25 15.75V16.25M2.75 4.75H21.25V9.25C18.5 10 18.5 14 21.25 14.75V19.25H2.75V14.75C5.5 14 5.5 10 2.75 9.25V4.75Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </Button>
-                    
-                    <Button variant="secondary" className="w-full sm:w-auto">
+                      <div className="bg-coral-secondary rounded-full p-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-cream">
+                          <path d="M15.25 7.75V8.25M15.25 11.75V12.25M15.25 15.75V16.25M2.75 4.75H21.25V9.25C18.5 10 18.5 14 21.25 14.75V19.25H2.75V14.75C5.5 14 5.5 10 2.75 9.25V4.75Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-2 px-5 py-3 border border-coral-primary text-coral-primary hover:bg-coral-primary hover:text-cream rounded-xl font-fraktion font-medium uppercase tracking-wide cursor-pointer transition-colors duration-200 w-full sm:w-auto">
                       <span>AÑADIR A CALENDARIO</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                        <path d="M7.75 4.75V2.75M16.25 4.75V2.75M11.9991 9.75V15.25M14.75 12.5H9.25M3.75 4.75H20.25V20.25H3.75V4.75Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </Button>
+                      <div className="bg-coral-primary rounded-full p-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-cream">
+                          <path d="M7.75 4.75V2.75M16.25 4.75V2.75M11.9991 9.75V15.25M14.75 12.5H9.25M3.75 4.75H20.25V20.25H3.75V4.75Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
