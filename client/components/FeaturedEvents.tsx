@@ -137,7 +137,7 @@ export const FeaturedEvents = ({
   return (
     <section className="flex flex-col items-start gap-6 w-full">
       {/* Header Container - With padding */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-2 md:gap-0 w-full px-4 sm:px-8 lg:px-12">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-2 md:gap-0 w-full px-4 md:px-0 lg:px-12">
         {/* Header Title - Responsive typography */}
         <h2 className="text-dark-green font-display text-[30px] md:text-[30px] lg:text-[48px] font-bold leading-[38px] md:leading-[38px] lg:leading-[60px] tracking-[-0.6px] md:tracking-[-0.6px] lg:tracking-[-0.96px]">
           EVENTOS DESTACADOS
