@@ -207,7 +207,7 @@ const FeaturedEvents = () => {
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-        <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
+        <h2 className="text-dark-green font-display font-bold text-[30px] leading-[38px] tracking-[-0.6px] lg:text-5xl lg:leading-[60px] lg:tracking-[-0.96px]">
           EVENTOS DESTACADOS
         </h2>
         <button className="flex items-center gap-1 group">
