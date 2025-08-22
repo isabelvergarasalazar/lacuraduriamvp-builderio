@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  }
+
+  @media (min-width: 768px) {
+    .events-grid {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .events-grid {
+      grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    }
+  }
+}
+
 @layer base {
   /**
    * Tailwind CSS theme
