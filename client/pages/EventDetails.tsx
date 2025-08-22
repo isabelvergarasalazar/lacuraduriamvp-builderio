@@ -113,7 +113,7 @@ const EventDetails = () => {
             </nav>
 
             {/* Event Content */}
-            <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-[100px] w-full">
+            <div className="flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-[100px] w-full">
               {/* Left Column - Event Image */}
               <div className="w-full lg:w-auto lg:flex-shrink-0 lg:sticky lg:top-8 lg:self-start">
                 <img
