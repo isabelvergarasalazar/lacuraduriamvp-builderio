@@ -41,13 +41,13 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col items-start gap-8 self-stretch">
       {/* Hero Background */}
-      <div className="relative w-[calc(100vw)] h-[734px] -ml-12">
+      <div className="relative w-[calc(100vw)] h-[400px] sm:h-[500px] lg:h-[734px] -ml-4 sm:-ml-8 lg:-ml-12">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/a484871b74618d95268be70f8b1c7c96e03d4040?width=3024"
           alt="Hero background"
-          className="w-full h-[716px] absolute left-0 top-[18px] object-cover"
+          className="w-full h-full absolute left-0 top-0 object-cover"
         />
-        <div className="w-full h-[734px] absolute left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-cream opacity-80"></div>
+        <div className="w-full h-full absolute left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-cream opacity-80"></div>
       </div>
 
       {/* Event Cards Carousel */}
