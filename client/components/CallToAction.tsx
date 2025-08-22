@@ -72,7 +72,7 @@ export const CallToAction = ({
             alt="Q Glass - Decorative element"
             className="absolute pointer-events-none hidden md:block
                        md:w-[139.525px] md:h-[111.995px]
-                       xl:w-[320.741px] xl:h-[257.453px]"
+                       lg:w-[320.741px] lg:h-[257.453px]"
             style={{
               transform: "rotate(-4.356deg)",
               transformOrigin: "center center",
