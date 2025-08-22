@@ -46,7 +46,7 @@ export const EventBanner = ({
   onViewEvent,
 }: EventBannerProps) => {
   return (
-    <div className="flex w-full max-w-[1271px] p-4 md:p-6 items-end gap-6 md:gap-11 rounded-lg bg-[#F4F5EC]">
+    <div className="flex w-full max-w-[1271px] p-4 md:p-6 items-end gap-6 md:gap-11 rounded-lg bg-[#F4F5EC] hover:bg-[#E5E6DD] transition-colors duration-200 ease-in-out cursor-pointer group">
       {/* Event Poster */}
       <img
         src={image}
