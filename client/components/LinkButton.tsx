@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 interface LinkButtonProps {
   children: ReactNode;
@@ -13,24 +13,36 @@ export const LinkButton = ({
   onClick,
   className = "",
 }: LinkButtonProps) => {
+  const [isClicked, setIsClicked] = useState(false);
+
   const handleClick = () => {
+    setIsClicked(true);
     onClick?.();
+
+    // Reset clicked state after animation
+    setTimeout(() => setIsClicked(false), 300);
   };
 
   const baseClasses = `
     flex items-center gap-1 rounded-xl group cursor-pointer
     transition-all duration-200 ease-in-out
-    hover:scale-105 focus:scale-105
     focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2
+    ${isClicked ? 'animate-pulse' : ''}
     ${className}
   `.trim();
 
   const content = (
     <>
-      <span className="text-coral-primary font-body text-lg font-medium leading-[28px] uppercase tracking-wide transition-colors duration-200 group-hover:text-coral-secondary group-focus:text-coral-secondary">
+      <span className="text-coral-primary font-body text-lg font-medium leading-[28px] uppercase tracking-wide transition-colors duration-200 group-hover:text-coral-secondary group-focus:text-coral-secondary group-active:text-coral-dark">
         {children}
       </span>
-      <div className="bg-coral-primary rounded-full p-2 transition-all duration-200 group-hover:bg-coral-secondary group-focus:bg-coral-secondary group-hover:scale-110 group-focus:scale-110">
+      <div className={`
+        rounded-full p-2 transition-all duration-300 ease-out
+        ${isClicked
+          ? 'bg-gradient-to-r from-coral-primary via-coral-secondary to-coral-dark'
+          : 'bg-coral-primary group-hover:bg-coral-secondary group-focus:bg-coral-secondary group-active:bg-coral-dark'
+        }
+      `}>
         <svg
           width="16"
           height="16"
