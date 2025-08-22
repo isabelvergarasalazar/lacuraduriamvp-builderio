@@ -200,19 +200,19 @@ const FeaturedEvents = () => {
 
   return (
     <div className="space-y-6">
-      <div className="flex justify-between items-end">
-        <h2 className="text-dark-green font-avant-garde text-5xl font-bold leading-tight tracking-tight">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+        <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
           EVENTOS DESTACADOS
         </h2>
         <button className="flex items-center gap-1 group">
-          <span className="text-coral-primary font-fraktion text-lg font-medium">VER CARTELERA COMPLETA</span>
-          <div className="bg-coral-primary rounded-full p-2">
-            <ChevronRight className="w-4 h-4 text-cream" />
+          <span className="text-coral-primary font-fraktion text-sm sm:text-lg font-medium">VER CARTELERA COMPLETA</span>
+          <div className="bg-coral-primary rounded-full p-1.5 sm:p-2">
+            <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-cream" />
           </div>
         </button>
       </div>
-      
-      <div className="flex gap-12 overflow-x-auto">
+
+      <div className="flex gap-6 lg:gap-12 overflow-x-auto pb-4">
         {events.map((event, index) => (
           <EventCard key={index} {...event} />
         ))}
