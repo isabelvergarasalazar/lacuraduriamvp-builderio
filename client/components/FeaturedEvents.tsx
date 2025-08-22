@@ -184,6 +184,7 @@ export const FeaturedEvents = ({
               transform: 'translateY(0)'
             }}
             onMouseDown={handleIndicatorMouseDown}
+            onTouchStart={handleIndicatorTouchStart}
           />
         </div>
       </div>
