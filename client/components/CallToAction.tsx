@@ -20,15 +20,20 @@ export const CallToAction = ({
 }: CallToActionProps) => {
   return (
     <section
-      className={`bg-neutral-100 px-4 md:px-8 xl:px-[48px] py-8 md:py-12 xl:py-[64px] pt-16 md:pt-20 xl:pt-[84px] relative ${className}`}
+      className={`bg-neutral-100 p-8 md:p-8 relative overflow-hidden ${className}`}
       aria-labelledby="cta-heading"
     >
-      <div className="flex flex-col gap-4 max-w-2xl relative z-10">
-        <h2 id="cta-heading" className="text-display-lg-bold whitespace-nowrap">
+      <div className="flex flex-col items-start gap-3 relative z-10">
+        <h2
+          id="cta-heading"
+          className="font-display text-neutral-900 font-bold text-[30px] leading-[38px] tracking-[-0.6px] self-stretch"
+        >
           {title}
         </h2>
-        <p className="text-display-xs-regular max-w-[456px]">{subtitle}</p>
-        <div className="pt-2">
+        <p className="font-body text-neutral-900 font-normal text-[24px] leading-[32px] self-stretch">
+          {subtitle}
+        </p>
+        <div className="mt-1">
           <Button
             icon={Calendar}
             size="lg"
@@ -40,16 +45,13 @@ export const CallToAction = ({
         </div>
       </div>
 
-      {/* Q Glass Image - Floating effect with exact Figma positioning */}
+      {/* Q Glass Image - Positioned according to tablet design */}
       {showImage && (
         <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/3b68cf450df4a94e56dd749b4b5e44ed6ec83b27?width=641"
+          src="https://api.builder.io/api/v1/image/assets/TEMP/78a928d4fd744c7d1f54e348000924b857d5507c?width=279"
           alt="Q Glass - Decorative element"
-          className="absolute w-[320.741px] h-[257.453px] pointer-events-none"
+          className="absolute w-[139.525px] h-[111.995px] pointer-events-none top-4 right-4"
           style={{
-            position: "absolute",
-            right: "28.631px",
-            top: "-58px",
             transform: "rotate(-4.356deg)",
             transformOrigin: "center center",
           }}
