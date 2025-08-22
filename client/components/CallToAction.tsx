@@ -20,7 +20,7 @@ export const CallToAction = ({
 }: CallToActionProps) => {
   return (
     <section
-      className={`bg-neutral-100 p-8 md:p-8 xl:px-[48px] xl:py-[64px] xl:pt-[84px] relative overflow-hidden ${className}`}
+      className={`bg-neutral-100 px-4 py-8 md:p-8 xl:px-[48px] xl:py-[64px] xl:pt-[84px] relative overflow-hidden ${className}`}
       aria-labelledby="cta-heading"
     >
       <div className="flex flex-col items-start gap-3 md:gap-3 xl:gap-4 self-stretch relative z-10">
@@ -37,10 +37,11 @@ export const CallToAction = ({
                       xl:max-w-[456px]">
           {subtitle}
         </p>
-        <div className="mt-0 md:mt-0 xl:pt-2">
+        <div className="w-full md:w-auto mt-0 md:mt-0 xl:pt-2">
           <Button
             icon={Calendar}
-            size="lg"
+            size="md"
+            className="w-full md:w-auto"
             href={buttonHref}
             aria-label={`${buttonText} - Abre en nueva ventana`}
           >
@@ -49,10 +50,10 @@ export const CallToAction = ({
         </div>
       </div>
 
-      {/* Q Glass Image - Positioned exactly as in Figma */}
+      {/* Q Glass Image - Responsive positioning for mobile, tablet, desktop */}
       {showImage && (
         <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/78a928d4fd744c7d1f54e348000924b857d5507c?width=279"
+          src="https://api.builder.io/api/v1/image/assets/TEMP/c406c88f3601ccc226f6ee02dbd7d565615185f6?width=279"
           alt="Q Glass - Decorative element"
           className="absolute pointer-events-none
                      w-[139.525px] h-[111.995px]
@@ -61,7 +62,7 @@ export const CallToAction = ({
           style={{
             transform: "rotate(-4.356deg)",
             transformOrigin: "center center",
-            right: "-2.034px",
+            right: "3.372px",
             top: "-59.421px",
           }}
           loading="lazy"
