@@ -173,7 +173,7 @@ export const FeaturedEvents = ({
       </div>
 
       {/* Interactive Scroll Indicator - With padding */}
-      <div className="flex flex-col items-center gap-2.5 w-full px-4 sm:px-8 lg:px-12">
+      <div className="flex flex-col items-center gap-2.5 w-full px-4 md:px-0 lg:px-12">
         <div
           ref={scrollTrackRef}
           className="flex w-[500px] max-w-full flex-col items-center gap-2.5 rounded-[24px] bg-neutral-100 p-0 cursor-pointer relative h-2"
