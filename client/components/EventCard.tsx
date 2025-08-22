@@ -23,14 +23,14 @@ export const EventCard = ({
 }: EventCardProps) => {
   return (
     <div
-      className="flex flex-col cursor-pointer w-full md:w-[320px] lg:w-[355px] group transition-all duration-200 ease-in-out"
+      className="flex flex-col cursor-pointer w-full md:w-[320px] lg:w-[320px] group transition-all duration-200 ease-in-out"
       onClick={onClick}
     >
       {/* Event Poster - Responsive dimensions */}
       <img
         src={image}
         alt={`${title} Event Poster`}
-        className="w-full md:w-[320px] md:h-[400px] lg:w-[355px] lg:h-[444px] aspect-[355/444] rounded-xs object-cover flex-shrink-0"
+        className="w-full md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px] aspect-[4/5] rounded-xs object-cover flex-shrink-0"
       />
 
       {/* Event Info - Responsive padding with hover state */}
