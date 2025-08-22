@@ -63,27 +63,29 @@ const HeroSection = () => {
       </div>
 
       {/* Event Cards Carousel - Positioned over background */}
-      <div className="relative -mt-[100px] sm:-mt-[120px] lg:-mt-[150px] flex justify-center items-center self-stretch px-4 sm:px-8 lg:px-12 z-10">
-        <div className="relative w-full max-w-[1271px] overflow-hidden">
-          <div
-            className="flex transition-transform duration-1000 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {events.map((event, index) => (
-              <div key={index} className="min-w-full flex justify-center">
-                <EventCard
-                  image={event.image}
-                  title={event.title}
-                  eventType={event.eventType}
-                  location={event.location}
-                  organizer={event.organizer}
-                  date={event.date}
-                  time={event.time}
-                  price={event.price}
-                  onViewEvent={() => console.log(`View event: ${event.title}`)}
-                />
-              </div>
-            ))}
+      <div className="relative -mt-[100px] sm:-mt-[120px] lg:-mt-[150px] flex justify-center items-center self-stretch z-10">
+        <div className="relative w-full overflow-hidden">
+          <div className="flex justify-center">
+            <div
+              className="flex transition-transform duration-1000 ease-in-out gap-5"
+              style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+            >
+              {events.map((event, index) => (
+                <div key={index} className="flex-shrink-0 w-[1271px] flex justify-center">
+                  <EventCard
+                    image={event.image}
+                    title={event.title}
+                    eventType={event.eventType}
+                    location={event.location}
+                    organizer={event.organizer}
+                    date={event.date}
+                    time={event.time}
+                    price={event.price}
+                    onViewEvent={() => console.log(`View event: ${event.title}`)}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Carousel indicators */}
