@@ -46,16 +46,16 @@ export const EventBanner = ({
   onViewEvent,
 }: EventBannerProps) => {
   return (
-    <div className="flex w-full max-w-[680px] md:max-w-[680px] lg:max-w-[1271px] p-4 md:p-4 lg:p-6 items-end gap-6 md:gap-3 lg:gap-11 rounded-lg bg-[#F4F5EC] hover:bg-[#E5E6DD] transition-colors duration-200 ease-in-out cursor-pointer group">
+    <div className="flex flex-col md:flex-row w-full max-w-[343px] md:max-w-[680px] lg:max-w-[1271px] p-4 md:p-4 lg:p-6 items-start md:items-end gap-3 md:gap-3 lg:gap-11 rounded-lg bg-[#F4F5EC] hover:bg-[#E5E6DD] transition-colors duration-200 ease-in-out cursor-pointer group">
       {/* Event Poster */}
       <img
         src={image}
         alt="Event Poster"
-        className="w-[300px] h-[375px] md:w-[312px] md:h-[390px] lg:w-[469px] lg:h-[587px] flex-shrink-0 rounded-lg object-cover"
+        className="w-full h-[389px] md:w-[312px] md:h-[390px] lg:w-[469px] lg:h-[587px] flex-shrink-0 rounded-lg object-cover aspect-[311/389] md:aspect-auto"
       />
 
       {/* Event Info */}
-      <div className="flex flex-col items-start gap-4 flex-1">
+      <div className="flex flex-col items-start gap-4 w-full md:flex-1">
         {/* Event Type and Title */}
         <div className="flex flex-col items-start gap-4">
           <Badge>{eventType}</Badge>
