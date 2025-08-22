@@ -219,7 +219,7 @@ const EventDetails = () => {
                     </div>
 
                     {/* City */}
-                    <div className="flex flex-col items-start gap-0.5 col-span-2">
+                    <div className="flex flex-col items-start gap-0 col-span-2">
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         CIUDAD
                       </span>
