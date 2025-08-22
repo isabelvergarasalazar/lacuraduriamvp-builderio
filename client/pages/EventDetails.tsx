@@ -330,10 +330,14 @@ const EventDetails = () => {
       </main>
 
       {/* Call to Action */}
-      <CallToAction />
+      <div className="w-full max-w-none md:max-w-[744px] md:mx-auto">
+        <CallToAction />
+      </div>
 
       {/* Footer */}
-      <Footer />
+      <div className="w-full max-w-none md:max-w-[744px] md:mx-auto">
+        <Footer />
+      </div>
     </div>
   );
 };
