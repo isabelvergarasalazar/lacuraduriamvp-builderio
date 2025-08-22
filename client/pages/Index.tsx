@@ -1,4 +1,5 @@
 import { Calendar, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 import { NavBar } from "@/components/NavBar";
 import { EventCard } from "@/components/EventCard";
 import { FeaturedEventCard } from "@/components/FeaturedEventCard";
