@@ -1,4 +1,5 @@
 import { Calendar } from "lucide-react";
+import { Button } from "./Button";
 
 interface NavBarProps {
   className?: string;
