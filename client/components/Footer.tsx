@@ -168,10 +168,10 @@ export const Footer = () => {
 
         {/* Bottom: Copyright and Tagline */}
         <div className="flex flex-col gap-4 md:gap-6">
-          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] md:leading-[24px] lg:leading-[24px]">
+          <p className="text-dark-green font-fraktion uppercase text-base md:text-base lg:text-[18px] leading-[24px] lg:leading-[24px]">
             © 2025 LA CURADURÍA. TODOS LOS DERECHOS RESERVADOS
           </p>
-          <p className="text-dark-green font-fraktion uppercase text-xs sm:text-sm md:text-base lg:text-[18px] leading-[20px] md:leading-[24px] lg:leading-[24px]">
+          <p className="text-dark-green font-fraktion uppercase text-base md:text-base lg:text-[18px] leading-[24px] lg:leading-[24px]">
             CREAMOS UN LENTE PARA FILTRAR LO ESENCIAL JUNTO A MEDIOS, ARTISTAS Y
             GESTORES.
           </p>
