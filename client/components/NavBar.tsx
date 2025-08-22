@@ -71,14 +71,34 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
             <nav className="flex items-center gap-3 w-full md:gap-4 lg:gap-8 md:flex-1 md:justify-center lg:w-auto lg:flex-initial" role="navigation" aria-label="Main navigation">
               <a
                 href="/cartelera"
-                className="text-cream text-base sm:text-base md:text-lg lg:text-lg font-fraktion uppercase tracking-wide hover:text-coral-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green rounded-sm py-1 px-2 flex-1 text-center md:flex-1 md:text-center lg:flex-initial lg:text-left"
+                className={`
+                  text-base sm:text-base md:text-lg lg:text-lg font-fraktion uppercase tracking-wide
+                  transition-all duration-200
+                  focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green
+                  rounded-full px-3 py-1.5
+                  flex-1 text-center md:flex-1 md:text-center lg:flex-initial lg:text-left
+                  ${activePage === 'cartelera'
+                    ? 'bg-cream text-dark-green'
+                    : 'text-cream hover:bg-neutral-800'
+                  }
+                `}
                 aria-label="Ver cartelera de eventos"
               >
                 CARTELERA
               </a>
               <a
                 href="/como-publicar"
-                className="text-cream text-base sm:text-base md:text-lg lg:text-lg font-fraktion uppercase tracking-wide hover:text-coral-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green rounded-sm py-1 px-2 flex-1 text-center md:flex-1 md:text-center lg:flex-initial lg:text-left"
+                className={`
+                  text-base sm:text-base md:text-lg lg:text-lg font-fraktion uppercase tracking-wide
+                  transition-all duration-200
+                  focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green
+                  rounded-full px-3 py-1.5
+                  flex-1 text-center md:flex-1 md:text-center lg:flex-initial lg:text-left
+                  ${activePage === 'como-publicar'
+                    ? 'bg-cream text-dark-green'
+                    : 'text-cream hover:bg-neutral-800'
+                  }
+                `}
                 aria-label="Aprende cómo publicar eventos"
               >
                 CÓMO PUBLICAR
