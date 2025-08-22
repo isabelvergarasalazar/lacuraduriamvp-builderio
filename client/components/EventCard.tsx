@@ -54,7 +54,7 @@ export const EventCard = ({
         {/* Location - Responsive typography */}
         <div
           className="
-          text-[18px] md:text-[20px] md:leading-[26px] lg:text-[22px] lg:leading-[30px]
+          text-[18px] md:text-[18px] lg:text-[18px]
           font-body font-normal text-neutral-800 w-[230px]
           transition-colors duration-200 ease-in-out
         "
