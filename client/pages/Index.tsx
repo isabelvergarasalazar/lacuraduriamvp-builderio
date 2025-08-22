@@ -1,6 +1,7 @@
-import { Calendar } from "lucide-react";
+import { Calendar, ChevronRight } from "lucide-react";
 import { NavBar } from "@/components/NavBar";
 import { EventCard } from "@/components/EventCard";
+import { FeaturedEventCard } from "@/components/FeaturedEventCard";
 
 const HeroSection = () => {
   // Sample event data - in a real app this would come from an API
