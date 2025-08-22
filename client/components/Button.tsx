@@ -28,6 +28,20 @@ export const Button = ({
   fullWidth = false,
   href
 }: ButtonProps) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    if (disabled) return;
+
+    // Trigger the futuristic effect
+    setIsClicked(true);
+
+    // Call the original onClick handler
+    onClick?.();
+
+    // Reset the effect after animation completes
+    setTimeout(() => setIsClicked(false), 600);
+  };
   const baseClasses = `
     transition-all duration-200 flex items-center justify-between gap-2 group 
     focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green 
