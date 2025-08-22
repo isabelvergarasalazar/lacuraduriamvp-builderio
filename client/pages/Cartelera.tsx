@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { NavBar } from "@/components/NavBar";
 import { EventCard } from "@/components/EventCard";
 import { CallToAction } from "@/components/CallToAction";
