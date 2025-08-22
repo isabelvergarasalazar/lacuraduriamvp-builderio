@@ -23,6 +23,31 @@
       grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
     }
   }
+
+  .dynamic-events-grid {
+    /* Mobile: single column */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* 48px */
+  }
+
+  /* Tablet and above: dynamic grid */
+  @media (min-width: 768px) {
+    .dynamic-events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem; /* 48px */
+      align-items: start;
+    }
+  }
+
+  /* Desktop: tighter gap matching Figma */
+  @media (min-width: 1024px) {
+    .dynamic-events-grid {
+      column-gap: 2.5rem; /* 40px */
+      row-gap: 3rem; /* 48px */
+    }
+  }
 }
 
 @layer base {
