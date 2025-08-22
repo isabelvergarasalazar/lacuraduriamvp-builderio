@@ -1,36 +1,59 @@
 interface FeaturedEventCardProps {
   image: string;
   title: string;
+  eventType?: string;
   location: string;
   date: string;
   time: string;
 }
 
-export const FeaturedEventCard = ({ 
-  image, 
-  title, 
-  location, 
-  date, 
-  time 
+export const FeaturedEventCard = ({
+  image,
+  title,
+  eventType = "[TIPO EVENTO]",
+  location,
+  date,
+  time
 }: FeaturedEventCardProps) => {
   return (
-    <div className="flex flex-col flex-shrink-0">
+    <div className="flex flex-col items-start gap-0 self-stretch flex-shrink-0">
+      {/* Event Poster */}
       <img
         src={image}
         alt={title}
-        className="w-64 sm:w-80 lg:w-[355px] h-80 sm:h-96 lg:h-[444px] object-cover rounded aspect-[355/444]"
+        className="w-[355px] h-[444px] object-cover rounded-xs"
+        style={{ aspectRatio: "355/444" }}
       />
-      <div className="p-3 space-y-2">
-        <div className="bg-blue-accent rounded px-2 py-1 inline-block">
-          <span className="text-dark-green text-xs sm:text-sm font-fraktion uppercase">[TIPO EVENTO]</span>
+
+      {/* Event Info */}
+      <div className="flex w-[355px] px-2 pt-3 pb-2 flex-col items-start gap-2">
+        {/* Badge */}
+        <div className="flex px-1 py-1 justify-center items-center gap-2.5 rounded-xs bg-[#75E6F9]">
+          <span className="text-neutral-900 font-body text-sm font-normal leading-[18px] uppercase">
+            {eventType}
+          </span>
         </div>
-        <h3 className="text-dark-green font-avant-garde text-xl sm:text-2xl lg:text-3xl font-bold leading-tight tracking-tight max-h-[76px] overflow-hidden">
+
+        {/* Event Title */}
+        <h3 className="max-h-[76px] self-stretch text-neutral-900 font-display text-[30px] font-bold leading-[38px] tracking-[-0.6px] overflow-hidden">
           {title}
         </h3>
-        <div className="space-y-1">
-          <p className="text-neutral-800 font-fraktion text-sm sm:text-lg max-w-[230px]">{location}</p>
-          <p className="text-neutral-800 font-fraktion text-sm sm:text-base">{date}</p>
-          <p className="text-neutral-800 font-fraktion text-sm sm:text-base">{time}</p>
+
+        {/* Location/Organizer */}
+        <div className="flex items-center gap-8 rounded-md">
+          <div className="w-[230px] text-neutral-800 font-body text-[22px] font-normal leading-[30px]">
+            {location}
+          </div>
+        </div>
+
+        {/* Date */}
+        <div className="w-[230px] text-neutral-800 font-body text-lg font-normal">
+          {date}
+        </div>
+
+        {/* Time */}
+        <div className="text-neutral-800 font-body text-lg font-normal">
+          {time}
         </div>
       </div>
     </div>
