@@ -1,16 +1,14 @@
-import { ChevronRight } from "lucide-react";
-import { Button } from "./Button";
+import { Badge } from "./Badge";
 
 interface EventCardProps {
   image: string;
   title: string;
   eventType: string;
   location: string;
-  organizer: string;
   date: string;
   time: string;
-  price: string;
-  onViewEvent?: () => void;
+  size?: 'sm' | 'md' | 'lg';
+  onClick?: () => void;
 }
 
 export const EventCard = ({
@@ -18,92 +16,81 @@ export const EventCard = ({
   title,
   eventType,
   location,
-  organizer,
   date,
   time,
-  price,
-  onViewEvent
+  size = 'lg',
+  onClick
 }: EventCardProps) => {
+  // Responsive sizing based on design specs
+  const sizeClasses = {
+    sm: {
+      container: 'w-[276px]',
+      image: 'w-[276px] h-[345px]',
+      title: 'text-[28px] leading-[34px] tracking-[-0.56px] line-clamp-1',
+      location: 'text-[18px]'
+    },
+    md: {
+      container: 'w-[320px]',
+      image: 'w-[320px] h-[400px]',
+      title: 'text-[28px] leading-[34px] tracking-[-0.56px]',
+      location: 'text-[22px] leading-[30px]'
+    },
+    lg: {
+      container: 'w-[355px]',
+      image: 'w-[355px] h-[444px]',
+      title: 'text-[30px] leading-[38px] tracking-[-0.6px]',
+      location: 'text-[22px] leading-[30px]'
+    }
+  };
+
+  const currentSize = sizeClasses[size];
+
   return (
-    <div className="flex flex-col lg:flex-row w-full max-w-[1271px] p-4 sm:p-6 items-start lg:items-end gap-6 lg:gap-11 rounded-lg bg-neutral-75 flex-shrink-0">
+    <div
+      className={`flex flex-col ${currentSize.container} cursor-pointer`}
+      onClick={onClick}
+    >
       {/* Event Poster */}
       <img
         src={image}
         alt={`${title} Event Poster`}
-        className="w-full sm:w-80 lg:w-[469px] h-64 sm:h-80 lg:h-[587px] flex-shrink-0 rounded-lg object-cover"
+        className={`${currentSize.image} aspect-[4/5] rounded-xs object-cover flex-shrink-0`}
       />
 
       {/* Event Info */}
-      <div className="flex flex-col items-start gap-4 flex-1 w-full">
-        {/* Event Type & Title */}
-        <div className="flex flex-col items-start gap-4">
-          <div className="flex px-1 py-1 justify-center items-center gap-2.5 rounded bg-blue-accent">
-            <span className="text-dark-green font-fraktion text-sm sm:text-base font-normal leading-6 uppercase">
-              {eventType}
-            </span>
-          </div>
-          <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight lg:leading-[60px] tracking-tight lg:tracking-[-0.96px]">
-            {title}
-          </h2>
+      <div className={`flex flex-col items-start gap-2 ${size === 'lg' ? 'p-3 pb-2' : 'p-3 pb-2'}`}>
+        {/* Badge */}
+        <Badge>
+          {eventType}
+        </Badge>
+
+        {/* Event Title */}
+        <h3 className={`
+          ${currentSize.title}
+          font-avant-garde font-bold text-dark-green
+          ${size === 'sm' ? 'max-h-[68px] overflow-hidden' : 'max-h-[76px]'}
+          self-stretch
+        `}>
+          {title}
+        </h3>
+
+        {/* Location */}
+        <div className={`
+          ${currentSize.location}
+          font-fraktion font-normal text-neutral-800 w-[230px]
+        `}>
+          {location}
         </div>
 
-        {/* Divider */}
-        <div className="w-full lg:w-[710px] h-px bg-neutral-200"></div>
-
-        {/* Event Details */}
-        <div className="flex flex-col items-start gap-2 self-stretch">
-          {/* Location & Organizer */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-8 self-stretch rounded-lg">
-            <div className="sm:w-[300px] text-neutral-800 font-fraktion text-lg sm:text-[22px] font-normal leading-[30px]">
-              {location}
-            </div>
-            <div className="flex items-end gap-2">
-              <span className="text-neutral-600 font-fraktion text-base sm:text-lg font-normal">
-                Organiza
-              </span>
-              <span className="text-neutral-800 font-fraktion text-lg sm:text-[22px] font-normal leading-[30px]">
-                {organizer}
-              </span>
-            </div>
-          </div>
-
-          {/* Date & Time */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-8 self-stretch rounded-lg">
-            <div className="sm:w-[300px] text-neutral-800 font-fraktion text-lg sm:text-[22px] font-normal leading-[30px]">
-              {date}
-            </div>
-            <div className="flex items-end gap-2">
-              <span className="text-neutral-600 font-fraktion text-base sm:text-lg font-normal">
-                Desde
-              </span>
-              <span className="text-neutral-800 font-fraktion text-lg sm:text-[22px] font-normal leading-[30px]">
-                {time}
-              </span>
-            </div>
-          </div>
-
-          {/* Price */}
-          <div className="flex items-end gap-2">
-            <span className="text-neutral-600 font-fraktion text-base sm:text-lg font-normal">
-              Desde
-            </span>
-            <span className="text-neutral-800 font-fraktion text-lg sm:text-[22px] font-normal leading-[30px]">
-              {price}
-            </span>
-          </div>
+        {/* Date */}
+        <div className="text-[18px] font-fraktion font-normal text-neutral-800 w-[230px]">
+          {date}
         </div>
 
-        {/* Divider */}
-        <div className="w-full lg:w-[710px] h-px bg-neutral-200"></div>
-
-        {/* View Event Button */}
-        <Button
-          icon={ChevronRight}
-          onClick={onViewEvent}
-          ariaLabel={`Ver evento ${title}`}
-        >
-          VER EVENTO
-        </Button>
+        {/* Time */}
+        <div className="text-[18px] font-fraktion font-normal text-neutral-800">
+          {time}
+        </div>
       </div>
     </div>
   );
