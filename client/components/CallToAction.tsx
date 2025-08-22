@@ -23,7 +23,7 @@ export const CallToAction = ({
       className={`bg-neutral-100 px-4 py-8 pt-20 md:p-8 md:pt-20 lg:px-[48px] lg:py-[64px] lg:pt-[84px] relative ${className}`}
       aria-labelledby="cta-heading"
     >
-      <div className="flex flex-col items-start gap-3 md:gap-3 xl:gap-4 self-stretch relative z-10">
+      <div className="flex flex-col items-start gap-3 md:gap-3 lg:gap-4 self-stretch relative z-10">
         <h2
           id="cta-heading"
           className="font-display text-neutral-900 font-bold self-stretch
