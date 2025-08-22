@@ -26,11 +26,17 @@ export const CallToAction = ({
       <div className="flex flex-col gap-4 md:gap-3 xl:gap-4 max-w-2xl relative z-10">
         <h2
           id="cta-heading"
-          className="text-display-lg-bold md:font-display md:text-neutral-900 md:font-bold md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] md:self-stretch whitespace-nowrap"
+          className="font-display text-neutral-900 font-bold whitespace-nowrap
+                     text-3xl leading-9 tracking-tight
+                     md:text-[30px] md:leading-[38px] md:tracking-[-0.6px]
+                     xl:text-5xl xl:leading-[60px] xl:tracking-[-0.96px]"
         >
           {title}
         </h2>
-        <p className="text-display-xs-regular md:font-body md:text-neutral-900 md:font-normal md:text-[24px] md:leading-[32px] md:self-stretch max-w-[456px]">
+        <p className="font-body text-neutral-900 font-normal max-w-[456px]
+                      text-lg leading-7
+                      md:text-[24px] md:leading-[32px]
+                      xl:text-2xl xl:leading-8">
           {subtitle}
         </p>
         <div className="pt-2 md:pt-1">
