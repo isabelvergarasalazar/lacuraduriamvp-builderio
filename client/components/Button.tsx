@@ -85,12 +85,18 @@ export const Button = ({
   const content = (
     <>
       <span
-        className={`text-cream font-fraktion font-medium uppercase tracking-wide ${textSizeClasses[size]}`}
+        className={`font-fraktion font-medium uppercase tracking-wide ${
+          variant === 'secondary' ? 'text-coral-primary' : 'text-cream'
+        } ${textSizeClasses[size]}`}
       >
         {children}
       </span>
       {Icon && (
-        <div className="bg-coral-secondary group-hover:bg-coral-dark group-focus:bg-coral-dark transition-colors duration-200 rounded-full p-2 sm:p-2">
+        <div className={`${
+          variant === 'secondary'
+            ? 'bg-coral-primary group-hover:bg-coral-secondary group-focus:bg-coral-secondary'
+            : 'bg-coral-secondary group-hover:bg-coral-dark group-focus:bg-coral-dark'
+        } transition-colors duration-200 rounded-full p-2 sm:p-2`}>
           <Icon
             className={`${iconSizeClasses[size]} text-cream`}
             aria-hidden="true"
