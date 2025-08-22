@@ -184,8 +184,8 @@ const EventDetails = () => {
 
                   {/* Event Information Container */}
                   <div className="flex flex-col items-start gap-4 w-full">
-                    {/* Info Grid */}
-                    <div className="grid grid-cols-2 gap-4 w-full">
+                    {/* Info Grid - Mobile: single column, Tablet+: 2 columns */}
+                    <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-4 w-full">
                       {/* Date */}
                       <div className="flex flex-col items-start gap-0">
                         <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
