@@ -107,6 +107,8 @@ export const EventBanner = ({
           onClick={onViewEvent}
           variant="primary"
           size="lg"
+          fullWidth={true}
+          className="w-full md:w-auto"
         >
           VER EVENTO
         </Button>
