@@ -20,12 +20,12 @@ export const LinkButton = ({
     onClick?.();
 
     // Reset clicked state after animation
-    setTimeout(() => setIsClicked(false), 600);
+    setTimeout(() => setIsClicked(false), 800);
   };
 
   const baseClasses = `
     flex items-center gap-1 rounded-xl group cursor-pointer
-    transition-all duration-300 ease-in-out
+    transition-all duration-200 ease-in-out
     focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2
     ${className}
   `.trim();
@@ -35,9 +35,9 @@ export const LinkButton = ({
       <span
         className={`
           font-body text-lg font-medium leading-[28px] uppercase tracking-wide
-          transition-all duration-300 ease-in-out
-          ${isClicked || 'group-hover group-focus group-active'
-            ? 'bg-gradient-to-r from-[#75E6F9] to-[#FF736C] bg-clip-text text-transparent'
+          transition-all duration-500 ease-in-out
+          ${isClicked
+            ? ''
             : 'text-coral-primary'
           }
         `}
@@ -53,10 +53,10 @@ export const LinkButton = ({
       </span>
       <div
         className={`
-          rounded-full p-2 transition-all duration-300 ease-out
+          rounded-full transition-all duration-500 ease-in-out
           ${isClicked
-            ? ''
-            : 'bg-coral-primary group-hover:bg-coral-secondary group-focus:bg-coral-secondary group-active:bg-coral-dark'
+            ? 'p-[3.2px]'
+            : 'p-2 bg-coral-primary group-hover:bg-[#BC4945]'
           }
         `}
         style={isClicked ? {
@@ -66,13 +66,13 @@ export const LinkButton = ({
         <svg
           width="16"
           height="16"
-          viewBox="0 0 16 16"
+          viewBox="0 0 17 16"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"
         >
           <path
-            d="M6 2.66675L11.3333 8.00007L6 13.3334"
+            d="M6.2002 2.66675L11.5335 8.00007L6.2002 13.3334"
             stroke="#FFFFF6"
             strokeWidth="1.5"
             strokeLinecap="round"
