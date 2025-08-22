@@ -57,8 +57,9 @@ export const Tag = ({ children, variant, className = "", onClick }: TagProps) =>
   const IconComponent = variantConfig.icon;
 
   const baseClasses = `
-    flex items-center gap-1 px-1.5 py-1 rounded-sm bg-neutral-100
-    ${onClick ? 'cursor-pointer hover:bg-neutral-200 transition-colors duration-200' : ''}
+    flex items-center gap-1 px-1.5 py-1 rounded-sm bg-neutral-100 hover:bg-neutral-200
+    transition-colors duration-200 ease-in-out
+    ${onClick ? 'cursor-pointer' : 'cursor-default'}
     ${className}
   `.trim();
 
