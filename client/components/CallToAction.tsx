@@ -20,8 +20,12 @@ export const CallToAction = ({
 }: CallToActionProps) => {
   return (
     <section
-      className={`bg-neutral-100 px-4 py-8 md:p-8 xl:px-[48px] xl:py-[64px] xl:pt-[84px] relative overflow-hidden ${className}`}
+      className={`bg-neutral-100 px-4 py-8 md:p-8 xl:px-[48px] xl:py-[64px] xl:pt-[84px] relative ${className}`}
       aria-labelledby="cta-heading"
+      style={{
+        marginTop: '60px',
+        paddingTop: '32px'
+      }}
     >
       <div className="flex flex-col items-start gap-3 md:gap-3 xl:gap-4 self-stretch relative z-10">
         <h2
