@@ -23,8 +23,10 @@ export const FeaturedEvents = ({
   onEventClick,
 }: FeaturedEventsProps) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollTrackRef = useRef<HTMLDivElement>(null);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [maxScroll, setMaxScroll] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
@@ -32,11 +34,17 @@ export const FeaturedEvents = ({
       const updateScrollInfo = () => {
         const maxScrollLeft = container.scrollWidth - container.clientWidth;
         setMaxScroll(maxScrollLeft);
+        setScrollPosition(container.scrollLeft);
       };
 
       updateScrollInfo();
+      container.addEventListener('scroll', updateScrollInfo);
       window.addEventListener('resize', updateScrollInfo);
-      return () => window.removeEventListener('resize', updateScrollInfo);
+
+      return () => {
+        container.removeEventListener('scroll', updateScrollInfo);
+        window.removeEventListener('resize', updateScrollInfo);
+      };
     }
   }, [events]);
 
@@ -47,10 +55,49 @@ export const FeaturedEvents = ({
     }
   };
 
-  // Calculate scroll indicator width based on current position
-  const scrollIndicatorWidth = maxScroll > 0
-    ? Math.max(162, Math.min(500, 162 + (scrollPosition / maxScroll) * (500 - 162)))
-    : 162;
+  // Calculate scroll indicator position and width
+  const scrollPercent = maxScroll > 0 ? scrollPosition / maxScroll : 0;
+  const indicatorPosition = scrollPercent * (500 - 162); // 500px track width - 162px indicator width
+  const scrollIndicatorWidth = 162;
+
+  // Handle scroll indicator interaction
+  const handleScrollTrackClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const container = scrollContainerRef.current;
+    const track = scrollTrackRef.current;
+    if (container && track) {
+      const rect = track.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const trackWidth = rect.width;
+      const scrollPercent = Math.max(0, Math.min(1, (clickX - 81) / (trackWidth - 162))); // Center indicator
+      container.scrollLeft = scrollPercent * maxScroll;
+    }
+  };
+
+  const handleIndicatorMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+
+    const handleMouseMove = (moveEvent: MouseEvent) => {
+      const container = scrollContainerRef.current;
+      const track = scrollTrackRef.current;
+      if (container && track) {
+        const rect = track.getBoundingClientRect();
+        const moveX = moveEvent.clientX - rect.left;
+        const trackWidth = rect.width;
+        const scrollPercent = Math.max(0, Math.min(1, (moveX - 81) / (trackWidth - 162)));
+        container.scrollLeft = scrollPercent * maxScroll;
+      }
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+  };
 
   return (
     <section className="flex flex-col items-start gap-6 w-full">
