@@ -104,18 +104,17 @@ export const HeroSection = () => {
               <div className="w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
 
               {/* CTA Button */}
-              <div className="flex items-center">
-                <div className="flex items-center bg-coral-primary hover:bg-coral-secondary rounded-xl pl-5 pr-2 py-1.5 gap-2 transition-colors duration-200">
-                  <span className="text-cream font-body text-lg font-medium uppercase">
-                    VER EVENTO
-                  </span>
-                  <div className="flex p-2 items-center gap-2.5 rounded-full bg-[#BC4945]">
-                    <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.5 2.75V4.5M17.4069 5.09326L16.0962 6.40392M6.90381 15.5962L5.59315 16.9069M5 11H3.25M6.90381 6.40381L5.59315 5.09315M15 21.25L10.75 10.25L21.75 14.5L17.5 17L15 21.25Z" stroke="#FFFFF6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
+              <Button
+                icon={ClickIcon}
+                onClick={() => {
+                  // Handle event view action
+                  console.log('Ver evento clicked');
+                }}
+                variant="primary"
+                size="lg"
+              >
+                VER EVENTO
+              </Button>
             </div>
           </div>
         </div>
