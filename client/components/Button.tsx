@@ -100,6 +100,7 @@ export const Button = ({
         href={href}
         className={combinedClasses}
         aria-label={ariaLabel}
+        onClick={handleClick}
       >
         {content}
       </a>
@@ -109,7 +110,7 @@ export const Button = ({
   return (
     <button
       type={type}
-      onClick={onClick}
+      onClick={handleClick}
       className={combinedClasses}
       disabled={disabled}
       aria-label={ariaLabel}
