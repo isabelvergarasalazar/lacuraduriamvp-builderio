@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { NavBar } from "@/components/NavBar";
 import { FeaturedEvents } from "@/components/FeaturedEvents";
 import { Footer } from "@/components/Footer";
