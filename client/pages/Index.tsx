@@ -224,7 +224,7 @@ const FeaturedEvents = () => {
 const MissionSection = () => {
   return (
     <div className="space-y-4">
-      <h2 className="text-dark-green font-avant-garde text-5xl font-bold leading-tight tracking-tight">
+      <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
         RENOVAMOS LA EXPLORACIÓN DEL ARTE Y LA CULTURA A TRAVÉS DE UNA GUÍA COLABORATIVA.
       </h2>
     </div>
@@ -233,27 +233,27 @@ const MissionSection = () => {
 
 const CallToAction = () => {
   return (
-    <div className="bg-neutral-100 px-12 py-16 relative">
-      <div className="space-y-4 max-w-2xl">
-        <h2 className="text-dark-green font-avant-garde text-5xl font-bold leading-tight tracking-tight">
+    <div className="bg-neutral-100 px-4 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 relative overflow-hidden">
+      <div className="space-y-4 max-w-2xl relative z-10">
+        <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
           SÚMATE A LA CARTELERA DE EVENTOS
         </h2>
-        <p className="text-dark-green font-fraktion text-3xl leading-relaxed tracking-tight max-w-[456px]">
+        <p className="text-dark-green font-fraktion text-lg sm:text-2xl lg:text-3xl leading-relaxed tracking-tight max-w-[456px]">
           Publica tu evento y sé parte de una guía amplia, diversa y selecta.
         </p>
-        <button className="bg-coral-primary hover:bg-coral-secondary transition-colors rounded-xl px-5 py-1.5 flex items-center gap-2">
-          <span className="text-cream text-lg font-fraktion font-medium uppercase">PUBLICAR EVENTO</span>
-          <div className="bg-coral-secondary rounded-full p-2">
-            <Calendar className="w-6 h-6 text-cream" />
+        <button className="bg-coral-primary hover:bg-coral-secondary transition-colors rounded-xl px-3 sm:px-5 py-1.5 flex items-center gap-2">
+          <span className="text-cream text-sm sm:text-lg font-fraktion font-medium uppercase">PUBLICAR EVENTO</span>
+          <div className="bg-coral-secondary rounded-full p-1.5 sm:p-2">
+            <Calendar className="w-4 h-4 sm:w-6 sm:h-6 text-cream" />
           </div>
         </button>
       </div>
-      
+
       {/* Q Glass Image */}
-      <img 
+      <img
         src="https://api.builder.io/api/v1/image/assets/TEMP/3b68cf450df4a94e56dd749b4b5e44ed6ec83b27?width=641"
         alt="Q Glass"
-        className="absolute bottom-0 right-8 w-80 h-64 -rotate-1 transform"
+        className="absolute bottom-0 right-2 sm:right-8 w-48 h-32 sm:w-64 sm:h-48 lg:w-80 lg:h-64 -rotate-1 transform opacity-80"
       />
     </div>
   );
