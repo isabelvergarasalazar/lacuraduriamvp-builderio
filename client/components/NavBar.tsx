@@ -74,7 +74,7 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
                 className={`
                   text-base sm:text-base md:text-lg lg:text-lg font-fraktion uppercase tracking-wide
                   transition-all duration-200
-                  focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green
+                  focus:outline-none focus:ring-2 focus:ring-blue-accent focus:ring-offset-2 focus:ring-offset-dark-green
                   rounded-full px-3 py-1.5
                   flex-1 text-center md:flex-1 md:text-center lg:flex-initial lg:text-left
                   ${activePage === 'cartelera'
@@ -91,7 +91,7 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
                 className={`
                   text-base sm:text-base md:text-lg lg:text-lg font-fraktion uppercase tracking-wide
                   transition-all duration-200
-                  focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2 focus:ring-offset-dark-green
+                  focus:outline-none focus:ring-2 focus:ring-blue-accent focus:ring-offset-2 focus:ring-offset-dark-green
                   rounded-full px-3 py-1.5
                   flex-1 text-center md:flex-1 md:text-center lg:flex-initial lg:text-left
                   ${activePage === 'como-publicar'
