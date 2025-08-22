@@ -2,6 +2,7 @@ import { Calendar } from "lucide-react";
 
 interface NavBarProps {
   className?: string;
+  activePage?: 'cartelera' | 'como-publicar';
 }
 
 export const NavBar = ({ className = "" }: NavBarProps) => {
