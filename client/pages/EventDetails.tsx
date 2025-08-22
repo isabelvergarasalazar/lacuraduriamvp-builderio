@@ -120,8 +120,8 @@ const EventDetails = () => {
       <main className="w-full">
         {/* Content Section */}
         <section className="px-4 md:px-8 xl:px-[48px] pt-12 pb-32 md:pt-12 md:pb-[128px] lg:pt-[48px] lg:pb-[96px]">
-          {/* Container - tablet specific width, desktop full width */}
-          <div className="w-full md:max-w-[744px] md:mx-auto lg:max-w-none lg:mx-0">
+          {/* Container - tablet with proper 32px padding */}
+          <div className="w-full md:max-w-[744px] md:mx-auto md:px-8 lg:max-w-none lg:mx-0 lg:px-0">
             <div className="flex flex-col items-start gap-4 md:gap-16 lg:gap-4 w-full">
               {/* Breadcrumbs */}
               <nav className="flex items-center gap-2">
