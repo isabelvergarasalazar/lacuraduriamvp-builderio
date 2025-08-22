@@ -20,29 +20,49 @@ export const LinkButton = ({
     onClick?.();
 
     // Reset clicked state after animation
-    setTimeout(() => setIsClicked(false), 300);
+    setTimeout(() => setIsClicked(false), 600);
   };
 
   const baseClasses = `
     flex items-center gap-1 rounded-xl group cursor-pointer
-    transition-all duration-200 ease-in-out
+    transition-all duration-300 ease-in-out
     focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2
-    ${isClicked ? 'animate-pulse' : ''}
     ${className}
   `.trim();
 
   const content = (
     <>
-      <span className="text-coral-primary font-body text-lg font-medium leading-[28px] uppercase tracking-wide transition-colors duration-200 group-hover:text-coral-secondary group-focus:text-coral-secondary group-active:text-coral-dark">
+      <span
+        className={`
+          font-body text-lg font-medium leading-[28px] uppercase tracking-wide
+          transition-all duration-300 ease-in-out
+          ${isClicked || 'group-hover group-focus group-active'
+            ? 'bg-gradient-to-r from-[#75E6F9] to-[#FF736C] bg-clip-text text-transparent'
+            : 'text-coral-primary'
+          }
+        `}
+        style={isClicked ? {
+          background: 'linear-gradient(270deg, #75E6F9 0%, #FF736C 100%)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          textFillColor: 'transparent'
+        } : {}}
+      >
         {children}
       </span>
-      <div className={`
-        rounded-full p-2 transition-all duration-300 ease-out
-        ${isClicked
-          ? 'bg-gradient-to-r from-coral-primary via-coral-secondary to-coral-dark'
-          : 'bg-coral-primary group-hover:bg-coral-secondary group-focus:bg-coral-secondary group-active:bg-coral-dark'
-        }
-      `}>
+      <div
+        className={`
+          rounded-full p-2 transition-all duration-300 ease-out
+          ${isClicked
+            ? ''
+            : 'bg-coral-primary group-hover:bg-coral-secondary group-focus:bg-coral-secondary group-active:bg-coral-dark'
+          }
+        `}
+        style={isClicked ? {
+          background: 'linear-gradient(270deg, #75E6F9 0%, #FF736C 100%)'
+        } : {}}
+      >
         <svg
           width="16"
           height="16"
