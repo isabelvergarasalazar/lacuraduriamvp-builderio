@@ -61,13 +61,13 @@ export const HeroSection = () => {
               {/* Event Type and Title */}
               <div className="flex flex-col items-start gap-4">
                 <Badge>[TIPO EVENTO]</Badge>
-                <h1 className="text-dark-green font-display text-5xl font-bold leading-[60px] tracking-[-0.96px]">
+                <h1 className="text-dark-green font-display text-2xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-[50px] lg:leading-[60px] tracking-[-0.48px] md:tracking-[-0.8px] lg:tracking-[-0.96px]">
                   Decibelio: Mariposa
                 </h1>
               </div>
 
               {/* Divider */}
-              <div className="w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
+              <div className="w-full max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
 
               {/* Event Details */}
               <div className="flex flex-col items-start gap-2 w-full">
