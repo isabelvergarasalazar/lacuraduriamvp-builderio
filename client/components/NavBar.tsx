@@ -8,7 +8,7 @@ interface NavBarProps {
 
 export const NavBar = ({ className = "", activePage }: NavBarProps) => {
   return (
-    <header className={`bg-dark-green w-screen ${className}`}>
+    <header className={`bg-dark-green w-full ${className}`}>
       <div className="w-full px-4 md:px-8 xl:px-[48px] py-4 lg:py-4">
         <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center gap-6 md:gap-6 lg:gap-6">
           {/* Logo */}
