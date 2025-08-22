@@ -127,25 +127,25 @@ export const FeaturedEvents = ({
 
   return (
     <section className="flex flex-col items-start gap-6 w-full">
-      {/* Header Container - Responsive layout */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-2 md:gap-0 w-full">
+      {/* Header Container - With padding */}
+      <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-2 md:gap-0 w-full px-4 sm:px-8 lg:px-12">
         {/* Header Title - Responsive typography */}
-        <h2 className="text-dark-green font-avant-garde text-[30px] md:text-[30px] lg:text-[48px] font-bold leading-[38px] md:leading-[38px] lg:leading-[60px] tracking-[-0.6px] md:tracking-[-0.6px] lg:tracking-[-0.96px]">
+        <h2 className="text-dark-green font-display text-[30px] md:text-[30px] lg:text-[48px] font-bold leading-[38px] md:leading-[38px] lg:leading-[60px] tracking-[-0.6px] md:tracking-[-0.6px] lg:tracking-[-0.96px]">
           EVENTOS DESTACADOS
         </h2>
-        
+
         {/* View Complete Button */}
         <LinkButton onClick={onViewComplete}>
           VER CARTELERA COMPLETA
         </LinkButton>
       </div>
 
-      {/* Events Container - Horizontal scroll with proper overflow */}
-      <div className="w-full">
+      {/* Events Container - Full width overflow */}
+      <div className="w-full overflow-hidden">
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex items-center gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
+          className="flex items-center gap-5 md:gap-8 lg:gap-12 overflow-x-auto scrollbar-hide scroll-smooth pb-4 pl-4 sm:pl-8 lg:pl-12"
         >
           {events.map((event, index) => (
             <div key={`featured-event-${index}`} className="flex-shrink-0">
@@ -161,12 +161,12 @@ export const FeaturedEvents = ({
             </div>
           ))}
           {/* Add extra space at the end to prevent cutting */}
-          <div className="flex-shrink-0 w-4"></div>
+          <div className="flex-shrink-0 w-4 sm:w-8 lg:w-12"></div>
         </div>
       </div>
 
-      {/* Interactive Scroll Indicator */}
-      <div className="flex flex-col items-center gap-2.5 w-full">
+      {/* Interactive Scroll Indicator - With padding */}
+      <div className="flex flex-col items-center gap-2.5 w-full px-4 sm:px-8 lg:px-12">
         <div
           ref={scrollTrackRef}
           className="flex w-[500px] max-w-full flex-col items-center gap-2.5 rounded-[24px] bg-neutral-100 p-0 cursor-pointer relative h-2"
