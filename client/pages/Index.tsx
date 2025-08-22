@@ -51,7 +51,7 @@ const HeroSection = () => {
       </div>
 
       {/* Event Cards Carousel */}
-      <div className="flex justify-center items-center gap-5 self-stretch overflow-x-auto">
+      <div className="flex justify-center items-center gap-5 self-stretch overflow-x-auto px-4 sm:px-8 lg:px-12 pb-4">
         {events.map((event, index) => (
           <EventCard
             key={index}
