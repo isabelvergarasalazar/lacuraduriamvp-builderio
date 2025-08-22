@@ -149,15 +149,7 @@ const Cartelera = () => {
 
         {/* Events Grid */}
         <section className="px-4 md:px-8 xl:px-[48px] pb-16 md:pb-20 lg:pb-[80px]">
-          <div className="grid gap-10 md:gap-12 lg:gap-10 xl:gap-10 justify-items-center" style={{
-            gridTemplateColumns: 'repeat(auto-fit, minmax(276px, 1fr))',
-            '@media (min-width: 768px)': {
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))'
-            },
-            '@media (min-width: 1024px)': {
-              gridTemplateColumns: 'repeat(auto-fit, minmax(355px, 1fr))'
-            }
-          }}>
+          <div className="events-grid gap-10 md:gap-12 lg:gap-10 xl:gap-10 justify-items-center">
             {sampleEvents.map((event) => (
               <EventCard
                 key={event.id}
