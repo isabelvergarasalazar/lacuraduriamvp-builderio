@@ -318,12 +318,14 @@ const EventDetails = () => {
         </section>
 
         {/* Featured Events Section */}
-        <section className="pb-16 md:pb-20 lg:pb-[80px]">
-          <FeaturedEvents
-            events={featuredEvents}
-            onViewComplete={handleViewCompleteSchedule}
-            onEventClick={handleEventClick}
-          />
+        <section className="pb-16 md:pb-0">
+          <div className="w-full max-w-none md:max-w-[744px] md:mx-auto">
+            <FeaturedEvents
+              events={featuredEvents}
+              onViewComplete={handleViewCompleteSchedule}
+              onEventClick={handleEventClick}
+            />
+          </div>
         </section>
       </main>
 
