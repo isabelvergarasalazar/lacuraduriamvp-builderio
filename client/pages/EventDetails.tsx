@@ -8,11 +8,12 @@ import { Footer } from "@/components/Footer";
 import { FeaturedEvents } from "@/components/FeaturedEvents";
 import { Tag } from "@/components/Tag";
 
-// Sample featured events data - same as used in Index page
+// Featured events data - consistent with Index page
 const featuredEvents = [
   {
+    id: 1,
     image:
-      "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=640",
+      "https://api.builder.io/api/v1/image/assets/TEMP/69e0617227523aeb762b59ab8c7455d8ba08c103?width=710",
     title: "Nombre de evento a dos líneas de texto",
     eventType: "[TIPO EVENTO]",
     location: "Video Club",
@@ -20,8 +21,9 @@ const featuredEvents = [
     time: "[00:00 P.M]",
   },
   {
+    id: 2,
     image:
-      "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=640",
+      "https://api.builder.io/api/v1/image/assets/TEMP/d1e42315b34e9dcde2fd9f3e2554d35ace942a1c?width=710",
     title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -29,8 +31,9 @@ const featuredEvents = [
     time: "[00:00 P.M]",
   },
   {
+    id: 3,
     image:
-      "https://api.builder.io/api/v1/image/assets/TEMP/00d075fecf595690a69b785815d479ff077912f0?width=640",
+      "https://api.builder.io/api/v1/image/assets/TEMP/2f4a4172abba2c915490e76ada44f4d977421f94?width=710",
     title: "Contrafrecuencias",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
@@ -38,11 +41,32 @@ const featuredEvents = [
     time: "[00:00 P.M]",
   },
   {
+    id: 4,
     image:
-      "https://api.builder.io/api/v1/image/assets/TEMP/8b2d97ec2f6e9c9232696f7f5b7d332d58a20a00?width=640",
+      "https://api.builder.io/api/v1/image/assets/TEMP/9bba6c09601ca4ffc49a67280a9ff89f2e201888?width=710",
     title: "Curado x Valesuchi + Julianna + DJ+1",
     eventType: "[TIPO EVENTO]",
     location: "[Nombre del lugar]",
+    date: "[Día, 00 Mes, Año]",
+    time: "[00:00 P.M]",
+  },
+  {
+    id: 5,
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/21e474626c450344e6f334c399518b37714123d2?width=710",
+    title: "Festival de Música Electrónica",
+    eventType: "[TIPO EVENTO]",
+    location: "Club Nocturno",
+    date: "[Día, 00 Mes, Año]",
+    time: "[00:00 P.M]",
+  },
+  {
+    id: 6,
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/728a061671c65baf8bd4b7daed622a758b6374ba?width=710",
+    title: "Arte y Cultura Contemporánea",
+    eventType: "[TIPO EVENTO]",
+    location: "Galería Central",
     date: "[Día, 00 Mes, Año]",
     time: "[00:00 P.M]",
   },
@@ -288,7 +312,7 @@ const EventDetails = () => {
         </section>
 
         {/* Featured Events Section */}
-        <section className="px-4 md:px-8 xl:px-[48px] pb-16 md:pb-20 lg:pb-[80px]">
+        <section className="pb-16 md:pb-20 lg:pb-[80px]">
           <FeaturedEvents
             events={featuredEvents}
             onViewComplete={handleViewCompleteSchedule}
