@@ -37,7 +37,7 @@ export const HeroSection = () => {
             price="40.000 COP"
             onViewEvent={() => {
               // Handle event view action
-              console.log('Ver evento clicked');
+              console.log("Ver evento clicked");
             }}
           />
         </div>

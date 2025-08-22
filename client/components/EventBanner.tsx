@@ -75,8 +75,12 @@ export const EventBanner = ({
               {location}
             </span>
             <div className="flex items-end gap-2">
-              <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">Organiza</span>
-              <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">{organizer}</span>
+              <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">
+                Organiza
+              </span>
+              <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">
+                {organizer}
+              </span>
             </div>
           </div>
 
@@ -86,15 +90,23 @@ export const EventBanner = ({
               {date}
             </span>
             <div className="flex items-end gap-2">
-              <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">Desde</span>
-              <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">{time}</span>
+              <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">
+                Desde
+              </span>
+              <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">
+                {time}
+              </span>
             </div>
           </div>
 
           {/* Price */}
           <div className="flex items-end gap-2">
-            <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">Desde</span>
-            <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">{price}</span>
+            <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">
+              Desde
+            </span>
+            <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">
+              {price}
+            </span>
           </div>
         </div>
 
