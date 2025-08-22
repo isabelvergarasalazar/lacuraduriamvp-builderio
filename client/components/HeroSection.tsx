@@ -21,9 +21,9 @@ export const HeroSection = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col justify-end items-start px-4 sm:px-8 lg:px-12 pb-8">
+      <div className="relative z-10 h-full flex flex-col justify-end items-center px-4 sm:px-8 lg:px-12 pb-6 lg:pb-8">
         {/* Tagline Section */}
-        <div className="flex justify-between items-center w-full py-5">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full py-3 md:py-5 gap-1.5 md:gap-0 justify-center items-center">
           {/* Left Tagline */}
           <div className="flex items-center gap-[5px]">
             <div className="w-[3px] h-[3px] bg-dark-green rounded-full" />
