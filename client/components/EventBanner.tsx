@@ -93,8 +93,8 @@ export const EventBanner = ({
 
           {/* Price */}
           <div className="flex items-end gap-2">
-            <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Desde</span>
-            <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">{price}</span>
+            <span className="text-[#64685F] font-body text-base md:text-base lg:text-lg font-normal md:leading-6">Desde</span>
+            <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px]">{price}</span>
           </div>
         </div>
 
