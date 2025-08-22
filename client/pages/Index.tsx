@@ -10,35 +10,38 @@ const HeroSection = () => {
   // Sample event data - in a real app this would come from an API
   const events = [
     {
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/06af181c852a9b694df83cbf3e045b4d8f43172d?width=938",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/06af181c852a9b694df83cbf3e045b4d8f43172d?width=938",
       title: "Decibelio: Mariposa",
       eventType: "[TIPO EVENTO]",
       location: "Carrera 13A # 22-54",
       organizer: "Mariposa",
       date: "Vie, 15 Ago 2025",
       time: "08:00 PM",
-      price: "40.000 COP"
+      price: "40.000 COP",
     },
     {
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/56fad6f7408648d64c7bf2bf9968b75dc6cc59de?width=938",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/56fad6f7408648d64c7bf2bf9968b75dc6cc59de?width=938",
       title: "Concierto Acústico",
       eventType: "[MÚSICA]",
       location: "Calle 85 # 15-20",
       organizer: "Colectivo Musical",
       date: "Sáb, 16 Ago 2025",
       time: "07:30 PM",
-      price: "35.000 COP"
+      price: "35.000 COP",
     },
     {
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/e62a63b66db832fb69da990ccc9fbabc15e16c64?width=938",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/e62a63b66db832fb69da990ccc9fbabc15e16c64?width=938",
       title: "Exposición de Arte",
       eventType: "[ARTE]",
       location: "Avenida 19 # 104-62",
       organizer: "Galería Moderna",
       date: "Dom, 17 Ago 2025",
       time: "02:00 PM",
-      price: "25.000 COP"
-    }
+      price: "25.000 COP",
+    },
   ];
 
   // Create extended array for infinite scrolling
@@ -83,7 +86,13 @@ const HeroSection = () => {
           alt="Hero background"
           className="w-full h-[716px] absolute left-0 top-[18px] object-cover"
         />
-        <div className="w-full h-full absolute left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-cream" style={{ background: 'linear-gradient(180deg, rgba(255, 255, 246, 0.00) 35.28%, #FFFFF6 80%)' }}></div>
+        <div
+          className="w-full h-full absolute left-0 top-0 bg-gradient-to-b from-transparent via-transparent to-cream"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(255, 255, 246, 0.00) 35.28%, #FFFFF6 80%)",
+          }}
+        ></div>
       </div>
 
       {/* Event Cards Carousel - Positioned over background */}
@@ -91,11 +100,14 @@ const HeroSection = () => {
         <div className="relative w-full overflow-hidden">
           <div className="flex justify-center">
             <div
-              className={`flex gap-5 ${isTransitioning ? 'transition-transform duration-1000 ease-in-out' : ''}`}
+              className={`flex gap-5 ${isTransitioning ? "transition-transform duration-1000 ease-in-out" : ""}`}
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
               {extendedEvents.map((event, index) => (
-                <div key={`${event.title}-${index}`} className="flex-shrink-0 w-[1271px] flex justify-center">
+                <div
+                  key={`${event.title}-${index}`}
+                  className="flex-shrink-0 w-[1271px] flex justify-center"
+                >
                   <EventCard
                     image={event.image}
                     title={event.title}
@@ -105,7 +117,9 @@ const HeroSection = () => {
                     date={event.date}
                     time={event.time}
                     price={event.price}
-                    onViewEvent={() => console.log(`View event: ${event.title}`)}
+                    onViewEvent={() =>
+                      console.log(`View event: ${event.title}`)
+                    }
                   />
                 </div>
               ))}
@@ -122,7 +136,9 @@ const HeroSection = () => {
                   setCurrentIndex(events.length + index);
                 }}
                 className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                  (currentIndex - events.length) % events.length === index ? 'bg-coral-primary' : 'bg-neutral-200'
+                  (currentIndex - events.length) % events.length === index
+                    ? "bg-coral-primary"
+                    : "bg-neutral-200"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -135,12 +151,16 @@ const HeroSection = () => {
       <div className="flex flex-col sm:flex-row justify-between items-center self-stretch py-5 gap-4 sm:gap-0">
         <div className="flex items-center gap-1.5">
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
-          <span className="text-dark-green font-fraktion text-lg">UN LENTE PARA EL ARTE</span>
+          <span className="text-dark-green font-fraktion text-lg">
+            UN LENTE PARA EL ARTE
+          </span>
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
         </div>
         <div className="flex items-center gap-1.5">
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
-          <span className="text-dark-green font-fraktion text-lg">EXPLORA LA CARTELERA DE EVENTOS</span>
+          <span className="text-dark-green font-fraktion text-lg">
+            EXPLORA LA CARTELERA DE EVENTOS
+          </span>
           <div className="w-1 h-1 bg-dark-green rounded-full"></div>
         </div>
       </div>
@@ -148,37 +168,40 @@ const HeroSection = () => {
   );
 };
 
-
 const FeaturedEvents = () => {
   const events = [
     {
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/69e0617227523aeb762b59ab8c7455d8ba08c103?width=710",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/69e0617227523aeb762b59ab8c7455d8ba08c103?width=710",
       title: "Nombre de evento a dos líneas de texto",
       location: "Video Club",
       date: "[Día, 00 Mes, Año]",
-      time: "[00:00 P.M]"
+      time: "[00:00 P.M]",
     },
     {
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/d1e42315b34e9dcde2fd9f3e2554d35ace942a1c?width=710",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/d1e42315b34e9dcde2fd9f3e2554d35ace942a1c?width=710",
       title: "EXXOTIKA CLUB presenta DISCOQUETTE Vol. 2",
       location: "[Nombre del lugar]",
       date: "[Día, 00 Mes, Año]",
-      time: "[00:00 P.M]"
+      time: "[00:00 P.M]",
     },
     {
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/2f4a4172abba2c915490e76ada44f4d977421f94?width=710",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/2f4a4172abba2c915490e76ada44f4d977421f94?width=710",
       title: "Contrafrecuencias",
       location: "[Nombre del lugar]",
       date: "[Día, 00 Mes, Año]",
-      time: "[00:00 P.M]"
+      time: "[00:00 P.M]",
     },
     {
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/9bba6c09601ca4ffc49a67280a9ff89f2e201888?width=710",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/9bba6c09601ca4ffc49a67280a9ff89f2e201888?width=710",
       title: "Curado x Valesuchi + Julianna + DJ+1",
       location: "[Nombre del lugar]",
       date: "[Día, 00 Mes, Año]",
-      time: "[00:00 P.M]"
-    }
+      time: "[00:00 P.M]",
+    },
   ];
 
   return (
@@ -188,7 +211,9 @@ const FeaturedEvents = () => {
           EVENTOS DESTACADOS
         </h2>
         <button className="flex items-center gap-1 group">
-          <span className="text-coral-primary font-fraktion text-sm sm:text-lg font-medium">VER CARTELERA COMPLETA</span>
+          <span className="text-coral-primary font-fraktion text-sm sm:text-lg font-medium">
+            VER CARTELERA COMPLETA
+          </span>
           <div className="bg-coral-primary rounded-full p-1.5 sm:p-2">
             <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-cream" />
           </div>
@@ -208,13 +233,12 @@ const MissionSection = () => {
   return (
     <div className="space-y-4">
       <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
-        RENOVAMOS LA EXPLORACIÓN DEL ARTE Y LA CULTURA A TRAVÉS DE UNA GUÍA COLABORATIVA.
+        RENOVAMOS LA EXPLORACIÓN DEL ARTE Y LA CULTURA A TRAVÉS DE UNA GUÍA
+        COLABORATIVA.
       </h2>
     </div>
   );
 };
-
-
 
 export default function Index() {
   return (

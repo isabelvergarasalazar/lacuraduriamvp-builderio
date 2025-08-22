@@ -24,18 +24,13 @@ export const CallToAction = ({
       aria-labelledby="cta-heading"
     >
       <div className="flex flex-col gap-4 max-w-2xl relative z-10">
-        <h2 
-          id="cta-heading"
-          className="text-display-lg-bold whitespace-nowrap"
-        >
+        <h2 id="cta-heading" className="text-display-lg-bold whitespace-nowrap">
           {title}
         </h2>
-        <p className="text-display-xs-regular max-w-[456px]">
-          {subtitle}
-        </p>
+        <p className="text-display-xs-regular max-w-[456px]">{subtitle}</p>
         <div className="pt-2">
-          <Button 
-            icon={Calendar} 
+          <Button
+            icon={Calendar}
             size="lg"
             href={buttonHref}
             aria-label={`${buttonText} - Abre en nueva ventana`}
@@ -52,11 +47,11 @@ export const CallToAction = ({
           alt="Q Glass - Decorative element"
           className="absolute w-[320.741px] h-[257.453px] pointer-events-none"
           style={{
-            position: 'absolute',
-            right: '28.631px',
-            top: '-58px',
-            transform: 'rotate(-4.356deg)',
-            transformOrigin: 'center center'
+            position: "absolute",
+            right: "28.631px",
+            top: "-58px",
+            transform: "rotate(-4.356deg)",
+            transformOrigin: "center center",
           }}
           loading="lazy"
         />

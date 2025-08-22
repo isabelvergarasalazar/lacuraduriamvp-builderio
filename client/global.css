@@ -121,13 +121,16 @@
 @layer components {
   /* Typography Classes */
   .text-display-lg-bold {
-    font-family: var(--Font-family-font-family-display, "ITC Avant Garde Gothic Pro");
+    font-family: var(
+      --Font-family-font-family-display,
+      "ITC Avant Garde Gothic Pro"
+    );
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 60px; /* 125% */
     letter-spacing: -0.96px;
-    color: var(--Neutrals-900---Main, #171C14);
+    color: var(--Neutrals-900---Main, #171c14);
   }
 
   .text-display-xs-regular {
@@ -137,7 +140,7 @@
     font-weight: 390;
     line-height: 32px; /* 114.286% */
     letter-spacing: -0.56px;
-    color: var(--Neutrals-900---Main, #171C14);
+    color: var(--Neutrals-900---Main, #171c14);
   }
 
   /* Responsive variants for smaller screens */
