@@ -46,11 +46,21 @@ const FeaturedEventsSection = () => {
     },
   ];
 
+  const handleEventClick = (event: any) => {
+    // Generate a slug from the event title and add an ID
+    const slug = event.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    navigate(`/cartelera/${slug}-1`);
+  };
+
+  const handleViewComplete = () => {
+    navigate("/cartelera");
+  };
+
   return (
     <FeaturedEvents
       events={events}
-      onViewComplete={() => window.location.href = "/cartelera"}
-      onEventClick={(event) => console.log("Event clicked:", event)}
+      onViewComplete={handleViewComplete}
+      onEventClick={handleEventClick}
     />
   );
 };
