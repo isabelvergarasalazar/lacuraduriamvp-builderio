@@ -17,7 +17,7 @@ export const FeaturedEventCard = ({
   location,
   date,
   time,
-  onBadgeClick
+  onBadgeClick,
 }: FeaturedEventCardProps) => {
   return (
     <div className="flex flex-col items-start gap-0 self-stretch flex-shrink-0 group cursor-pointer transition-all duration-200 ease-in-out">
@@ -32,9 +32,7 @@ export const FeaturedEventCard = ({
       {/* Event Info */}
       <div className="flex w-[355px] px-2 pt-3 pb-2 flex-col items-start gap-2 transition-colors duration-200 ease-in-out group-hover:bg-[#E5E6DD]">
         {/* Badge */}
-        <Badge onClick={onBadgeClick}>
-          {eventType}
-        </Badge>
+        <Badge onClick={onBadgeClick}>{eventType}</Badge>
 
         {/* Event Title */}
         <h3 className="max-h-[76px] self-stretch text-neutral-900 font-display text-[30px] font-bold leading-[38px] tracking-[-0.6px] overflow-hidden">

@@ -36,32 +36,38 @@ export const LinkButton = ({
         className={`
           font-body text-lg font-medium leading-[28px] uppercase tracking-wide
           transition-all duration-500 ease-in-out
-          ${isClicked
-            ? ''
-            : 'text-coral-primary'
-          }
+          ${isClicked ? "" : "text-coral-primary"}
         `}
-        style={isClicked ? {
-          background: 'linear-gradient(270deg, #75E6F9 0%, #FF736C 100%)',
-          WebkitBackgroundClip: 'text',
-          backgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          textFillColor: 'transparent'
-        } : {}}
+        style={
+          isClicked
+            ? {
+                background: "linear-gradient(270deg, #75E6F9 0%, #FF736C 100%)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                textFillColor: "transparent",
+              }
+            : {}
+        }
       >
         {children}
       </span>
       <div
         className={`
           rounded-full transition-all duration-500 ease-in-out
-          ${isClicked
-            ? 'p-[3.2px]'
-            : 'p-2 bg-coral-primary group-hover:bg-[#BC4945]'
+          ${
+            isClicked
+              ? "p-[3.2px]"
+              : "p-2 bg-coral-primary group-hover:bg-[#BC4945]"
           }
         `}
-        style={isClicked ? {
-          background: 'linear-gradient(270deg, #75E6F9 0%, #FF736C 100%)'
-        } : {}}
+        style={
+          isClicked
+            ? {
+                background: "linear-gradient(270deg, #75E6F9 0%, #FF736C 100%)",
+              }
+            : {}
+        }
       >
         <svg
           width="16"

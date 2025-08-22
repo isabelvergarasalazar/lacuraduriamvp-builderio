@@ -6,11 +6,7 @@ interface BadgeProps {
   onClick?: () => void;
 }
 
-export const Badge = ({
-  children,
-  className = "",
-  onClick,
-}: BadgeProps) => {
+export const Badge = ({ children, className = "", onClick }: BadgeProps) => {
   const baseClasses = `
     flex px-1 py-1 justify-center items-center gap-2.5 rounded-xs
     bg-[#75E6F9] hover:bg-[#23CCED]
@@ -33,9 +29,5 @@ export const Badge = ({
     );
   }
 
-  return (
-    <div className={baseClasses}>
-      {content}
-    </div>
-  );
+  return <div className={baseClasses}>{content}</div>;
 };

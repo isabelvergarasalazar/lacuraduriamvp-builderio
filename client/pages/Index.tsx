@@ -211,9 +211,7 @@ const FeaturedEvents = () => {
         <h2 className="text-dark-green font-display font-bold text-[30px] leading-[38px] tracking-[-0.6px] lg:text-5xl lg:leading-[60px] lg:tracking-[-0.96px]">
           EVENTOS DESTACADOS
         </h2>
-        <LinkButton href="/cartelera">
-          VER CARTELERA COMPLETA
-        </LinkButton>
+        <LinkButton href="/cartelera">VER CARTELERA COMPLETA</LinkButton>
       </div>
 
       <div className="flex gap-6 lg:gap-12 overflow-x-auto pb-4">
