@@ -26,7 +26,7 @@ export const LinkButton = ({
   const baseClasses = `
     flex items-center gap-1 rounded-xl group cursor-pointer
     transition-all duration-200 ease-in-out
-    focus:outline-none focus:ring-2 focus:ring-coral-primary focus:ring-offset-2
+    focus:outline-none
     ${className}
   `.trim();
 
