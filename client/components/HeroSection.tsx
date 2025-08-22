@@ -39,11 +39,7 @@ export const HeroSection = () => {
             <div className="flex flex-col items-start gap-4 flex-1">
               {/* Event Type and Title */}
               <div className="flex flex-col items-start gap-4">
-                <Badge className="bg-[#75E6F9] px-1 py-1">
-                  <span className="text-dark-green font-body text-base font-normal leading-6 uppercase">
-                    [TIPO EVENTO]
-                  </span>
-                </Badge>
+                <Badge>[TIPO EVENTO]</Badge>
                 <h1 className="text-dark-green font-display text-5xl font-bold leading-[60px] tracking-[-0.96px]">
                   Decibelio: Mariposa
                 </h1>
