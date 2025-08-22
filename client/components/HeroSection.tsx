@@ -45,7 +45,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col justify-end items-center px-4 sm:px-8 lg:px-12 pb-6 lg:pb-8 gap-8">
+      <div className="relative z-10 h-full flex flex-col justify-end items-center px-4 sm:px-8 lg:px-12 pt-8 pb-6 lg:pb-8 gap-8">
         {/* Event Banner Section */}
         <div className="flex h-[635px] justify-center items-center w-full">
           <div className="flex w-full max-w-[1271px] p-6 items-end gap-11 rounded-lg bg-[#F4F5EC]">
