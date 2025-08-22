@@ -134,7 +134,7 @@ const FeaturedEvents = () => {
 
       <div className="flex gap-6 lg:gap-12 overflow-x-auto pb-4">
         {events.map((event, index) => (
-          <EventCard key={index} {...event} />
+          <FeaturedEventCard key={index} {...event} />
         ))}
       </div>
     </div>
