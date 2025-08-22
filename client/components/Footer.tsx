@@ -3,9 +3,9 @@ export const Footer = () => {
     <footer className="bg-coral-primary relative min-h-[591px] md:min-h-[428px] lg:min-h-[466px]">
       <div className="w-full px-4 md:px-8 xl:px-[48px] py-6 sm:py-8 md:py-12 lg:py-16">
         {/* Mobile & Tablet: Column Layout | Desktop: Row Layout */}
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 gap-3 md:gap-3 lg:gap-0">
+        <div className="flex flex-col lg:flex-row lg:items-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 gap-3 md:gap-3 lg:gap-6">
           {/* Navigation Links */}
-          <div className="flex justify-between items-center md:justify-start md:gap-4 px-1.5 py-1.5 rounded-full w-full md:w-auto">
+          <div className="flex justify-between items-center md:justify-start md:gap-4 px-1.5 py-1.5 rounded-full w-full lg:w-auto lg:flex-shrink-0">
             <a
               href="/cartelera"
               className="text-dark-green font-fraktion text-base md:text-base lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[24px] lg:leading-[30px] px-2 py-1 rounded uppercase"
@@ -20,11 +20,11 @@ export const Footer = () => {
             </a>
           </div>
 
-          {/* Divider - All screens */}
-          <div className="w-full lg:w-[333px] h-px bg-coral-secondary"></div>
+          {/* Divider - Responsive width */}
+          <div className="w-full lg:flex-1 lg:max-w-[333px] h-px bg-coral-secondary"></div>
 
           {/* Contact Information */}
-          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-4 px-1.5 py-1.5 rounded-full w-full md:w-auto md:flex-wrap lg:justify-center">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-4 px-1.5 py-1.5 rounded-full w-full lg:w-auto lg:flex-shrink-0 md:flex-wrap lg:justify-end">
             <a
               href="mailto:contacto@lacuraduria.net"
               className="text-dark-green font-fraktion text-base md:text-base lg:text-[22px] hover:text-neutral-800 hover:scale-105 transition-all duration-200 leading-[24px] lg:leading-[30px] px-2 py-1 rounded text-left uppercase"
