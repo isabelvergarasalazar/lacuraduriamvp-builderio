@@ -236,7 +236,7 @@ export default function Index() {
       <NavBar />
       <main className="px-4 sm:px-8 lg:px-12 pb-8 sm:pb-12 lg:pb-16 pt-8 space-y-32">
         <HeroSection />
-        <FeaturedEvents />
+        <FeaturedEventsSection />
         <MissionSection />
       </main>
       <CallToAction />
