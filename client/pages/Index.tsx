@@ -211,14 +211,9 @@ const FeaturedEvents = () => {
         <h2 className="text-dark-green font-display font-bold text-[30px] leading-[38px] tracking-[-0.6px] lg:text-5xl lg:leading-[60px] lg:tracking-[-0.96px]">
           EVENTOS DESTACADOS
         </h2>
-        <button className="flex items-center gap-1 group">
-          <span className="text-coral-primary font-fraktion text-sm sm:text-lg font-medium">
-            VER CARTELERA COMPLETA
-          </span>
-          <div className="bg-coral-primary rounded-full p-1.5 sm:p-2">
-            <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-cream" />
-          </div>
-        </button>
+        <LinkButton href="/cartelera">
+          VER CARTELERA COMPLETA
+        </LinkButton>
       </div>
 
       <div className="flex gap-6 lg:gap-12 overflow-x-auto pb-4">
