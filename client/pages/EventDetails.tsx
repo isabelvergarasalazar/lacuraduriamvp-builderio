@@ -119,8 +119,8 @@ const EventDetails = () => {
       {/* Main Content */}
       <main className="w-full">
         {/* Content Section */}
-        <section className="px-4 md:px-8 xl:px-[48px] pt-12 pb-32 md:pt-12 md:pb-[128px] lg:pt-[48px] lg:pb-[96px]">
-          {/* Container - tablet with proper 32px padding */}
+        <section className="px-4 md:px-0 lg:px-[48px] pt-12 pb-32 md:pt-12 md:pb-[128px] lg:pt-[48px] lg:pb-[96px]">
+          {/* Container - tablet with proper 32px padding within 744px container */}
           <div className="w-full md:max-w-[744px] md:mx-auto md:px-8 lg:max-w-none lg:mx-0 lg:px-0">
             <div className="flex flex-col items-start gap-4 md:gap-16 lg:gap-4 w-full">
               {/* Breadcrumbs */}
