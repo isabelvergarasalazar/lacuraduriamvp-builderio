@@ -67,8 +67,8 @@ export const EventBanner = ({
         {/* Divider - Hidden on mobile */}
         <div className="hidden md:block w-full max-w-[324px] md:max-w-[324px] lg:max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
 
-        {/* Event Details */}
-        <div className="flex flex-col items-start gap-2 w-full">
+        {/* Event Details - Hidden on mobile */}
+        <div className="hidden md:flex flex-col items-start gap-2 w-full">
           {/* Location and Organizer */}
           <div className="flex flex-col md:flex-col lg:flex-row lg:items-center gap-2 lg:gap-8 w-full">
             <span className="text-neutral-800 font-body text-lg md:text-lg lg:text-[22px] font-normal leading-[24px] lg:leading-[30px] lg:w-[300px]">
