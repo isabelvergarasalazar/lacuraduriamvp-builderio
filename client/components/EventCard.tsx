@@ -34,7 +34,7 @@ export const EventCard = ({
       />
 
       {/* Event Info - Responsive padding with hover state */}
-      <div className="flex flex-col items-start gap-2 px-2 pt-3 pb-2 transition-colors duration-200 ease-in-out group-hover:bg-[#E5E6DD] rounded-b-xs">
+      <div className="flex flex-col items-start gap-2 p-3 md:p-3 lg:p-3 transition-colors duration-200 ease-in-out group-hover:bg-[#E5E6DD] rounded-b-xs">
         {/* Badge */}
         <Badge>{eventType}</Badge>
 
