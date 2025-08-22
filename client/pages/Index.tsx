@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { NavBar } from "@/components/NavBar";
 import { EventCard } from "@/components/EventCard";
 import { FeaturedEventCard } from "@/components/FeaturedEventCard";
+import { Footer } from "@/components/Footer";
 
 const HeroSection = () => {
   // Sample event data - in a real app this would come from an API
