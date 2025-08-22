@@ -265,7 +265,7 @@ const EventDetails = () => {
                       <div className="flex flex-wrap items-start gap-4 w-full">
                         {[...Array(8)].map((_, index) => (
                           <Tag key={index} variant="promoter">
-                            [Artist]
+                            [Promotor]
                           </Tag>
                         ))}
                       </div>
