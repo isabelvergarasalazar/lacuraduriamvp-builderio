@@ -37,7 +37,7 @@ export const CallToAction = ({
                       lg:max-w-[456px]">
           {subtitle}
         </p>
-        <div className="w-full md:w-auto mt-0 md:mt-0 xl:pt-2">
+        <div className="w-full md:w-auto mt-0 md:mt-0 lg:pt-2">
           <Button
             icon={Calendar}
             size="md"
