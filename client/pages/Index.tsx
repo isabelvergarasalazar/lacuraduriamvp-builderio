@@ -261,11 +261,11 @@ const CallToAction = () => {
 
 const Footer = () => {
   return (
-    <div className="bg-coral-primary relative min-h-[466px]">
-      <div className="px-12 py-16">
+    <div className="bg-coral-primary relative min-h-[300px] sm:min-h-[400px] lg:min-h-[466px]">
+      <div className="px-4 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16">
         {/* Logo */}
-        <div className="flex justify-center mb-16">
-          <svg width="1414" height="193" viewBox="0 0 1414 193" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-w-full h-auto">
+        <div className="flex justify-center mb-8 sm:mb-12 lg:mb-16">
+          <svg width="1414" height="193" viewBox="0 0 1414 193" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-xs sm:max-w-md lg:max-w-2xl h-auto">
             <path d="M166.103 55.2592H66.9107C60.5271 55.2592 55.3632 60.4264 55.3632 66.7851V110.518H99.8017C105.848 110.518 110.739 115.414 110.739 121.436V165.791H55.3762C24.7817 165.791 0 141.055 0 110.531V55.2722C0 24.7352 24.7947 0 55.3632 0H166.103C196.671 0 221.466 24.7482 221.466 55.2592H166.09H166.103ZM221.232 55.3887H221.479V110.648C190.91 110.648 166.116 135.396 166.116 165.907H110.623C110.623 104.872 160.095 55.4924 221.245 55.3758L221.232 55.3887Z" fill="#171C14"/>
             <path d="M217.807 192.21C234.353 192.21 247.766 178.822 247.766 162.307C247.766 145.793 234.353 132.405 217.807 132.405C201.261 132.405 187.848 145.793 187.848 162.307C187.848 178.822 201.261 192.21 217.807 192.21Z" fill="#171C14"/>
             <path d="M336.448 91.3132H276.167V1.07495H306.308V61.2424H396.728C396.728 77.8577 383.235 91.3261 366.588 91.3261H336.448V91.3132Z" fill="#171C14"/>
@@ -283,39 +283,39 @@ const Footer = () => {
         </div>
 
         {/* Footer Content */}
-        <div className="flex justify-between items-start mb-8">
+        <div className="flex flex-col lg:flex-row justify-between items-start mb-6 sm:mb-8 gap-6 lg:gap-0">
           {/* Left Links */}
-          <div className="flex items-center gap-4">
-            <a href="/cartelera" className="text-dark-green font-fraktion text-xl hover:text-neutral-800 transition-colors">CARTELERA</a>
-            <a href="/como-publicar" className="text-dark-green font-fraktion text-xl hover:text-neutral-800 transition-colors">CÓMO PUBLICAR</a>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+            <a href="/cartelera" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">CARTELERA</a>
+            <a href="/como-publicar" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">CÓMO PUBLICAR</a>
           </div>
 
-          {/* Divider */}
-          <div className="w-80 h-px bg-coral-dark"></div>
+          {/* Divider - Hidden on mobile */}
+          <div className="hidden lg:block w-60 xl:w-80 h-px bg-coral-dark"></div>
 
           {/* Right Contact Info */}
-          <div className="flex items-center gap-4">
-            <a href="mailto:contacto@lacuraduria.net" className="text-dark-green font-fraktion text-xl hover:text-neutral-800 transition-colors">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 lg:gap-4">
+            <a href="mailto:contacto@lacuraduria.net" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">
               CONTACTO@LACURADURIA.NET
             </a>
             <div className="flex items-center gap-1.5">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
                 <path d="M9.12661 7.45553C9.29857 7.46249 9.48906 7.47064 9.67008 7.87276C9.79339 8.14713 10.0007 8.65803 10.1663 9.06609C10.2889 9.36843 10.3887 9.61431 10.4144 9.6657C10.4749 9.78642 10.5149 9.92778 10.4345 10.0887C10.4222 10.1134 10.4108 10.1368 10.3999 10.159C10.34 10.2816 10.2957 10.3721 10.1933 10.4914C10.1524 10.539 10.1101 10.5904 10.0679 10.6418C9.98517 10.7424 9.90262 10.8427 9.83088 10.9144C9.70976 11.0347 9.58364 11.1655 9.72473 11.4071C9.86583 11.6487 10.3504 12.4393 11.0684 13.0795C11.8411 13.7685 12.5121 14.0594 12.8518 14.2067C12.9178 14.2353 12.9713 14.2585 13.0106 14.2781C13.2523 14.3988 13.393 14.3786 13.5339 14.2174C13.6749 14.0562 14.1372 13.5125 14.2984 13.2707C14.4596 13.029 14.6205 13.0691 14.8418 13.1498C15.0632 13.2304 16.2504 13.8146 16.4921 13.9355C16.5397 13.9592 16.5841 13.9807 16.6252 14.0005C16.7933 14.0815 16.9068 14.1362 16.9552 14.2174C17.0155 14.3184 17.0154 14.8016 16.8142 15.3656C16.6131 15.9295 15.6272 16.4735 15.1842 16.5137C15.1416 16.5176 15.0992 16.5226 15.0556 16.5277C14.6462 16.5758 14.1297 16.6365 12.286 15.9094C10.0152 15.014 8.51853 12.7939 8.2114 12.3383C8.18651 12.3014 8.16943 12.276 8.16038 12.2639L8.15752 12.2601C8.02674 12.0852 7.17432 10.9454 7.17432 9.76619C7.17432 8.65453 7.72061 8.07156 7.97217 7.8031C7.9895 7.78461 8.00543 7.76761 8.01969 7.75203C8.24091 7.51031 8.5026 7.44988 8.66366 7.44988L9.12661 7.45553Z" fill="#171C14"/>
                 <path fillRule="evenodd" clipRule="evenodd" d="M2.33887 21.75L3.71024 16.743C2.86302 15.2741 2.41801 13.6079 2.42005 11.9122C2.42229 6.58441 6.75801 2.25 12.086 2.25C14.6715 2.25131 17.0983 3.25747 18.9234 5.08391C20.7485 6.91034 21.7527 9.33805 21.7518 11.92C21.7494 17.2474 17.413 21.5826 12.0858 21.5826H12.0816C10.4641 21.582 8.87464 21.1762 7.46281 20.4063L2.33887 21.75ZM12.0889 3.88227C7.65737 3.88227 4.0535 7.48482 4.05193 11.9129C4.04974 13.425 4.47554 14.9068 5.2801 16.187L5.47125 16.4909L4.65951 19.4543L7.7002 18.657L7.99381 18.831C9.22697 19.5628 10.6409 19.9498 12.0828 19.9506H12.0858C16.5139 19.9506 20.1178 16.3477 20.1195 11.9193C20.1228 10.8639 19.9168 9.8182 19.5133 8.8429C19.1097 7.8676 18.5167 6.98203 17.7686 6.23746C17.0247 5.48882 16.1396 4.89519 15.1647 4.49091C14.1897 4.08664 13.1443 3.87977 12.0889 3.88227Z" fill="#171C14"/>
               </svg>
-              <a href="tel:+573044138497" className="text-black font-fraktion text-xl">(+57) 304 413 8497</a>
+              <a href="tel:+573044138497" className="text-black font-fraktion text-lg sm:text-xl whitespace-nowrap">(+57) 304 413 8497</a>
             </div>
-            <a href="https://instagram.com" className="text-dark-green font-fraktion text-xl hover:text-neutral-800 transition-colors">INSTAGRAM</a>
-            <a href="https://linkedin.com" className="text-dark-green font-fraktion text-xl hover:text-neutral-800 transition-colors">LINKEDIN</a>
+            <a href="https://instagram.com" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">INSTAGRAM</a>
+            <a href="https://linkedin.com" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">LINKEDIN</a>
           </div>
         </div>
 
         {/* Bottom Footer */}
-        <div className="flex justify-between items-start">
-          <p className="text-dark-green font-fraktion uppercase">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-4 lg:gap-0">
+          <p className="text-dark-green font-fraktion uppercase text-sm sm:text-base">
             © 2025 La Curaduría. Todos los derechos reservados.
           </p>
-          <p className="text-dark-green font-fraktion uppercase text-right max-w-md">
+          <p className="text-dark-green font-fraktion uppercase text-right text-sm sm:text-base max-w-md">
             CREAMOS UN LENTE PARA FILTRAR LO ESENCIAL JUNTO A MEDIOS, ARTISTAS Y GESTORES.
           </p>
         </div>
