@@ -117,11 +117,9 @@ const EventDetails = () => {
       <NavBar activePage="cartelera" />
 
       {/* Main Content */}
-      <main className="w-full">
+      <main className="pb-8 sm:pb-12 lg:pb-16 pt-8 space-y-32">
         {/* Content Section */}
-        <section className="px-4 md:px-0 lg:px-[48px] pt-12 pb-32 md:pt-12 md:pb-[128px] lg:pt-[48px] lg:pb-[96px]">
-          {/* Container - responsive padding without width constraints */}
-          <div className="w-full md:px-8 lg:px-0">
+        <section className="px-4 sm:px-8 lg:px-12">
             <div className="flex flex-col items-start gap-4 md:gap-16 lg:gap-4 w-full">
               {/* Breadcrumbs */}
               <nav className="flex items-center gap-2">
@@ -314,7 +312,6 @@ const EventDetails = () => {
                 </div>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Featured Events Section */}
