@@ -14,7 +14,8 @@ export const HeroSection = () => {
         <div
           className="w-full h-full absolute top-0 left-0"
           style={{
-            background: 'linear-gradient(180deg, #FFFFF6 35.28%, rgba(255, 255, 246, 0.00) 80%)'
+            background:
+              "linear-gradient(180deg, #FFFFF6 35.28%, rgba(255, 255, 246, 0.00) 80%)",
           }}
         />
       </div>
