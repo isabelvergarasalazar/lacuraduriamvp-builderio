@@ -72,36 +72,36 @@ export const HeroSection = () => {
               {/* Event Details */}
               <div className="flex flex-col items-start gap-2 w-full">
                 {/* Location and Organizer */}
-                <div className="flex items-center gap-8 w-full">
-                  <span className="w-[300px] text-neutral-800 font-body text-[22px] font-normal leading-[30px]">
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-8 w-full">
+                  <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px] md:w-[300px]">
                     Carrera 13A # 22-54
                   </span>
                   <div className="flex items-end gap-2">
-                    <span className="text-[#64685F] font-body text-lg font-normal">Organiza</span>
-                    <span className="text-neutral-800 font-body text-[22px] font-normal leading-[30px]">Mariposa</span>
+                    <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Organiza</span>
+                    <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">Mariposa</span>
                   </div>
                 </div>
 
                 {/* Date and Time */}
-                <div className="flex items-center gap-8 w-full">
-                  <span className="w-[300px] text-neutral-800 font-body text-[22px] font-normal leading-[30px]">
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-8 w-full">
+                  <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px] md:w-[300px]">
                     Vie, 15 Ago 2025
                   </span>
                   <div className="flex items-end gap-2">
-                    <span className="text-[#64685F] font-body text-lg font-normal">Desde</span>
-                    <span className="text-neutral-800 font-body text-[22px] font-normal leading-[30px]">08:00 PM</span>
+                    <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Desde</span>
+                    <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">08:00 PM</span>
                   </div>
                 </div>
 
                 {/* Price */}
                 <div className="flex items-end gap-2">
-                  <span className="text-[#64685F] font-body text-lg font-normal">Desde</span>
-                  <span className="text-neutral-800 font-body text-[22px] font-normal leading-[30px]">40.000 COP</span>
+                  <span className="text-[#64685F] font-body text-base md:text-lg font-normal">Desde</span>
+                  <span className="text-neutral-800 font-body text-lg md:text-[22px] font-normal leading-[24px] md:leading-[30px]">40.000 COP</span>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
+              <div className="w-full max-w-[710px] h-0 bg-[#CBCDC4] border-t"></div>
 
               {/* CTA Button */}
               <Button
