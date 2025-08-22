@@ -23,18 +23,18 @@ export const EventCard = ({
 }: EventCardProps) => {
   return (
     <div
-      className="flex flex-col cursor-pointer flex-shrink-0 w-[276px] md:w-[320px] lg:w-[355px]"
+      className="flex flex-col cursor-pointer flex-shrink-0 w-[276px] md:w-[320px] lg:w-[355px] group transition-all duration-200 ease-in-out"
       onClick={onClick}
     >
       {/* Event Poster - Responsive dimensions */}
       <img
         src={image}
         alt={`${title} Event Poster`}
-        className="w-[276px] h-[345px] md:w-[320px] md:h-[400px] lg:w-[355px] lg:h-[444px] aspect-[4/5] rounded-xs object-cover flex-shrink-0"
+        className="w-[276px] h-[345px] md:w-[320px] md:h-[400px] lg:w-[355px] lg:h-[444px] aspect-[4/5] rounded-xs object-cover flex-shrink-0 transition-transform duration-200 ease-in-out group-hover:scale-[1.02]"
       />
 
-      {/* Event Info - Responsive padding */}
-      <div className="flex flex-col items-start gap-2 p-3 pb-2 lg:px-2 lg:pt-3 lg:pb-2">
+      {/* Event Info - Responsive padding with hover state */}
+      <div className="flex flex-col items-start gap-2 p-3 pb-2 lg:px-2 lg:pt-3 lg:pb-2 transition-colors duration-200 ease-in-out group-hover:bg-neutral-100 rounded-b-xs">
         {/* Badge */}
         <Badge>{eventType}</Badge>
 
@@ -45,6 +45,7 @@ export const EventCard = ({
           font-display font-bold text-dark-green
           max-h-[68px] lg:max-h-[76px] overflow-hidden
           self-stretch
+          transition-colors duration-200 ease-in-out
         "
         >
           {title}
@@ -55,18 +56,19 @@ export const EventCard = ({
           className="
           text-[18px] md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px]
           font-body font-normal text-neutral-800 w-[230px]
+          transition-colors duration-200 ease-in-out
         "
         >
           {location}
         </div>
 
         {/* Date */}
-        <div className="text-[18px] font-body font-normal text-neutral-800 w-[230px]">
+        <div className="text-[18px] font-body font-normal text-neutral-800 w-[230px] transition-colors duration-200 ease-in-out">
           {date}
         </div>
 
         {/* Time */}
-        <div className="text-[18px] font-body font-normal text-neutral-800">
+        <div className="text-[18px] font-body font-normal text-neutral-800 transition-colors duration-200 ease-in-out">
           {time}
         </div>
       </div>
