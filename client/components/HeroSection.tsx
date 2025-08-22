@@ -9,12 +9,12 @@ export const HeroSection = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/a484871b74618d95268be70f8b1c7c96e03d4040?width=3024"
           alt="Hero Background"
-          className="w-full h-[734px] object-cover absolute left-0 top-0"
+          className="w-full h-full min-h-[500px] md:min-h-[600px] lg:h-[734px] object-cover absolute left-0 top-0"
         />
 
         {/* Gradient Overlay */}
         <div
-          className="w-full h-[734px] absolute top-0 left-0"
+          className="w-full h-full absolute top-0 left-0"
           style={{
             background:
               "linear-gradient(180deg, #FFFFF6 35.28%, rgba(255, 255, 246, 0.00) 80%)",
