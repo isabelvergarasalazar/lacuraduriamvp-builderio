@@ -12,8 +12,8 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
       <div className="w-full px-4 md:px-8 xl:px-[48px] py-4 lg:py-4">
         <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center gap-6 md:gap-6 lg:gap-6">
           {/* Logo */}
-          <div className="flex items-center justify-center lg:justify-start">
-            <a href="/" className="block">
+          <div className="flex items-center justify-center lg:justify-start w-full md:w-full lg:w-auto">
+            <a href="/" className="block w-full md:w-full lg:w-auto">
               {/* Mobile Logo */}
               <svg
                 viewBox="0 0 343 47"
