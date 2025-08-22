@@ -232,7 +232,7 @@ const FeaturedEvents = () => {
 const MissionSection = () => {
   return (
     <div className="space-y-4">
-      <h2 className="text-dark-green font-avant-garde text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight tracking-tight">
+      <h2 className="text-dark-green font-display font-bold text-[30px] leading-[38px] tracking-[-0.6px] lg:text-5xl lg:leading-[60px] lg:tracking-[-0.96px]">
         RENOVAMOS LA EXPLORACIÓN DEL ARTE Y LA CULTURA A TRAVÉS DE UNA GUÍA
         COLABORATIVA.
       </h2>
