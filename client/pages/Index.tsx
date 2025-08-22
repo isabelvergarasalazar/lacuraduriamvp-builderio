@@ -39,6 +39,17 @@ const HeroSection = () => {
     }
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-rotate carousel every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % events.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [events.length]);
+
   return (
     <div className="relative flex flex-col items-start gap-8 self-stretch">
       {/* Hero Background */}
@@ -210,7 +221,7 @@ const Footer = () => {
           {/* Left Links */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
             <a href="/cartelera" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">CARTELERA</a>
-            <a href="/como-publicar" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">CÓMO PUBLICAR</a>
+            <a href="/como-publicar" className="text-dark-green font-fraktion text-lg sm:text-xl hover:text-neutral-800 transition-colors">C��MO PUBLICAR</a>
           </div>
 
           {/* Divider - Hidden on mobile */}
