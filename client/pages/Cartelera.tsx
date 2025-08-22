@@ -129,6 +129,14 @@ const sampleEvents = [
 ];
 
 const Cartelera = () => {
+  const navigate = useNavigate();
+
+  const handleEventClick = (event: any) => {
+    // Generate a slug from the event title
+    const slug = event.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    navigate(`/cartelera/${slug}-${event.id}`);
+  };
+
   return (
     <div className="min-h-screen bg-cream">
       {/* Navigation */}
