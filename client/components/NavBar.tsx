@@ -19,7 +19,7 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
                 viewBox="0 0 343 47"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-full max-w-[280px] h-auto md:hidden"
+                className="w-full h-auto md:hidden"
                 aria-label="La Curaduría Logo"
               >
                 <path
