@@ -163,7 +163,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         FECHA
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal uppercase">
+                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
                         {eventData.date}
                       </span>
                     </div>
@@ -173,7 +173,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         HORA INICIO
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal uppercase">
+                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
                         {eventData.time}
                       </span>
                     </div>
@@ -183,7 +183,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         PRECIO
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal uppercase">
+                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
                         {eventData.price}
                       </span>
                     </div>
@@ -193,7 +193,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         MAYORÍA DE EDAD?
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal uppercase">
+                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
                         {eventData.ageLimit}
                       </span>
                     </div>
@@ -203,7 +203,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         DÓNDE?
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal uppercase">
+                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
                         {eventData.location}
                       </span>
                     </div>
