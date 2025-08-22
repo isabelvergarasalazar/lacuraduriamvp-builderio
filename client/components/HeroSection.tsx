@@ -47,7 +47,7 @@ export const HeroSection = () => {
       {/* Content Container */}
       <div className="relative z-10 flex flex-col items-center px-4 sm:px-8 lg:px-12 pt-8 pb-0 gap-8">
         {/* Event Banner Section */}
-        <div className="flex min-h-[500px] md:min-h-[450px] lg:min-h-[635px] justify-center items-center w-full">
+        <div className="flex justify-center items-center w-full">
           <div className="flex w-full max-w-[1271px] p-4 md:p-6 items-end gap-6 md:gap-11 rounded-lg bg-[#F4F5EC]">
             {/* Event Poster */}
             <img
