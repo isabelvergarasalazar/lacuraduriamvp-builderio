@@ -41,11 +41,11 @@ const HeroSection = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-rotate carousel every 5 seconds
+  // Auto-rotate carousel every 7 seconds for better slider experience
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % events.length);
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [events.length]);
