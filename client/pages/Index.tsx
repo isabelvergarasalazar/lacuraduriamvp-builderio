@@ -5,6 +5,8 @@ import { Footer } from "@/components/Footer";
 import { CallToAction } from "@/components/CallToAction";
 
 const FeaturedEventsSection = () => {
+  const navigate = useNavigate();
+
   const events = [
     {
       image:
