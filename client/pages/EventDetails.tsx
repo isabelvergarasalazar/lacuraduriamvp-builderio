@@ -213,7 +213,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         DIRECCIÓN
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal">
+                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
                         {eventData.address}
                       </span>
                     </div>
@@ -223,7 +223,7 @@ const EventDetails = () => {
                       <span className="text-neutral-600 font-body text-base font-normal leading-6 uppercase">
                         CIUDAD
                       </span>
-                      <span className="text-dark-green font-body text-lg font-normal">
+                      <span className="text-dark-green font-body text-lg font-normal leading-normal uppercase">
                         {eventData.city}
                       </span>
                     </div>
