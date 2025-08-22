@@ -30,11 +30,11 @@ export const EventCard = ({
       <img
         src={image}
         alt={`${title} Event Poster`}
-        className="w-[276px] h-[345px] md:w-[320px] md:h-[400px] lg:w-[355px] lg:h-[444px] aspect-[4/5] rounded-xs object-cover flex-shrink-0 transition-transform duration-200 ease-in-out group-hover:scale-[1.02]"
+        className="w-[276px] h-[345px] md:w-[320px] md:h-[400px] lg:w-[355px] lg:h-[444px] aspect-[4/5] rounded-xs object-cover flex-shrink-0"
       />
 
       {/* Event Info - Responsive padding with hover state */}
-      <div className="flex flex-col items-start gap-2 p-3 pb-2 lg:px-2 lg:pt-3 lg:pb-2 transition-colors duration-200 ease-in-out group-hover:bg-neutral-100 rounded-b-xs">
+      <div className="flex flex-col items-start gap-2 p-3 pb-2 lg:px-2 lg:pt-3 lg:pb-2 transition-colors duration-200 ease-in-out group-hover:bg-[#E5E6DD] rounded-b-xs">
         {/* Badge */}
         <Badge>{eventType}</Badge>
 
