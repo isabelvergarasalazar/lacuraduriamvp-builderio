@@ -192,24 +192,6 @@ export const FeaturedEvents = ({
         </div>
       </div>
 
-      <style jsx>{`
-        .scrollbar-hide {
-          -webkit-overflow-scrolling: touch;
-          scrollbar-width: none;
-          -ms-overflow-style: none;
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-          width: 0;
-          height: 0;
-        }
-        .scrollbar-hide::-webkit-scrollbar-track {
-          display: none;
-        }
-        .scrollbar-hide::-webkit-scrollbar-thumb {
-          display: none;
-        }
-      `}</style>
     </section>
   );
 };
