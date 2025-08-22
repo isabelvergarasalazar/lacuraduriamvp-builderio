@@ -23,7 +23,7 @@ export const EventCard = ({
 }: EventCardProps) => {
   return (
     <div
-      className="flex flex-col cursor-pointer w-full max-w-[355px] group transition-all duration-200 ease-in-out"
+      className="flex flex-col cursor-pointer w-full group transition-all duration-200 ease-in-out"
       onClick={onClick}
     >
       {/* Event Poster - Responsive dimensions */}
