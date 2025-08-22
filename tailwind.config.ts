@@ -71,10 +71,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        fontFamily: {
-          'fraktion': ['PP Fraktion Sans', 'system-ui', 'sans-serif'],
-          'avant-garde': ['ITC Avant Garde Gothic Pro', 'system-ui', 'sans-serif'],
-        },
+      },
+      fontFamily: {
+        'fraktion': ['PP Fraktion Sans', 'system-ui', 'sans-serif'],
+        'avant-garde': ['ITC Avant Garde Gothic Pro', 'system-ui', 'sans-serif'],
+        'body': ['PP Fraktion Sans', 'system-ui', 'sans-serif'],
+        'display': ['ITC Avant Garde Gothic Pro', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
