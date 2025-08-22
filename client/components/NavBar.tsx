@@ -44,7 +44,7 @@ export const NavBar = ({ className = "" }: NavBarProps) => {
                 viewBox="0 0 680 93"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="hidden md:block w-[680px] lg:w-80 xl:w-96 h-auto"
+                className="hidden md:block w-full max-w-[680px] lg:max-w-80 xl:max-w-96 h-auto"
                 aria-label="La Curaduría Logo"
               >
                 <path d="M79.8796 26.5745H32.1777C29.1078 26.5745 26.6245 29.0594 26.6245 32.1173V53.1489H47.9952C50.9028 53.1489 53.2552 55.5031 53.2552 58.399V79.7296H26.6307C11.9177 79.7296 0 67.8343 0 53.1552V26.5807C0 11.8953 11.9239 0 26.6245 0H79.8796C94.5802 0 106.504 11.9015 106.504 26.5745H79.8734H79.8796ZM106.392 26.6367H106.51V53.2112C91.8098 53.2112 79.8858 65.1127 79.8858 79.7857H53.199C53.199 50.4336 76.9907 26.6866 106.398 26.6305L106.392 26.6367Z" fill="#FF736C"/>
