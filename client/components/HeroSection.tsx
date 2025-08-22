@@ -1,26 +1,4 @@
-import { Badge } from "./Badge";
-import { Button } from "./Button";
-
-// Custom Click Icon component for the CTA button
-const ClickIcon = ({ className = "", ...props }) => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 25 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={className}
-    {...props}
-  >
-    <path
-      d="M11.5 2.75V4.5M17.4069 5.09326L16.0962 6.40392M6.90381 15.5962L5.59315 16.9069M5 11H3.25M6.90381 6.40381L5.59315 5.09315M15 21.25L10.75 10.25L21.75 14.5L17.5 17L15 21.25Z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
+import { EventBanner } from "./EventBanner";
 
 export const HeroSection = () => {
   return (
