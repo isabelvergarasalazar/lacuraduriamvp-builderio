@@ -21,16 +21,40 @@ export const EventCard = ({
   size = "lg",
   onClick,
 }: EventCardProps) => {
+  // Define sizes based on the size prop
+  const getSizeClasses = () => {
+    switch (size) {
+      case "sm":
+        return {
+          container: "w-[254px] md:w-[320px] lg:w-[320px]",
+          image: "w-[254px] h-[318px] md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px]"
+        };
+      case "md":
+        return {
+          container: "w-[280px] md:w-[320px] lg:w-[320px]",
+          image: "w-[280px] h-[350px] md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px]"
+        };
+      case "lg":
+      default:
+        return {
+          container: "w-full md:w-[320px] lg:w-[320px]",
+          image: "w-full md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px] aspect-[4/5]"
+        };
+    }
+  };
+
+  const sizeClasses = getSizeClasses();
+
   return (
     <div
-      className="flex flex-col cursor-pointer w-full md:w-[320px] lg:w-[320px] group transition-all duration-200 ease-in-out"
+      className={`flex flex-col cursor-pointer ${sizeClasses.container} group transition-all duration-200 ease-in-out`}
       onClick={onClick}
     >
       {/* Event Poster - Responsive dimensions */}
       <img
         src={image}
         alt={`${title} Event Poster`}
-        className="w-full md:w-[320px] md:h-[400px] lg:w-[320px] lg:h-[400px] aspect-[4/5] rounded-xs object-cover flex-shrink-0"
+        className={`${sizeClasses.image} rounded-xs object-cover flex-shrink-0`}
       />
 
       {/* Event Info - Responsive padding with hover state */}
