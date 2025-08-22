@@ -4,6 +4,7 @@ import { NavBar } from "@/components/NavBar";
 import { EventCard } from "@/components/EventCard";
 import { FeaturedEventCard } from "@/components/FeaturedEventCard";
 import { Footer } from "@/components/Footer";
+import { Button } from "@/components/Button";
 
 const HeroSection = () => {
   // Sample event data - in a real app this would come from an API
