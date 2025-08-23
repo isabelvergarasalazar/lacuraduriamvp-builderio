@@ -176,11 +176,11 @@ const EventDetails = () => {
 
       {/* Main Content */}
       <main className="flex flex-col">
-        {/* Dark Hero Section */}
-        <section className="bg-dark-green px-4 sm:px-8 lg:px-12 pb-12 pt-8 lg:pt-12">
-          <div className="flex flex-col gap-4">
+        {/* Dark Content Section - contains breadcrumbs, poster, and event info */}
+        <section className="bg-dark-green px-8 md:px-8 lg:px-12 pb-32 pt-12">
+          <div className="max-w-[680px] mx-auto flex flex-col gap-16">
             {/* Breadcrumbs */}
-            <nav className="flex items-center gap-2">
+            <nav className="flex justify-center items-center gap-2">
               <button
                 onClick={() => navigate("/cartelera")}
                 className="text-cream font-body text-sm font-normal leading-[18px] uppercase hover:text-cream/80 transition-colors"
@@ -195,245 +195,235 @@ const EventDetails = () => {
               </span>
             </nav>
 
-            {/* Event Hero Content */}
-            <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-10 xl:gap-16 w-full">
+            {/* Event Container */}
+            <div className="flex flex-col gap-10">
               {/* Event Poster */}
-              <div className="w-full max-w-[644px] lg:w-auto lg:flex-shrink-0">
-                <img
-                  src={eventData.image}
-                  alt={`${eventData.title} Event Poster`}
-                  className="w-full aspect-[4/5] rounded-lg object-cover"
-                />
-              </div>
+              <img
+                src={eventData.image}
+                alt={`${eventData.title} Event Poster`}
+                className="w-full aspect-[4/5] rounded-lg object-cover"
+              />
 
-              {/* Event Title and CTA Section */}
-              <div className="flex flex-col items-start gap-3 w-full lg:flex-1 lg:min-w-0 bg-dark-green">
-                <Badge color="azul">{eventData.eventType}</Badge>
+              {/* Event Info */}
+              <div className="flex flex-col gap-10">
+                {/* Title and CTA Section */}
+                <div className="flex flex-col gap-3">
+                  <Badge color="azul">{eventData.eventType}</Badge>
 
-                <h1 className="text-cream font-display font-bold text-[36px] leading-[44px] tracking-[-0.72px] md:text-[48px] md:leading-[58px] md:tracking-[-0.96px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] w-full">
-                  {eventData.title}
-                </h1>
+                  <h1 className="text-cream font-display font-bold text-[40px] leading-[40px] tracking-[-0.8px] w-full">
+                    {eventData.title}
+                  </h1>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row items-start gap-4 mt-4">
-                  <Button
-                    icon={TicketIcon}
-                    variant="primary"
-                    size="lg"
-                    className="w-full sm:w-auto"
-                  >
-                    COMPRAR TICKETS
-                  </Button>
+                  {/* CTA Buttons */}
+                  <div className="flex flex-col sm:flex-row items-start gap-4">
+                    <Button
+                      icon={TicketIcon}
+                      variant="primary"
+                      size="lg"
+                      className="w-full sm:w-auto"
+                    >
+                      COMPRAR TICKETS
+                    </Button>
 
-                  <Button
-                    icon={CalendarAddIcon}
-                    variant="secondary"
-                    size="lg"
-                    className="w-full sm:w-auto bg-cream border-red-primary text-red-primary hover:bg-cream/90"
-                  >
-                    AÑADIR A CALENDARIO
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Event Information Section */}
-        <section className="px-4 sm:px-8 lg:px-12 py-12 lg:py-16">
-          <div className="max-w-[732px]">
-            {/* Event Information Grid */}
-            {eventData.isOnline ? (
-              // Online Event Grid - 3 rows, 2 columns
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-4 md:gap-y-8 mb-10">
-                {/* Row 1: Date */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    FECHA
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.date}
-                  </span>
+                    <Button
+                      icon={CalendarAddIcon}
+                      variant="secondary"
+                      size="lg"
+                      className="w-full sm:w-auto bg-cream border-red-primary text-red-primary hover:bg-cream/90"
+                    >
+                      AÑADIR A CALENDARIO
+                    </Button>
+                  </div>
                 </div>
 
-                {/* Row 1: Time */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    HORA INICIO
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.time}
-                  </span>
+                {/* Event Information Grid */}
+                <div className="flex flex-col gap-4">
+                  {eventData.isOnline ? (
+                    // Online Event Grid
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-8 mb-4">
+                      {/* Row 1: Date and Time */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          FECHA
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.date}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          HORA INICIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.time}
+                        </span>
+                      </div>
+
+                      {/* Row 2: Price and Age Limit */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          PRECIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.price}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          MAYORÍA DE EDAD?
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.ageLimit}
+                        </span>
+                      </div>
+
+                      {/* Row 3: Online Event Link */}
+                      <div className="flex flex-col gap-0 col-span-2">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          EVENTO ONLINE
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.onlineLink}
+                        </span>
+                      </div>
+                    </div>
+                  ) : (
+                    // Presencial Event Grid
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-8 mb-4">
+                      {/* Row 1: Date and Time */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          FECHA
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.date}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          HORA INICIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.time}
+                        </span>
+                      </div>
+
+                      {/* Row 2: Price and Age Limit */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          PRECIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.price}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          MAYORÍA DE EDAD?
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.ageLimit}
+                        </span>
+                      </div>
+
+                      {/* Row 3: Location and Address */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          DÓNDE?
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.location}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          DIRECCIÓN
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.address}
+                        </span>
+                      </div>
+
+                      {/* Row 4: City */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          CIUDAD
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.city}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Divider */}
+                  <div className="w-full h-px bg-neutral-200"></div>
+
+                  {/* Description */}
+                  <div className="mb-4">
+                    <p className="text-dark-green font-body text-lg font-normal leading-normal">
+                      {eventData.description}
+                    </p>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="w-full h-px bg-neutral-200"></div>
+
+                  {/* Artists, Promoters, and Organizer Section */}
+                  <div className="flex flex-col gap-8">
+                    {/* Artists Tags */}
+                    <div className="flex flex-col gap-2">
+                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                        ARTISTAS
+                      </span>
+                      <div className="flex flex-wrap gap-4">
+                        {[...Array(8)].map((_, index) => (
+                          <Tag key={index} variant="artist">
+                            [Artist]
+                          </Tag>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Promoters Tags */}
+                    <div className="flex flex-col gap-2">
+                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                        PROMOTORES / COLECTIVO
+                      </span>
+                      <div className="flex flex-wrap gap-4">
+                        {[...Array(8)].map((_, index) => (
+                          <Tag key={index} variant="promoter">
+                            [Promotor]
+                          </Tag>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Organizer Link */}
+                    <div className="flex flex-col gap-0">
+                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                        CONOCE MÁS SOBRE EL ORGANIZADOR
+                      </span>
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                        [LINK]
+                      </span>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Row 2: Price */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    PRECIO
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.price}
-                  </span>
-                </div>
-
-                {/* Row 2: Age Limit */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    MAYORÍA DE EDAD?
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.ageLimit}
-                  </span>
-                </div>
-
-                {/* Row 3: Online Event Link */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    EVENTO ONLINE
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.onlineLink}
-                  </span>
-                </div>
-              </div>
-            ) : (
-              // Presencial Event Grid - Original layout
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-4 md:gap-y-8 mb-10">
-                {/* Date */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    FECHA
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.date}
-                  </span>
-                </div>
-
-                {/* Time */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    HORA INICIO
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.time}
-                  </span>
-                </div>
-
-                {/* Price */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    PRECIO
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.price}
-                  </span>
-                </div>
-
-                {/* Age Limit */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    MAYORÍA DE EDAD?
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.ageLimit}
-                  </span>
-                </div>
-
-                {/* Location */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    DÓNDE?
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.location}
-                  </span>
-                </div>
-
-                {/* Address */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    DIRECCIÓN
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.address}
-                  </span>
-                </div>
-
-                {/* City */}
-                <div className="flex flex-col gap-0">
-                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                    CIUDAD
-                  </span>
-                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                    {eventData.city}
-                  </span>
-                </div>
-              </div>
-            )}
-
-            {/* Divider */}
-            <div className="w-full h-px bg-neutral-200 mb-4"></div>
-
-            {/* Description */}
-            <div className="mb-10">
-              <p className="text-dark-green font-body text-lg font-normal leading-normal">
-                {eventData.description}
-              </p>
-            </div>
-
-            {/* Divider */}
-            <div className="w-full h-px bg-neutral-200 mb-8"></div>
-
-            {/* Artists, Promoters, and Organizer Section */}
-            <div className="flex flex-col gap-8">
-              {/* Artists Tags */}
-              <div className="flex flex-col gap-2">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  ARTISTAS
-                </span>
-                <div className="flex flex-wrap gap-4">
-                  {[...Array(8)].map((_, index) => (
-                    <Tag key={index} variant="artist">
-                      [Artist]
-                    </Tag>
-                  ))}
-                </div>
-              </div>
-
-              {/* Promoters Tags */}
-              <div className="flex flex-col gap-2">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  PROMOTORES / COLECTIVO
-                </span>
-                <div className="flex flex-wrap gap-4">
-                  {[...Array(8)].map((_, index) => (
-                    <Tag key={index} variant="promoter">
-                      [Promotor]
-                    </Tag>
-                  ))}
-                </div>
-              </div>
-
-              {/* Organizer Link */}
-              <div className="flex flex-col gap-0">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  CONOCE MÁS SOBRE EL ORGANIZADOR
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  [LINK]
-                </span>
               </div>
             </div>
           </div>
         </section>
 
         {/* Featured Events Section */}
-        <section className="px-4 sm:px-8 lg:px-12 pb-12 lg:pb-16">
-          <FeaturedEvents
-            events={featuredEvents}
-            onViewComplete={handleViewCompleteSchedule}
-            onEventClick={handleEventClick}
-          />
+        <section className="px-8 md:px-8 lg:px-12 pb-12 lg:pb-16">
+          <div className="max-w-[680px] mx-auto">
+            <FeaturedEvents
+              events={featuredEvents}
+              onViewComplete={handleViewCompleteSchedule}
+              onEventClick={handleEventClick}
+            />
+          </div>
         </section>
       </main>
 
