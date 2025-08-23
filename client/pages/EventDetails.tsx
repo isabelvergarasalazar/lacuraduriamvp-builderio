@@ -7,6 +7,33 @@ import { Footer } from "@/components/Footer";
 import { FeaturedEvents } from "@/components/FeaturedEvents";
 import { Tag } from "@/components/Tag";
 
+// Event data types
+interface BaseEventData {
+  image: string;
+  title: string;
+  eventType: string;
+  date: string;
+  time: string;
+  price: string;
+  ageLimit: string;
+  description: string;
+  isOnline: boolean;
+}
+
+interface PresencialEventData extends BaseEventData {
+  isOnline: false;
+  location: string;
+  address: string;
+  city: string;
+}
+
+interface OnlineEventData extends BaseEventData {
+  isOnline: true;
+  onlineLink: string;
+}
+
+type EventData = PresencialEventData | OnlineEventData;
+
 // Featured events data - consistent with Index page
 const featuredEvents = [
   {
