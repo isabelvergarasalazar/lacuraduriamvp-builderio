@@ -120,7 +120,7 @@ const EventDetails = () => {
   const navigate = useNavigate();
 
   // Extract event data based on slug (in a real app, this would fetch from API)
-  const getEventData = () => {
+  const getEventData = (): EventData => {
     // Determine if this is an online event based on slug or other criteria
     const isOnlineEvent = eventSlug?.includes('online') || eventSlug?.includes('virtual');
 
