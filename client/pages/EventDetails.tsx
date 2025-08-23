@@ -94,8 +94,11 @@ const EventDetails = () => {
 
   // Extract event data based on slug (in a real app, this would fetch from API)
   const getEventData = () => {
+    // Determine if this is an online event based on slug or other criteria
+    const isOnlineEvent = eventSlug?.includes('online') || eventSlug?.includes('virtual');
+
     // Default event data - in real app would fetch based on slug
-    return {
+    const baseEventData = {
       image:
         "https://api.builder.io/api/v1/image/assets/TEMP/0d510f77d19485139462e5fe56249c37225aef2d?width=1288",
       title: "NOMBRE DEL EVENTO COMPLETO",
@@ -104,12 +107,24 @@ const EventDetails = () => {
       time: "08:00 PM",
       price: "50.000 COP",
       ageLimit: "18 años",
-      location: "CLUB VIDEO",
-      address: "CALLE 64 # 4 - 55",
-      city: "Bogotá",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo est, pretium in eros vel, mattis porta eros. Integer porttitor a erat non auctor. Donec a turpis at orci fringilla varius. Etiam vehicula in purus non tincidunt. Phasellus sed nisi pharetra, sollicitudin mauris id, faucibus eros. Maecenas tempus ligula ex. Vestibulum aliquet porta blandit. Phasellus nec metus ullamcorper, luctus purus sed, aliquam nibh. Quisque iaculis tortor quis posuere sagittis. Mauris fringilla finibus accumsan. Ut nibh augue, condimentum a ipsum id, fermentum gravida ex. Phasellus pulvinar tincidunt viverra. Praesent augue turpis, sodales non luctus ac, suscipit at neque. Nullam id massa dignissim, ornare est eu, laoreet ex. Duis id lacus quis elit faucibus tristique ut finibus ante.",
+        "[Descripción del evento] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo est, pretium in eros vel, mattis porta eros. Integer porttitor a erat non auctor. Donec a turpis at orci fringilla varius. Etiam vehicula in purus non tincidunt. Phasellus sed nisi pharetra, sollicitudin mauris id, faucibus eros. Maecenas tempus ligula ex. Vestibulum aliquet porta blandit. Phasellus nec metus ullamcorper, luctus purus sed, aliquam nibh. Quisque iaculis tortor quis posuere sagittis. Mauris fringilla finibus accumsan. Ut nibh augue, condimentum a ipsum id, fermentum gravida ex. Phasellus pulvinar tincidunt viverra. Praesent augue turpis, sodales non luctus ac, suscipit at neque. Nullam id massa dignissim, ornare est eu, laoreet ex. Duis id lacus quis elit faucibus tristique ut finibus ante.",
+      isOnline: isOnlineEvent,
     };
+
+    if (isOnlineEvent) {
+      return {
+        ...baseEventData,
+        onlineLink: "[LINK]",
+      };
+    } else {
+      return {
+        ...baseEventData,
+        location: "CLUB VIDEO",
+        address: "CALLE 64 # 4 - 55",
+        city: "Bogotá",
+      };
+    }
   };
 
   const eventData = getEventData();
