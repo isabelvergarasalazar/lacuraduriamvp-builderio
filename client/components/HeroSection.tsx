@@ -42,14 +42,14 @@ export const HeroSection = () => {
         <div className="flex justify-center items-center w-full">
           <EventBanner
             image="https://api.builder.io/api/v1/image/assets/TEMP/56fad6f7408648d64c7bf2bf9968b75dc6cc59de?width=938"
-            eventType="[TIPO EVENTO]"
-            title="Decibelio: Mariposa"
-            location="Carrera 13A # 22-54"
-            organizer="Mariposa"
-            date="Vie, 15 Ago 2025"
+            eventType="[EVENTO ONLINE]"
+            title="Concierto Virtual Interactivo"
+            location="Evento Online"
+            organizer="Digital Arts Collective"
+            date="Jue, 28 Ago 2025"
             time="08:00 PM"
-            price="40.000 COP"
-            onViewEvent={handleViewEvent}
+            price="25.000 COP"
+            onViewEvent={handleViewOnlineEvent}
           />
         </div>
 
