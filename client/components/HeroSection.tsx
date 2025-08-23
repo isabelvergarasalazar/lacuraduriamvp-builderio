@@ -10,6 +10,11 @@ export const HeroSection = () => {
     navigate(`/cartelera/${slug}-1`);
   };
 
+  const handleViewOnlineEvent = () => {
+    // Navigate to online event demo
+    navigate(`/cartelera/online-virtual-concert-1`);
+  };
+
   return (
     <section className="relative w-full h-auto md:h-auto lg:h-[734px] overflow-hidden">
       {/* Hero Background - Full size absolute positioned */}
