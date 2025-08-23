@@ -216,77 +216,133 @@ const EventDetails = () => {
         <section className="px-4 sm:px-8 lg:px-12 py-12 lg:py-16">
           <div className="max-w-[732px]">
             {/* Event Information Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-4 md:gap-y-8 mb-10">
-              {/* Date */}
-              <div className="flex flex-col gap-0">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  FECHA
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  {eventData.date}
-                </span>
-              </div>
+            {eventData.isOnline ? (
+              // Online Event Grid - 3 rows, 2 columns
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-4 md:gap-y-8 mb-10">
+                {/* Row 1: Date */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    FECHA
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.date}
+                  </span>
+                </div>
 
-              {/* Time */}
-              <div className="flex flex-col gap-0">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  HORA INICIO
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  {eventData.time}
-                </span>
-              </div>
+                {/* Row 1: Time */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    HORA INICIO
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.time}
+                  </span>
+                </div>
 
-              {/* Price */}
-              <div className="flex flex-col gap-0">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  PRECIO
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  {eventData.price}
-                </span>
-              </div>
+                {/* Row 2: Price */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    PRECIO
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.price}
+                  </span>
+                </div>
 
-              {/* Age Limit */}
-              <div className="flex flex-col gap-0">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  MAYORÍA DE EDAD?
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  {eventData.ageLimit}
-                </span>
-              </div>
+                {/* Row 2: Age Limit */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    MAYORÍA DE EDAD?
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.ageLimit}
+                  </span>
+                </div>
 
-              {/* Location */}
-              <div className="flex flex-col gap-0">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  DÓNDE?
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  {eventData.location}
-                </span>
+                {/* Row 3: Online Event Link */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    EVENTO ONLINE
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.onlineLink}
+                  </span>
+                </div>
               </div>
+            ) : (
+              // Presencial Event Grid - Original layout
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-4 md:gap-y-8 mb-10">
+                {/* Date */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    FECHA
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.date}
+                  </span>
+                </div>
 
-              {/* Address */}
-              <div className="flex flex-col gap-0">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  DIRECCIÓN
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  {eventData.address}
-                </span>
-              </div>
+                {/* Time */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    HORA INICIO
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.time}
+                  </span>
+                </div>
 
-              {/* City (spans full width on larger screens) */}
-              <div className="flex flex-col gap-0 md:col-span-1">
-                <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
-                  CIUDAD
-                </span>
-                <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
-                  {eventData.city}
-                </span>
+                {/* Price */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    PRECIO
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.price}
+                  </span>
+                </div>
+
+                {/* Age Limit */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    MAYORÍA DE EDAD?
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.ageLimit}
+                  </span>
+                </div>
+
+                {/* Location */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    DÓNDE?
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.location}
+                  </span>
+                </div>
+
+                {/* Address */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    DIRECCIÓN
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.address}
+                  </span>
+                </div>
+
+                {/* City */}
+                <div className="flex flex-col gap-0">
+                  <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                    CIUDAD
+                  </span>
+                  <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                    {eventData.city}
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Divider */}
             <div className="w-full h-px bg-neutral-200 mb-4"></div>
