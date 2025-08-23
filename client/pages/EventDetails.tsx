@@ -176,9 +176,10 @@ const EventDetails = () => {
 
       {/* Main Content */}
       <main className="flex flex-col">
-        {/* Dark Content Section - contains breadcrumbs, poster, and event info */}
-        <section className="bg-dark-green px-8 md:px-8 lg:px-12 pb-32 pt-12">
-          <div className="max-w-[680px] mx-auto flex flex-col gap-16">
+        {/* Dark Content Section */}
+        <section className="bg-dark-green px-4 md:px-8 lg:px-12 pb-32 pt-12">
+          {/* Mobile & Tablet Layout */}
+          <div className="max-w-[680px] mx-auto flex flex-col gap-16 xl:hidden">
             {/* Breadcrumbs */}
             <nav className="flex justify-center items-center gap-2">
               <button
@@ -210,7 +211,7 @@ const EventDetails = () => {
                 <div className="flex flex-col gap-3">
                   <Badge color="azul">{eventData.eventType}</Badge>
 
-                  <h1 className="text-cream font-display font-bold text-[40px] leading-[40px] tracking-[-0.8px] w-full">
+                  <h1 className="text-cream font-display font-bold text-[32px] md:text-[40px] leading-[36px] md:leading-[40px] tracking-[-0.64px] md:tracking-[-0.8px] w-full">
                     {eventData.title}
                   </h1>
 
@@ -240,7 +241,7 @@ const EventDetails = () => {
                 <div className="flex flex-col gap-4">
                   {eventData.isOnline ? (
                     // Online Event Grid
-                    <div className="grid grid-cols-2 gap-x-4 gap-y-8 mb-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 mb-4">
                       {/* Row 1: Date and Time */}
                       <div className="flex flex-col gap-0">
                         <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
@@ -278,7 +279,7 @@ const EventDetails = () => {
                       </div>
 
                       {/* Row 3: Online Event Link */}
-                      <div className="flex flex-col gap-0 col-span-2">
+                      <div className="flex flex-col gap-0 col-span-1 sm:col-span-2">
                         <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
                           EVENTO ONLINE
                         </span>
@@ -289,7 +290,7 @@ const EventDetails = () => {
                     </div>
                   ) : (
                     // Presencial Event Grid
-                    <div className="grid grid-cols-2 gap-x-4 gap-y-8 mb-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 mb-4">
                       {/* Row 1: Date and Time */}
                       <div className="flex flex-col gap-0">
                         <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
@@ -413,11 +414,251 @@ const EventDetails = () => {
               </div>
             </div>
           </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden xl:flex xl:flex-col xl:gap-16">
+            {/* Breadcrumbs */}
+            <nav className="flex justify-center items-center gap-2">
+              <button
+                onClick={() => navigate("/cartelera")}
+                className="text-cream font-body text-sm font-normal leading-[18px] uppercase hover:text-cream/80 transition-colors"
+              >
+                CARTELERA
+              </button>
+              <span className="text-cream font-body text-sm font-normal leading-[18px]">
+                /
+              </span>
+              <span className="text-cream font-body text-sm font-semibold leading-[18px] uppercase">
+                NOMBRE EVENTO
+              </span>
+            </nav>
+
+            {/* Desktop Event Container */}
+            <div className="flex flex-col gap-10">
+              {/* Desktop Hero Layout - Side by Side */}
+              <div className="flex justify-between items-start gap-10">
+                {/* Event Poster */}
+                <div className="flex items-center">
+                  <img
+                    src={eventData.image}
+                    alt={`${eventData.title} Event Poster`}
+                    className="w-[644px] h-[805px] aspect-[4/5] rounded-lg object-cover"
+                  />
+                </div>
+
+                {/* Title and CTA Section */}
+                <div className="flex flex-col items-start gap-3 w-[732px] flex-shrink-0 self-stretch bg-dark-green">
+                  <Badge color="azul">{eventData.eventType}</Badge>
+
+                  <h1 className="text-cream font-display font-bold text-[60px] leading-[72px] tracking-[-1.2px] w-full">
+                    {eventData.title}
+                  </h1>
+
+                  {/* CTA Buttons */}
+                  <div className="flex items-start gap-4">
+                    <Button
+                      icon={TicketIcon}
+                      variant="primary"
+                      size="lg"
+                    >
+                      COMPRAR TICKETS
+                    </Button>
+
+                    <Button
+                      icon={CalendarAddIcon}
+                      variant="secondary"
+                      size="lg"
+                      className="bg-cream border-red-primary text-red-primary hover:bg-cream/90"
+                    >
+                      AÑADIR A CALENDARIO
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Desktop Event Information */}
+              <div className="flex flex-col items-start gap-10 w-[732px]">
+                <div className="flex flex-col gap-4 self-stretch">
+                  {eventData.isOnline ? (
+                    // Online Event Grid
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-8 mb-4">
+                      {/* Row 1: Date and Time */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          FECHA
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.date}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          HORA INICIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.time}
+                        </span>
+                      </div>
+
+                      {/* Row 2: Price and Age Limit */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          PRECIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.price}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          MAYORÍA DE EDAD?
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.ageLimit}
+                        </span>
+                      </div>
+
+                      {/* Row 3: Online Event Link */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          EVENTO ONLINE
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.onlineLink}
+                        </span>
+                      </div>
+                    </div>
+                  ) : (
+                    // Presencial Event Grid
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-8 mb-4">
+                      {/* Row 1: Date and Time */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          FECHA
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.date}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          HORA INICIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.time}
+                        </span>
+                      </div>
+
+                      {/* Row 2: Price and Age Limit */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          PRECIO
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.price}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          MAYORÍA DE EDAD?
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.ageLimit}
+                        </span>
+                      </div>
+
+                      {/* Row 3: Location and Address */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          DÓNDE?
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.location}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          DIRECCIÓN
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.address}
+                        </span>
+                      </div>
+
+                      {/* Row 4: City */}
+                      <div className="flex flex-col gap-0">
+                        <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                          CIUDAD
+                        </span>
+                        <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                          {eventData.city}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Divider */}
+                  <div className="w-[732px] h-px bg-neutral-200"></div>
+
+                  {/* Description */}
+                  <div className="mb-4">
+                    <p className="text-dark-green font-body text-lg font-normal leading-normal self-stretch">
+                      {eventData.description}
+                    </p>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="w-[732px] h-px bg-neutral-200"></div>
+
+                  {/* Artists, Promoters, and Organizer Section */}
+                  <div className="flex flex-col gap-8 self-stretch">
+                    {/* Artists Tags */}
+                    <div className="flex flex-col gap-2 self-stretch">
+                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                        ARTISTAS
+                      </span>
+                      <div className="flex flex-wrap gap-4 self-stretch">
+                        {[...Array(8)].map((_, index) => (
+                          <Tag key={index} variant="artist">
+                            [Artist]
+                          </Tag>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Promoters Tags */}
+                    <div className="flex flex-col gap-2 self-stretch">
+                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                        PROMOTORES / COLECTIVO
+                      </span>
+                      <div className="flex flex-wrap gap-4 self-stretch">
+                        {[...Array(8)].map((_, index) => (
+                          <Tag key={index} variant="promoter">
+                            [Promotor]
+                          </Tag>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Organizer Link */}
+                    <div className="flex flex-col gap-0 self-stretch">
+                      <span className="text-neutral-700 font-body text-base font-normal leading-6 uppercase">
+                        CONOCE MÁS SOBRE EL ORGANIZADOR
+                      </span>
+                      <span className="text-dark-green font-body text-[22px] font-normal leading-[30px] uppercase">
+                        [LINK]
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Featured Events Section */}
-        <section className="px-8 md:px-8 lg:px-12 pb-12 lg:pb-16">
-          <div className="max-w-[680px] mx-auto">
+        <section className="px-4 md:px-8 lg:px-12 pb-12 lg:pb-16">
+          <div className="max-w-[680px] xl:max-w-none mx-auto">
             <FeaturedEvents
               events={featuredEvents}
               onViewComplete={handleViewCompleteSchedule}
