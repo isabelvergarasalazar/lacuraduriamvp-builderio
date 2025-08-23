@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { EventBanner } from "./EventBanner";
 
 export const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleViewEvent = () => {
+    // Generate a slug from the event title and navigate to event details
+    const slug = "decibelio-mariposa";
+    navigate(`/cartelera/${slug}-1`);
+  };
+
   return (
     <section className="relative w-full h-auto md:h-auto lg:h-[734px] overflow-hidden">
       {/* Hero Background - Full size absolute positioned */}
@@ -35,10 +44,7 @@ export const HeroSection = () => {
             date="Vie, 15 Ago 2025"
             time="08:00 PM"
             price="40.000 COP"
-            onViewEvent={() => {
-              // Handle event view action
-              console.log("Ver evento clicked");
-            }}
+            onViewEvent={handleViewEvent}
           />
         </div>
 
