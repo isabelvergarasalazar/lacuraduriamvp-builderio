@@ -138,21 +138,6 @@ const ComoPublicar = () => {
           </div>
         </div>
 
-        {/* Custom Animation Styles */}
-        <style jsx>{`
-          @keyframes scroll-left {
-            from {
-              transform: translateX(0);
-            }
-            to {
-              transform: translateX(-100%);
-            }
-          }
-          
-          .animate-scroll-left {
-            animation: scroll-left 60s linear infinite;
-          }
-        `}</style>
       </section>
 
       {/* Call to Action */}
