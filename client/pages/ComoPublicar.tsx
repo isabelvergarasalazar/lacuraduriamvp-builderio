@@ -6,8 +6,15 @@ import { Badge } from "@/components/Badge";
 const ComoPublicar = () => {
   // Event type badges that will float across the screen
   const eventTypes = [
-    "CONCIERTO", "FIESTA", "FESTIVAL", "SESIÓN DE ESCUCHA", "JAM SESSION",
-    "ACÚSTICO", "EVENTO HÍBRIDO", "FERIA", "SHOWCASE"
+    "CONCIERTO",
+    "FIESTA",
+    "FESTIVAL",
+    "SESIÓN DE ESCUCHA",
+    "JAM SESSION",
+    "ACÚSTICO",
+    "EVENTO HÍBRIDO",
+    "FERIA",
+    "SHOWCASE",
   ];
 
   return (
@@ -36,11 +43,7 @@ const ComoPublicar = () => {
             <div className="flex items-center gap-1.5 whitespace-nowrap animate-scroll-left">
               {/* Create a seamless loop by duplicating the array */}
               {[...eventTypes, ...eventTypes].map((type, index) => (
-                <Badge
-                  key={index}
-                  color="neutral"
-                  className="flex-shrink-0"
-                >
+                <Badge key={index} color="neutral" className="flex-shrink-0">
                   {type}
                 </Badge>
               ))}
@@ -123,7 +126,6 @@ const ComoPublicar = () => {
             </div>
           </div>
         </div>
-
       </section>
 
       {/* Call to Action */}

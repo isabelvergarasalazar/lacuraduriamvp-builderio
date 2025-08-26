@@ -28,9 +28,17 @@ const App = () => (
           <Route path="/publicar" element={<PublicarEvento />} />
           <Route path="/como-publicar" element={<ComoPublicar />} />
           {/* Redirect /EventDetails to a sample event */}
-          <Route path="/EventDetails" element={<Navigate to="/cartelera/decibelio-mariposa-1" replace />} />
+          <Route
+            path="/EventDetails"
+            element={<Navigate to="/cartelera/decibelio-mariposa-1" replace />}
+          />
           {/* Demo route for online events */}
-          <Route path="/online-event" element={<Navigate to="/cartelera/online-virtual-concert-1" replace />} />
+          <Route
+            path="/online-event"
+            element={
+              <Navigate to="/cartelera/online-virtual-concert-1" replace />
+            }
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
