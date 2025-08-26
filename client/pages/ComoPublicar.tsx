@@ -50,12 +50,13 @@ const ComoPublicar = () => {
           {/* Bottom Section - Logo and Tagline */}
           <div className="flex flex-col items-center gap-10">
             {/* La Curaduria Logo */}
-            <div className="flex justify-center items-center w-full">
+            <div className="flex justify-center items-center w-full max-w-full">
               <svg
                 viewBox="0 0 1443 197"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-auto"
+                className="w-full h-auto max-w-full"
+                preserveAspectRatio="xMidYMid meet"
               >
                 <path
                   d="M169.509 56.3926H68.283C61.7685 56.3926 56.4987 61.6657 56.4987 68.1548V112.785H101.849C108.019 112.785 113.011 117.781 113.011 123.926V169.191H56.5119C25.29 169.191 0 143.948 0 112.798V56.4058C0 25.2425 25.3032 0 56.4987 0H169.509C200.705 0 226.008 25.2557 226.008 56.3926H169.496H169.509ZM225.77 56.5247H226.021V112.917C194.826 112.917 169.522 138.173 169.522 169.31H112.891C112.891 107.023 163.379 56.6305 225.783 56.5115L225.77 56.5247Z"
