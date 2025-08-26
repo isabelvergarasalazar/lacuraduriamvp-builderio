@@ -114,7 +114,7 @@ const ComoPublicar = () => {
             </div>
 
             {/* Tagline */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-5 px-4 md:px-8 lg:px-12">
               <div className="w-1 h-1 bg-white rounded-full"></div>
               <h1 className="text-white font-body text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal leading-8 tracking-[-0.56px] text-center">
                 UN LENTE PARA EL ARTE
