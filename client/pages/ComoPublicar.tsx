@@ -6,11 +6,8 @@ import { Badge } from "@/components/Badge";
 const ComoPublicar = () => {
   // Event type badges that will float across the screen
   const eventTypes = [
-    "CONCIERTO", "FIESTA", "FESTIVAL", "SESIÓN DE ESCUCHA", "JAM SESSION", 
-    "ACÚSTICO", "EVENTO HÍBRIDO", "FERIA", "SHOWCASE", "CONCIERTO", 
-    "FIESTA", "FESTIVAL", "SESIÓN DE ESCUCHA", "JAM SESSION", "ACÚSTICO",
-    "EVENTO HÍBRIDO", "FERIA", "SHOWCASE", "CONCIERTO", "FIESTA", 
-    "FESTIVAL", "SESIÓN DE ESCUCHA", "JAM SESSION", "ACÚSTICO"
+    "CONCIERTO", "FIESTA", "FESTIVAL", "SESIÓN DE ESCUCHA", "JAM SESSION",
+    "ACÚSTICO", "EVENTO HÍBRIDO", "FERIA", "SHOWCASE"
   ];
 
   return (
