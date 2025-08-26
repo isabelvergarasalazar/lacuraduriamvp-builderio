@@ -34,25 +34,25 @@ const ComoPublicar = () => {
         {/* Content */}
         <div className="relative z-20 flex flex-col items-center justify-between h-full px-4 md:px-8 lg:px-12 py-4">
           {/* Top Section - Floating Badges */}
-          <div className="w-full h-7 flex items-center overflow-hidden relative">
+          <div className="w-full h-7 flex items-center overflow-hidden relative z-30">
             {/* Animated Badge Strip */}
             <div className="flex items-center gap-1.5 whitespace-nowrap animate-scroll-left">
               {/* First set of badges */}
               {eventTypes.map((type, index) => (
-                <Badge 
+                <Badge
                   key={`first-${index}`}
                   color="neutral"
-                  className="bg-dark-green bg-opacity-50 text-white flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   {type}
                 </Badge>
               ))}
               {/* Duplicate set for seamless loop */}
               {eventTypes.map((type, index) => (
-                <Badge 
+                <Badge
                   key={`second-${index}`}
                   color="neutral"
-                  className="bg-dark-green bg-opacity-50 text-white flex-shrink-0"
+                  className="flex-shrink-0"
                 >
                   {type}
                 </Badge>
