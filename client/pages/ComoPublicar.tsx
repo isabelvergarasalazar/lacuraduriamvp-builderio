@@ -52,8 +52,6 @@ const ComoPublicar = () => {
             {/* La Curaduria Logo */}
             <div className="flex justify-center items-center w-full">
               <svg
-                width="1443"
-                height="197"
                 viewBox="0 0 1443 197"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
