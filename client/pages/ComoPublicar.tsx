@@ -29,9 +29,9 @@ const ComoPublicar = () => {
         <div className="absolute inset-x-0 top-0 h-[236px] bg-gradient-to-b from-black to-transparent z-10"></div>
 
         {/* Content */}
-        <div className="relative z-20 flex flex-col items-center justify-between h-full px-4 md:px-8 lg:px-12 py-4">
+        <div className="relative z-20 flex flex-col items-center justify-between h-full py-4">
           {/* Top Section - Floating Badges */}
-          <div className="w-full h-7 flex items-center overflow-hidden relative z-30">
+          <div className="w-full h-10 flex items-center overflow-hidden relative z-30 px-4 md:px-8 lg:px-12">
             {/* Animated Badge Strip */}
             <div className="flex items-center gap-1.5 whitespace-nowrap animate-scroll-left">
               {/* Create a seamless loop by duplicating the array */}
@@ -48,14 +48,14 @@ const ComoPublicar = () => {
           </div>
 
           {/* Bottom Section - Logo and Tagline */}
-          <div className="flex flex-col items-center gap-10">
-            {/* La Curaduria Logo */}
-            <div className="flex justify-center items-center w-full max-w-full">
+          <div className="flex flex-col items-center gap-10 w-full">
+            {/* La Curaduria Logo - Full Width */}
+            <div className="w-full">
               <svg
                 viewBox="0 0 1443 197"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-auto max-w-full"
+                className="w-full h-auto"
                 preserveAspectRatio="xMidYMid meet"
               >
                 <path
