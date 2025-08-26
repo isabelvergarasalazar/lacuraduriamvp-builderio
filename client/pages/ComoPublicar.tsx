@@ -36,7 +36,13 @@ const ComoPublicar = () => {
           {/* Top Section - Floating Badges */}
           <div className="w-full h-7 flex items-center overflow-hidden relative">
             {/* Animated Badge Strip */}
-            <div className="flex items-center gap-1.5 animate-scroll-left whitespace-nowrap">
+            <div
+              className="flex items-center gap-1.5 whitespace-nowrap animate-pulse"
+              style={{
+                animation: 'translateX 60s linear infinite',
+                transform: 'translateX(-100%)'
+              }}
+            >
               {/* First set of badges */}
               {eventTypes.map((type, index) => (
                 <Badge 
