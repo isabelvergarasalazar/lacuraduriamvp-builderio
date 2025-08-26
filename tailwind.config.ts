@@ -27,6 +27,12 @@ export default {
         "neutral-600": "#4B4E46",
         "neutral-800": "#31352D",
 
+        // CÓMO FUNCIONA Section Colors
+        "verde-200": "#006F4D",
+        "rojo-200": "#FF736C",
+        "azul-200": "#75E6F9",
+        "amarillo-200": "#FFC335",
+
         // Existing shadcn colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
