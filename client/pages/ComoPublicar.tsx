@@ -408,7 +408,7 @@ const ComoPublicar = () => {
 
           {/* POR QUÉ PUBLICAR Section */}
           <div className="flex flex-col lg:flex-row justify-between items-start w-full">
-            <h3 className="w-full lg:w-[438px] text-neutral-900 font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px] mb-8 lg:mb-0">
+            <h3 className="w-full lg:w-[438px] text-neutral-900 font-display text-3xl md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] lg:text-[48px] lg:leading-[60px] lg:tracking-[-0.96px] font-bold mb-8 lg:mb-0">
               ¿POR QUÉ PUBLICAR?
             </h3>
 
