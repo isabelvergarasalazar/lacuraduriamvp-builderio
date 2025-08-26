@@ -32,7 +32,7 @@ const ComoPublicar = () => {
         <div className="absolute inset-x-0 top-0 h-[236px] bg-gradient-to-b from-black to-transparent z-10"></div>
 
         {/* Content */}
-        <div className="relative z-20 flex flex-col items-center justify-between h-full px-8 py-4">
+        <div className="relative z-20 flex flex-col items-center justify-between h-full px-4 md:px-8 lg:px-12 py-4">
           {/* Top Section - Floating Badges */}
           <div className="w-full h-7 flex items-center overflow-hidden relative">
             {/* Animated Badge Strip */}
