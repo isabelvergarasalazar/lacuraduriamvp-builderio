@@ -324,7 +324,7 @@ const ComoPublicar = () => {
 
           {/* CÓMO FUNCIONA Section */}
           <div className="space-y-8">
-            <h3 className="text-neutral-900 font-display text-3xl md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] lg:text-[48px] lg:leading-[60px] lg:tracking-[-0.96px] font-bold">
+            <h3 className="text-neutral-900 font-display text-[30px] leading-[38px] tracking-[-0.6px] md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] lg:text-[48px] lg:leading-[60px] lg:tracking-[-0.96px] font-bold">
               ��CÓMO FUNCIONA?
             </h3>
 
