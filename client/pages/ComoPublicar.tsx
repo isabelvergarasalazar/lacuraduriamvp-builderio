@@ -63,7 +63,7 @@ const ComoPublicar = () => {
           {/* Bottom Section - Logo and Tagline */}
           <div className="flex flex-col items-center gap-10">
             {/* La Curaduria Logo */}
-            <div className="flex justify-center items-center w-full max-w-[1443px]">
+            <div className="flex justify-center items-center w-full">
               <svg
                 width="1443"
                 height="197"
