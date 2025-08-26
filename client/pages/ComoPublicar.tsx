@@ -340,7 +340,8 @@ const ComoPublicar = () => {
                       Completa el formulario
                     </h4>
                     <p className="text-neutral-900 font-body text-lg leading-6 font-normal">
-                      Recibe inscripciones, interacciones y construye una comunidad alrededor de tu trabajo.
+                      Recibe inscripciones, interacciones y construye una
+                      comunidad alrededor de tu trabajo.
                     </p>
                   </div>
                 </div>
@@ -357,7 +358,8 @@ const ComoPublicar = () => {
                       Revisión editorial
                     </h4>
                     <p className="text-neutral-900 font-body text-lg leading-6 font-normal">
-                      Recibe inscripciones, interacciones y construye una comunidad alrededor de tu trabajo.
+                      Recibe inscripciones, interacciones y construye una
+                      comunidad alrededor de tu trabajo.
                     </p>
                   </div>
                 </div>
@@ -374,7 +376,9 @@ const ComoPublicar = () => {
                       Publicación y Promoción
                     </h4>
                     <p className="text-neutral-900 font-body text-lg leading-6 font-normal">
-                      Si es aprobada, la actividad se suma a la cartelera y queda visible en el explorador de La Curaduría: lacuraduria.net
+                      Si es aprobada, la actividad se suma a la cartelera y
+                      queda visible en el explorador de La Curaduría:
+                      lacuraduria.net
                     </p>
                   </div>
                 </div>
@@ -391,7 +395,8 @@ const ComoPublicar = () => {
                       Difusión y cubrimiento
                     </h4>
                     <p className="text-neutral-900 font-body text-lg leading-6 font-normal">
-                      Amplificamos el evento en nuestros canales y conectamos públicos que asistan y medios que cubran.
+                      Amplificamos el evento en nuestros canales y conectamos
+                      públicos que asistan y medios que cubran.
                     </p>
                   </div>
                 </div>
