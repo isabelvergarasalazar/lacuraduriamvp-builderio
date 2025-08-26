@@ -432,9 +432,7 @@ const ComoPublicar = () => {
                 </h4>
               </div>
 
-              <svg className="w-full h-0.5 stroke-neutral-900 opacity-10" viewBox="0 0 667 2" fill="none">
-                <path d="M0 1H667" stroke="currentColor" strokeWidth="1" opacity="0.1" />
-              </svg>
+              <div className="w-full h-px bg-neutral-900 opacity-10"></div>
 
               <div className="flex flex-col items-start gap-2.5">
                 <svg
@@ -455,9 +453,7 @@ const ComoPublicar = () => {
                 </h4>
               </div>
 
-              <svg className="w-full h-0.5 stroke-neutral-900 opacity-10" viewBox="0 0 667 2" fill="none">
-                <path d="M0 1H667" stroke="currentColor" strokeWidth="1" opacity="0.1" />
-              </svg>
+              <div className="w-full h-px bg-neutral-900 opacity-10"></div>
 
               <div className="flex flex-col items-start gap-2.5 w-full">
                 <svg
