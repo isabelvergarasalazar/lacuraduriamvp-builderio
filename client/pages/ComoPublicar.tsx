@@ -129,15 +129,15 @@ const ComoPublicar = () => {
       </section>
 
       {/* New Content Section */}
-      <section className="bg-[#FFFFF6] py-12 px-[26px] md:px-[32px] lg:px-[48px]">
-        <div className="space-y-24">
+      <section className="bg-[#FFFFF6] py-12 px-4 md:px-[32px] lg:px-[48px]">
+        <div className="space-y-10 md:space-y-16 lg:space-y-24">
           {/* Intro Section - PARTICIPA EN LA CARTELERA */}
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8 lg:gap-12">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 md:gap-8 lg:gap-12">
             <div className="flex flex-col max-w-2xl gap-3">
-              <h2 className="text-neutral-800 font-display text-4xl md:text-[54px] md:leading-normal md:tracking-[-1.08px] lg:text-[80px] lg:leading-[90px] lg:tracking-[-1.6px] font-bold">
+              <h2 className="text-neutral-800 font-display text-[54px] leading-normal tracking-[-1.08px] md:text-[54px] md:leading-normal md:tracking-[-1.08px] lg:text-[80px] lg:leading-[90px] lg:tracking-[-1.6px] font-bold">
                 PARTICIPA EN LA CARTELERA
               </h2>
-              <p className="text-neutral-900 font-body text-lg md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-normal max-w-[520px]">
+              <p className="text-neutral-900 font-body text-[22px] leading-[30px] md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-normal max-w-[520px]">
                 Publica tus eventos en una cartelera variada, donde cada
                 propuesta pasa por criterios editoriales que garantizan calidad
                 y relevancia.
@@ -145,7 +145,7 @@ const ComoPublicar = () => {
             </div>
             <div className="lg:w-[545px] lg:h-[350px] flex-shrink-0">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/789878cd79d3c93f872a5b1dce3cdcac9408f18b?width=1131"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/32810712a3b8f3d0e49253eeade67a95ed7022e3?width=748"
                 alt="Comparte tu Evento Cultural"
                 className="w-full h-auto lg:w-[566px] lg:h-[430px] object-cover"
               />
