@@ -26,6 +26,7 @@ const App = () => (
           <Route path="/cartelera" element={<Cartelera />} />
           <Route path="/cartelera/:eventSlug" element={<EventDetails />} />
           <Route path="/publicar" element={<PublicarEvento />} />
+          <Route path="/como-publicar" element={<ComoPublicar />} />
           {/* Redirect /EventDetails to a sample event */}
           <Route path="/EventDetails" element={<Navigate to="/cartelera/decibelio-mariposa-1" replace />} />
           {/* Demo route for online events */}
