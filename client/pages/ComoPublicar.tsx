@@ -134,10 +134,10 @@ const ComoPublicar = () => {
           {/* Intro Section - PARTICIPA EN LA CARTELERA */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8 lg:gap-12">
             <div className="flex flex-col max-w-2xl gap-3">
-              <h2 className="text-neutral-800 font-display text-4xl md:text-5xl lg:text-[80px] lg:leading-[90px] font-bold tracking-[-1.6px]">
+              <h2 className="text-neutral-800 font-display text-4xl md:text-[54px] md:leading-normal md:tracking-[-1.08px] lg:text-[80px] lg:leading-[90px] lg:tracking-[-1.6px] font-bold">
                 PARTICIPA EN LA CARTELERA
               </h2>
-              <p className="text-neutral-900 font-body text-lg md:text-xl lg:text-[22px] lg:leading-[30px] font-normal max-w-[520px]">
+              <p className="text-neutral-900 font-body text-lg md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-normal max-w-[520px]">
                 Publica tus eventos en una cartelera variada, donde cada
                 propuesta pasa por criterios editoriales que garantizan calidad
                 y relevancia.
