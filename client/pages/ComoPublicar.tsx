@@ -177,7 +177,7 @@ const ComoPublicar = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[23px]">
                   {/* Música Card */}
-                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
                     <svg
                       className="w-12 h-12 text-cream"
                       viewBox="0 0 48 48"
@@ -200,7 +200,7 @@ const ComoPublicar = () => {
                   </div>
 
                   {/* Historias Card */}
-                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
                     <svg
                       className="w-8 h-8 text-cream"
                       viewBox="0 0 33 32"
@@ -224,7 +224,7 @@ const ComoPublicar = () => {
                   </div>
 
                   {/* Comunidades Card */}
-                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
                     <svg
                       className="w-8 h-8 text-cream"
                       viewBox="0 0 33 32"
@@ -248,7 +248,7 @@ const ComoPublicar = () => {
                   </div>
 
                   {/* Cubrimientos Card */}
-                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
                     <svg
                       className="w-8 h-8 text-cream"
                       viewBox="0 0 33 32"
