@@ -129,8 +129,8 @@ const ComoPublicar = () => {
       </section>
 
       {/* New Content Section */}
-      <section className="bg-[#FFFFF6] py-12 px-6 md:px-12 lg:px-12">
-        <div className="max-w-7xl mx-auto space-y-24">
+      <section className="bg-[#FFFFF6] py-12 px-[26px] md:px-[32px] lg:px-[48px]">
+        <div className="space-y-24">
           {/* Intro Section - PARTICIPA EN LA CARTELERA */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8 lg:gap-12">
             <div className="flex flex-col max-w-2xl gap-3">
