@@ -191,6 +191,7 @@ export const NavBar = ({ className = "", activePage }: NavBarProps) => {
               icon={Calendar}
               ariaLabel="Publicar un nuevo evento"
               className="w-full lg:w-auto"
+              href="/publicar"
             >
               PUBLICAR EVENTO
             </Button>
