@@ -158,24 +158,24 @@ const ComoPublicar = () => {
           {/* QUÉ BUSCAMOS Section and Badge Group Container */}
           <div className="w-full flex flex-col gap-4">
             {/* QUÉ BUSCAMOS Section */}
-            <div className="relative rounded-2xl bg-neutral-900 p-8 md:p-20 lg:p-20 overflow-hidden">
+            <div className="relative rounded-2xl bg-neutral-900 py-20 px-8 overflow-hidden flex flex-col justify-end items-start gap-10">
               {/* Background Image */}
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/bf0134f9813fb20c19d99ff7c788b3ed1e53fc09?width=1416"
                 alt="Background"
-                className="absolute right-0 bottom-0 w-[708px] h-[708px] object-cover opacity-50"
+                className="absolute right-0 -bottom-[100px] w-[708px] h-[708px] object-cover"
               />
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-neutral-900/80 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 from-50% to-transparent rounded-2xl"></div>
 
               {/* Content */}
-              <div className="relative z-10 space-y-10">
+              <div className="relative z-10 w-full space-y-10">
                 <h3 className="text-white font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px]">
                   ¿QUÉ BUSCAMOS?
                 </h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[23px]">
                   {/* Música Card */}
                   <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
                     <svg
