@@ -190,7 +190,7 @@ const ComoPublicar = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Música
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
@@ -214,7 +214,7 @@ const ComoPublicar = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Historias
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
@@ -238,7 +238,7 @@ const ComoPublicar = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Comunidades
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
@@ -265,7 +265,7 @@ const ComoPublicar = () => {
                         fill="currentColor"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Cubrimientos
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
