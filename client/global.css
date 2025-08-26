@@ -295,15 +295,16 @@
 
   /* Scroll animation for floating badges */
   @keyframes scroll-left {
-    from {
+    0% {
       transform: translateX(0);
     }
-    to {
-      transform: translateX(-100%);
+    100% {
+      transform: translateX(-50%);
     }
   }
 
   .animate-scroll-left {
-    animation: scroll-left 60s linear infinite;
+    animation: scroll-left 30s linear infinite;
+    width: 200%; /* Double width to accommodate duplicate set */
   }
 }
