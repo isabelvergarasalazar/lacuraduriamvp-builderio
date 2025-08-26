@@ -37,20 +37,10 @@ const ComoPublicar = () => {
           <div className="w-full h-7 flex items-center overflow-hidden relative z-30">
             {/* Animated Badge Strip */}
             <div className="flex items-center gap-1.5 whitespace-nowrap animate-scroll-left">
-              {/* First set of badges */}
-              {eventTypes.map((type, index) => (
+              {/* Create a seamless loop by duplicating the array */}
+              {[...eventTypes, ...eventTypes].map((type, index) => (
                 <Badge
-                  key={`first-${index}`}
-                  color="neutral"
-                  className="flex-shrink-0"
-                >
-                  {type}
-                </Badge>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {eventTypes.map((type, index) => (
-                <Badge
-                  key={`second-${index}`}
+                  key={index}
                   color="neutral"
                   className="flex-shrink-0"
                 >
