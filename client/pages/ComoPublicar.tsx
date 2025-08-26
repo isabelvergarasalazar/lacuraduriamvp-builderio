@@ -366,13 +366,13 @@ const ComoPublicar = () => {
               </div>
 
               {/* Card 3 - Azul */}
-              <div className="bg-azul-200 rounded-xl p-5 h-[264px] flex items-end">
-                <div className="flex justify-between items-end w-full">
-                  <div className="text-neutral-900 font-display text-5xl md:text-[60px] font-semibold leading-[72px] tracking-[-1.2px]">
+              <div className="bg-azul-200 rounded-xl p-5 md:pt-20 md:px-4 md:pb-4 lg:p-5 h-[264px] flex items-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
+                <div className="flex justify-between items-end w-full md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between">
+                  <div className="text-neutral-900 font-display text-5xl md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] font-semibold">
                     03
                   </div>
-                  <div className="flex flex-col gap-3 max-w-[282px]">
-                    <h4 className="text-neutral-900 font-body text-[22px] leading-[30px] font-bold">
+                  <div className="flex flex-col gap-3 max-w-[282px] md:max-w-none md:w-full lg:max-w-[282px]">
+                    <h4 className="text-neutral-900 font-body text-[22px] md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Publicación en la cartelera
                     </h4>
                     <p className="text-neutral-900 font-body text-lg leading-6 font-normal">
