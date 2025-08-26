@@ -159,122 +159,122 @@ const ComoPublicar = () => {
           <div className="w-full flex flex-col gap-4">
             {/* QUÉ BUSCAMOS Section */}
             <div className="relative rounded-2xl bg-neutral-900 p-8 md:p-20 lg:p-20 overflow-hidden">
-            {/* Background Image */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/bf0134f9813fb20c19d99ff7c788b3ed1e53fc09?width=1416"
-              alt="Background"
-              className="absolute right-0 bottom-0 w-[708px] h-[708px] object-cover opacity-50"
-            />
+              {/* Background Image */}
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/bf0134f9813fb20c19d99ff7c788b3ed1e53fc09?width=1416"
+                alt="Background"
+                className="absolute right-0 bottom-0 w-[708px] h-[708px] object-cover opacity-50"
+              />
 
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-neutral-900/80 to-transparent"></div>
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-neutral-900/80 to-transparent"></div>
 
-            {/* Content */}
-            <div className="relative z-10 space-y-10">
-              <h3 className="text-white font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px]">
-                ¿QUÉ BUSCAMOS?
-              </h3>
+              {/* Content */}
+              <div className="relative z-10 space-y-10">
+                <h3 className="text-white font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px]">
+                  ¿QUÉ BUSCAMOS?
+                </h3>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {/* Música Card */}
-                <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
-                  <svg
-                    className="w-12 h-12 text-cream"
-                    viewBox="0 0 48 48"
-                    fill="none"
-                  >
-                    <path
-                      d="M19.5 37.5C19.5 40.2614 16.8137 42.5 13.5 42.5C10.1863 42.5 7.5 40.2614 7.5 37.5C7.5 34.7386 10.1863 32.5 13.5 32.5C16.8137 32.5 19.5 34.7386 19.5 37.5ZM19.5 37.5V11.5L40.5044 5.5V31.5M40.5044 31.5C40.5044 34.2614 37.8181 36.5 34.5044 36.5C31.1907 36.5 28.5044 34.2614 28.5044 31.5C28.5044 28.7386 31.1907 26.5 34.5044 26.5C37.8181 26.5 40.5044 28.7386 40.5044 31.5Z"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
-                    Música
-                  </h4>
-                  <p className="text-white font-body text-lg font-normal">
-                    Propuestas con alta participación musical, desde fiestas y
-                    conciertos íntimos hasta grandes festivales.
-                  </p>
-                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {/* Música Card */}
+                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                    <svg
+                      className="w-12 h-12 text-cream"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                    >
+                      <path
+                        d="M19.5 37.5C19.5 40.2614 16.8137 42.5 13.5 42.5C10.1863 42.5 7.5 40.2614 7.5 37.5C7.5 34.7386 10.1863 32.5 13.5 32.5C16.8137 32.5 19.5 34.7386 19.5 37.5ZM19.5 37.5V11.5L40.5044 5.5V31.5M40.5044 31.5C40.5044 34.2614 37.8181 36.5 34.5044 36.5C31.1907 36.5 28.5044 34.2614 28.5044 31.5C28.5044 28.7386 31.1907 26.5 34.5044 26.5C37.8181 26.5 40.5044 28.7386 40.5044 31.5Z"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                      Música
+                    </h4>
+                    <p className="text-white font-body text-lg font-normal">
+                      Propuestas con alta participación musical, desde fiestas y
+                      conciertos íntimos hasta grandes festivales.
+                    </p>
+                  </div>
 
-                {/* Historias Card */}
-                <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
-                  <svg
-                    className="w-8 h-8 text-cream"
-                    viewBox="0 0 33 32"
-                    fill="none"
-                  >
-                    <path
-                      d="M11.0837 4.37037H7.75033C7.01395 4.37037 6.41699 4.96732 6.41699 5.7037V26.3333C6.41699 27.0697 7.01395 27.6667 7.75033 27.6667H25.7503C26.4867 27.6667 27.0837 27.0697 27.0837 26.3333V5.7037C27.0837 4.96732 26.4867 4.37037 25.7503 4.37037H22.417M11.0837 4.37037H16.7503M11.0837 4.37037V5.66667M11.0837 4.37037V3M16.7503 4.37037H22.417M16.7503 4.37037V5.66667M16.7503 4.37037V3M22.417 4.37037V5.66667M22.417 4.37037V3M12.417 13H21.0837M12.417 18.3333H18.417"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
-                    Historias
-                  </h4>
-                  <p className="text-white font-body text-lg font-normal">
-                    Actividades que tengan historias que contar y que generen
-                    nuevas narrativas.
-                  </p>
-                </div>
+                  {/* Historias Card */}
+                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                    <svg
+                      className="w-8 h-8 text-cream"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.0837 4.37037H7.75033C7.01395 4.37037 6.41699 4.96732 6.41699 5.7037V26.3333C6.41699 27.0697 7.01395 27.6667 7.75033 27.6667H25.7503C26.4867 27.6667 27.0837 27.0697 27.0837 26.3333V5.7037C27.0837 4.96732 26.4867 4.37037 25.7503 4.37037H22.417M11.0837 4.37037H16.7503M11.0837 4.37037V5.66667M11.0837 4.37037V3M16.7503 4.37037H22.417M16.7503 4.37037V5.66667M16.7503 4.37037V3M22.417 4.37037V5.66667M22.417 4.37037V3M12.417 13H21.0837M12.417 18.3333H18.417"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                      Historias
+                    </h4>
+                    <p className="text-white font-body text-lg font-normal">
+                      Actividades que tengan historias que contar y que generen
+                      nuevas narrativas.
+                    </p>
+                  </div>
 
-                {/* Comunidades Card */}
-                <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
-                  <svg
-                    className="w-8 h-8 text-cream"
-                    viewBox="0 0 33 32"
-                    fill="none"
-                  >
-                    <path
-                      d="M18.1667 17.7933C17.63 17.71 17.0738 17.6667 16.5 17.6667C10.9131 17.6667 6.99192 21.7673 6.5 27.0001H16.8471M24.5 28.3705C24.8611 28.3705 28.8333 26.3242 28.8333 23.5556C28.8333 21.6297 27.6296 20.6667 26.4259 20.6667C25.2222 20.6667 24.5 21.389 24.5 21.389C24.5 21.389 23.7778 20.6667 22.5741 20.6667C21.3704 20.6667 20.1667 21.6297 20.1667 23.5556C20.1667 26.3242 24.1389 28.3705 24.5 28.3705ZM21.5 8.66675C21.5 11.4282 19.2614 13.6667 16.5 13.6667C13.7386 13.6667 11.5 11.4282 11.5 8.66675C11.5 5.90532 13.7386 3.66675 16.5 3.66675C19.2614 3.66675 21.5 5.90532 21.5 8.66675Z"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
-                    Comunidades
-                  </h4>
-                  <p className="text-white font-body text-lg font-normal">
-                    Encuentros que fortalezcan lazos y construyan comunidad en
-                    torno a la música.
-                  </p>
-                </div>
+                  {/* Comunidades Card */}
+                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                    <svg
+                      className="w-8 h-8 text-cream"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M18.1667 17.7933C17.63 17.71 17.0738 17.6667 16.5 17.6667C10.9131 17.6667 6.99192 21.7673 6.5 27.0001H16.8471M24.5 28.3705C24.8611 28.3705 28.8333 26.3242 28.8333 23.5556C28.8333 21.6297 27.6296 20.6667 26.4259 20.6667C25.2222 20.6667 24.5 21.389 24.5 21.389C24.5 21.389 23.7778 20.6667 22.5741 20.6667C21.3704 20.6667 20.1667 21.6297 20.1667 23.5556C20.1667 26.3242 24.1389 28.3705 24.5 28.3705ZM21.5 8.66675C21.5 11.4282 19.2614 13.6667 16.5 13.6667C13.7386 13.6667 11.5 11.4282 11.5 8.66675C11.5 5.90532 13.7386 3.66675 16.5 3.66675C19.2614 3.66675 21.5 5.90532 21.5 8.66675Z"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                      Comunidades
+                    </h4>
+                    <p className="text-white font-body text-lg font-normal">
+                      Encuentros que fortalezcan lazos y construyan comunidad en
+                      torno a la música.
+                    </p>
+                  </div>
 
-                {/* Cubrimientos Card */}
-                <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
-                  <svg
-                    className="w-8 h-8 text-cream"
-                    viewBox="0 0 33 32"
-                    fill="none"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M4.0406 15.9998C7.13442 21.8835 11.7696 24.6664 16.2503 24.6665C20.7311 24.6665 25.3662 21.8836 28.4601 15.9999C25.3662 10.1163 20.7311 7.33329 16.2503 7.33325C11.7695 7.33322 7.13442 10.1161 4.0406 15.9998ZM16.2503 5.33325C21.7726 5.33329 27.1328 8.85403 30.4783 15.5532C30.6188 15.8345 30.6188 16.1654 30.4783 16.4467C27.1328 23.1459 21.7726 26.6665 16.2503 26.6665C10.728 26.6664 5.36786 23.1457 2.02235 16.4466C1.88187 16.1653 1.88187 15.8343 2.02235 15.553C5.36786 8.85387 10.728 5.33321 16.2503 5.33325Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M14.5719 14.0234L15.654 11.8592C15.8997 11.3678 16.6009 11.3678 16.8466 11.8592L17.9287 14.0234C17.9932 14.1524 18.0978 14.257 18.2269 14.3215L20.3911 15.4036C20.8825 15.6493 20.8825 16.3505 20.3911 16.5962L18.2269 17.6783C18.0978 17.7428 17.9932 17.8474 17.9287 17.9765L16.8466 20.1407C16.6009 20.632 15.8997 20.632 15.654 20.1407L14.5719 17.9765C14.5074 17.8474 14.4028 17.7428 14.2738 17.6783L12.1096 16.5962C11.6182 16.3505 11.6182 15.6493 12.1096 15.4036L14.2738 14.3215C14.4028 14.257 14.5074 14.1524 14.5719 14.0234Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
-                    Cubrimientos
-                  </h4>
-                  <p className="text-white font-body text-lg font-normal">
-                    Propuestas que podamos documentar y compartir en la
-                    plataforma, ampliando su alcance.
-                  </p>
+                  {/* Cubrimientos Card */}
+                  <div className="bg-neutral-800 rounded-xl p-6 flex flex-col justify-end gap-4 h-[282px]">
+                    <svg
+                      className="w-8 h-8 text-cream"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M4.0406 15.9998C7.13442 21.8835 11.7696 24.6664 16.2503 24.6665C20.7311 24.6665 25.3662 21.8836 28.4601 15.9999C25.3662 10.1163 20.7311 7.33329 16.2503 7.33325C11.7695 7.33322 7.13442 10.1161 4.0406 15.9998ZM16.2503 5.33325C21.7726 5.33329 27.1328 8.85403 30.4783 15.5532C30.6188 15.8345 30.6188 16.1654 30.4783 16.4467C27.1328 23.1459 21.7726 26.6665 16.2503 26.6665C10.728 26.6664 5.36786 23.1457 2.02235 16.4466C1.88187 16.1653 1.88187 15.8343 2.02235 15.553C5.36786 8.85387 10.728 5.33321 16.2503 5.33325Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M14.5719 14.0234L15.654 11.8592C15.8997 11.3678 16.6009 11.3678 16.8466 11.8592L17.9287 14.0234C17.9932 14.1524 18.0978 14.257 18.2269 14.3215L20.3911 15.4036C20.8825 15.6493 20.8825 16.3505 20.3911 16.5962L18.2269 17.6783C18.0978 17.7428 17.9932 17.8474 17.9287 17.9765L16.8466 20.1407C16.6009 20.632 15.8997 20.632 15.654 20.1407L14.5719 17.9765C14.5074 17.8474 14.4028 17.7428 14.2738 17.6783L12.1096 16.5962C11.6182 16.3505 11.6182 15.6493 12.1096 15.4036L14.2738 14.3215C14.4028 14.257 14.5074 14.1524 14.5719 14.0234Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <h4 className="text-cream font-body text-[22px] leading-[30px] font-bold">
+                      Cubrimientos
+                    </h4>
+                    <p className="text-white font-body text-lg font-normal">
+                      Propuestas que podamos documentar y compartir en la
+                      plataforma, ampliando su alcance.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
 
             {/* Badge Group */}
