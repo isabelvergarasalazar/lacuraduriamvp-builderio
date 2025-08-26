@@ -4,19 +4,26 @@ interface BadgeProps {
   children: ReactNode;
   className?: string;
   onClick?: () => void;
+  color?: "azul" | "neutral";
 }
 
-export const Badge = ({ children, className = "", onClick }: BadgeProps) => {
+export const Badge = ({ children, className = "", onClick, color = "azul" }: BadgeProps) => {
+  // Color variants
+  const colorClasses = {
+    azul: "bg-[#75E6F9] hover:bg-[#23CCED] text-neutral-900",
+    neutral: "bg-dark-green bg-opacity-50 text-white hover:bg-opacity-70"
+  };
+
   const baseClasses = `
     flex px-2 py-1.5 justify-center items-center gap-2.5 rounded
-    bg-[#75E6F9] hover:bg-[#23CCED]
     transition-colors duration-200 ease-in-out
-    cursor-pointer
+    ${colorClasses[color]}
+    ${onClick ? 'cursor-pointer' : ''}
     ${className}
   `.trim();
 
   const content = (
-    <span className="text-neutral-900 font-body text-lg font-normal leading-7 uppercase">
+    <span className="font-body text-lg font-normal leading-7 uppercase">
       {children}
     </span>
   );
