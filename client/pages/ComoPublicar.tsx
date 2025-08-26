@@ -330,18 +330,17 @@ const ComoPublicar = () => {
 
             <div className="flex flex-col gap-0 md:grid md:grid-cols-1 md:gap-0 lg:grid-cols-2 lg:gap-0">
               {/* Card 1 - Verde */}
-              <div className="bg-verde-200 rounded-xl p-5 md:pt-20 md:px-4 md:pb-4 lg:p-5 h-[264px] flex items-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
-                <div className="flex justify-between items-end w-full md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between">
-                  <div className="text-neutral-900 font-display text-5xl md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] font-semibold">
+              <div className="bg-verde-200 rounded-2xl py-20 px-4 md:pt-20 md:px-4 md:pb-4 lg:p-5 h-auto min-h-[320px] md:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
+                <div className="flex flex-col gap-2 md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between w-full">
+                  <div className="text-neutral-900 font-display text-[40px] leading-[40px] tracking-[-0.8px] md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] font-semibold">
                     01
                   </div>
-                  <div className="flex flex-col gap-3 max-w-[282px] md:max-w-none md:w-full lg:max-w-[282px]">
-                    <h4 className="text-neutral-900 font-body text-[22px] md:text-[24px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-bold">
+                  <div className="flex flex-col gap-3 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
+                    <h4 className="text-neutral-900 font-body text-[24px] leading-[30px] md:text-[24px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Completa el formulario
                     </h4>
                     <p className="text-neutral-900 font-body text-lg leading-6 font-normal">
-                      Ingresa la información clave del evento: nombre, fecha,
-                      lugar, descripción y material visual.
+                      Recibe inscripciones, interacciones y construye una comunidad alrededor de tu trabajo.
                     </p>
                   </div>
                 </div>
