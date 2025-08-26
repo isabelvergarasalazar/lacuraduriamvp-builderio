@@ -16,7 +16,7 @@ const ComoPublicar = () => {
       <NavBar activePage="como-publicar" />
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] bg-dark-green overflow-hidden">
+      <section className="relative h-[70vh] min-h-[400px] bg-dark-green overflow-hidden w-full">
         {/* Background Image */}
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/e27f1251a01a3ff95d783233be63183ca32e7a6e?width=4952"
