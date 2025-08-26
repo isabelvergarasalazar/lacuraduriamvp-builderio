@@ -153,17 +153,17 @@ const ComoPublicar = () => {
           </div>
 
           {/* Divider */}
-          <div className="w-full h-px bg-neutral-100"></div>
+          <div className="w-full h-px bg-neutral-700 opacity-[0.08]"></div>
 
           {/* QUÉ BUSCAMOS Section and Badge Group Container */}
           <div className="w-full flex flex-col gap-4">
             {/* QUÉ BUSCAMOS Section */}
-            <div className="relative rounded-2xl bg-neutral-900 py-20 px-8 overflow-hidden flex flex-col justify-end items-start gap-10">
+            <div className="relative rounded-2xl bg-neutral-900 py-10 px-4 md:py-20 md:px-8 lg:py-20 lg:px-8 overflow-hidden flex flex-col justify-end items-start gap-10">
               {/* Background Image */}
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/bf0134f9813fb20c19d99ff7c788b3ed1e53fc09?width=1416"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/452f09c4c88a88d6749fd9c0ff2525416357dda5?width=2310"
                 alt="Background"
-                className="absolute right-0 -bottom-[100px] w-[708px] h-[708px] object-cover"
+                className="absolute right-0 top-0 w-[1155px] h-[1155px] object-cover -translate-x-[406px] md:right-0 md:-bottom-[100px] md:w-[708px] md:h-[708px] md:translate-x-0"
               />
 
               {/* Gradient Overlay */}
@@ -171,7 +171,7 @@ const ComoPublicar = () => {
 
               {/* Content */}
               <div className="relative z-10 w-full space-y-10">
-                <h3 className="text-white font-display text-3xl md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] lg:text-[48px] lg:leading-[60px] lg:tracking-[-0.96px] font-bold">
+                <h3 className="text-white font-display text-[30px] leading-[38px] tracking-[-0.6px] md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] lg:text-[48px] lg:leading-[60px] lg:tracking-[-0.96px] font-bold">
                   ¿QUÉ BUSCAMOS?
                 </h3>
 
