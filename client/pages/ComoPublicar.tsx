@@ -324,11 +324,11 @@ const ComoPublicar = () => {
 
           {/* CÓMO FUNCIONA Section */}
           <div className="space-y-8">
-            <h3 className="text-neutral-900 font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px]">
+            <h3 className="text-neutral-900 font-display text-3xl md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] lg:text-[48px] lg:leading-[60px] lg:tracking-[-0.96px] font-bold">
               ��CÓMO FUNCIONA?
             </h3>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:space-y-0 lg:gap-0">
               {/* Card 1 - Verde */}
               <div className="bg-verde-200 rounded-xl p-5 h-[264px] flex items-end">
                 <div className="flex justify-between items-end w-full">
