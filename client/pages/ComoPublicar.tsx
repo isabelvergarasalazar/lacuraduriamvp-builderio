@@ -278,7 +278,7 @@ const ComoPublicar = () => {
             </div>
 
             {/* Badge Group */}
-            <div className="flex flex-col md:flex-col lg:flex-row gap-6 md:gap-6 lg:gap-6">
+            <div className="flex flex-col gap-6 md:flex-col md:gap-6 lg:flex-row lg:gap-6">
               <div className="flex items-center gap-4 bg-neutral-100 rounded-lg p-2 flex-1">
                 <svg
                   className="w-8 h-8 text-neutral-900 flex-shrink-0"
@@ -293,7 +293,7 @@ const ComoPublicar = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p className="text-neutral-800 font-body text-sm uppercase tracking-wide">
+                <p className="text-neutral-800 font-body text-sm font-normal leading-[18px] uppercase tracking-wide">
                   Eventos en Colombia desde el 24 de agosto.
                 </p>
               </div>
@@ -311,7 +311,7 @@ const ComoPublicar = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p className="text-neutral-800 font-body text-sm uppercase tracking-wide">
+                <p className="text-neutral-800 font-body text-sm font-normal leading-[18px] uppercase tracking-wide">
                   Dejamos por fuera las actividades que no estén alineadas con
                   nuestro enfoque
                 </p>
@@ -320,7 +320,7 @@ const ComoPublicar = () => {
           </div>
 
           {/* Divider */}
-          <div className="w-full h-px bg-neutral-100"></div>
+          <div className="w-full h-px bg-neutral-700 opacity-[0.08]"></div>
 
           {/* CÓMO FUNCIONA Section */}
           <div className="space-y-8">
