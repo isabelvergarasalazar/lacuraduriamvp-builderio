@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import Cartelera from "./pages/Cartelera";
 import EventDetails from "./pages/EventDetails";
+import PublicarEvento from "./pages/PublicarEvento";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
