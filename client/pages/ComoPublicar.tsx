@@ -21,7 +21,7 @@ const ComoPublicar = () => {
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/e27f1251a01a3ff95d783233be63183ca32e7a6e?width=4952"
           alt="Background"
-          className="absolute w-[2476px] h-[1393px] object-cover -left-[481px] -top-[246px] z-0"
+          className="absolute inset-0 w-full h-full object-cover scale-150 z-0"
         />
 
         {/* Gradient Overlays */}
