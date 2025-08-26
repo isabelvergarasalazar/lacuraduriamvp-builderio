@@ -49,8 +49,8 @@ const ComoPublicar = () => {
 
           {/* Bottom Section - Logo and Tagline */}
           <div className="flex flex-col items-center gap-10 w-full">
-            {/* La Curaduria Logo - Full Width */}
-            <div className="w-full">
+            {/* La Curaduria Logo - Container Margins */}
+            <div className="w-full px-[26px] md:px-8 lg:px-12">
               <svg
                 viewBox="0 0 1443 197"
                 fill="none"
