@@ -11,7 +11,7 @@ export const Badge = ({ children, className = "", onClick, color = "azul" }: Bad
   // Color variants
   const colorClasses = {
     azul: "bg-[#75E6F9] hover:bg-[#23CCED] text-neutral-900",
-    neutral: "bg-dark-green bg-opacity-50 text-white hover:bg-opacity-70"
+    neutral: "bg-dark-green bg-opacity-80 text-white hover:bg-opacity-90"
   };
 
   const baseClasses = `
