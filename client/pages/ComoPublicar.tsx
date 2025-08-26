@@ -171,11 +171,11 @@ const ComoPublicar = () => {
 
               {/* Content */}
               <div className="relative z-10 w-full space-y-10">
-                <h3 className="text-white font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px]">
+                <h3 className="text-white font-display text-3xl md:text-[30px] md:leading-[38px] md:tracking-[-0.6px] lg:text-[48px] lg:leading-[60px] lg:tracking-[-0.96px] font-bold">
                   ¿QUÉ BUSCAMOS?
                 </h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[23px]">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-[23px]">
                   {/* Música Card */}
                   <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
                     <svg
