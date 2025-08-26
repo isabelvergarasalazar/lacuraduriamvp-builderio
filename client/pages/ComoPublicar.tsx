@@ -177,7 +177,7 @@ const ComoPublicar = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-[23px]">
                   {/* Música Card */}
-                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-auto min-h-[200px] md:h-[282px]">
                     <svg
                       className="w-12 h-12 text-cream"
                       viewBox="0 0 48 48"
@@ -190,7 +190,7 @@ const ComoPublicar = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[24px] leading-[32px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Música
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
@@ -200,7 +200,7 @@ const ComoPublicar = () => {
                   </div>
 
                   {/* Historias Card */}
-                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-auto min-h-[200px] md:h-[282px]">
                     <svg
                       className="w-8 h-8 text-cream"
                       viewBox="0 0 33 32"
@@ -214,7 +214,7 @@ const ComoPublicar = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[24px] leading-[32px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Historias
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
@@ -224,7 +224,7 @@ const ComoPublicar = () => {
                   </div>
 
                   {/* Comunidades Card */}
-                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-auto min-h-[200px] md:h-[282px]">
                     <svg
                       className="w-8 h-8 text-cream"
                       viewBox="0 0 33 32"
@@ -238,7 +238,7 @@ const ComoPublicar = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[24px] leading-[32px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Comunidades
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
@@ -248,7 +248,7 @@ const ComoPublicar = () => {
                   </div>
 
                   {/* Cubrimientos Card */}
-                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-[282px]">
+                  <div className="bg-neutral-800 rounded-xl py-6 px-5 flex flex-col justify-end gap-4 h-auto min-h-[200px] md:h-[282px]">
                     <svg
                       className="w-8 h-8 text-cream"
                       viewBox="0 0 33 32"
@@ -265,7 +265,7 @@ const ComoPublicar = () => {
                         fill="currentColor"
                       />
                     </svg>
-                    <h4 className="text-cream font-body text-[22px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
+                    <h4 className="text-cream font-body text-[24px] leading-[32px] md:text-[24px] md:leading-[32px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Cubrimientos
                     </h4>
                     <p className="text-white font-body text-lg font-normal">
