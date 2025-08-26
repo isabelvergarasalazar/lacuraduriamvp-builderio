@@ -155,8 +155,10 @@ const ComoPublicar = () => {
           {/* Divider */}
           <div className="w-full h-px bg-neutral-100"></div>
 
-          {/* QUÉ BUSCAMOS Section */}
-          <div className="relative rounded-2xl bg-neutral-900 p-8 md:p-20 lg:p-20 overflow-hidden">
+          {/* QUÉ BUSCAMOS Section and Badge Group Container */}
+          <div className="w-full flex flex-col gap-4">
+            {/* QUÉ BUSCAMOS Section */}
+            <div className="relative rounded-2xl bg-neutral-900 p-8 md:p-20 lg:p-20 overflow-hidden">
             {/* Background Image */}
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/bf0134f9813fb20c19d99ff7c788b3ed1e53fc09?width=1416"
@@ -273,46 +275,47 @@ const ComoPublicar = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Badge Group */}
-          <div className="flex flex-col md:flex-row gap-6 mt-4">
-            <div className="flex items-center gap-4 bg-neutral-100 rounded-lg p-2 flex-1">
-              <svg
-                className="w-8 h-8 text-neutral-900 flex-shrink-0"
-                viewBox="0 0 32 32"
-                fill="none"
-              >
-                <path
-                  d="M3.3192 13.494L5.24863 24.4363L13.486 22.9839M3.3192 13.494L2.35449 8.02288L20.081 4.89722L20.9447 9.79541M3.3192 13.494L17.667 10.9641M21.3337 15.6668V18.6668L24.0003 21.3335M29.667 18.6668C29.667 23.2692 25.936 27.0001 21.3337 27.0001C16.7313 27.0001 13.0003 23.2692 13.0003 18.6668C13.0003 14.0644 16.7313 10.3335 21.3337 10.3335C25.936 10.3335 29.667 14.0644 29.667 18.6668Z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <p className="text-neutral-800 font-body text-sm uppercase tracking-wide">
-                Eventos en Colombia desde el 24 de agosto.
-              </p>
             </div>
-            <div className="flex items-center gap-4 bg-neutral-100 rounded-lg p-2 flex-1">
-              <svg
-                className="w-8 h-8 text-neutral-900 flex-shrink-0"
-                viewBox="0 0 32 32"
-                fill="none"
-              >
-                <path
-                  d="M20.0003 12.6667L14.0003 20.0001L11.3337 17.3334M28.3337 16.0001C28.3337 22.8116 22.8118 28.3334 16.0003 28.3334C9.18881 28.3334 3.66699 22.8116 3.66699 16.0001C3.66699 9.18857 9.18881 3.66675 16.0003 3.66675C22.8118 3.66675 28.3337 9.18857 28.3337 16.0001Z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <p className="text-neutral-800 font-body text-sm uppercase tracking-wide">
-                Dejamos por fuera las actividades que no estén alineadas con
-                nuestro enfoque
-              </p>
+
+            {/* Badge Group */}
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="flex items-center gap-4 bg-neutral-100 rounded-lg p-2 flex-1">
+                <svg
+                  className="w-8 h-8 text-neutral-900 flex-shrink-0"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M3.3192 13.494L5.24863 24.4363L13.486 22.9839M3.3192 13.494L2.35449 8.02288L20.081 4.89722L20.9447 9.79541M3.3192 13.494L17.667 10.9641M21.3337 15.6668V18.6668L24.0003 21.3335M29.667 18.6668C29.667 23.2692 25.936 27.0001 21.3337 27.0001C16.7313 27.0001 13.0003 23.2692 13.0003 18.6668C13.0003 14.0644 16.7313 10.3335 21.3337 10.3335C25.936 10.3335 29.667 14.0644 29.667 18.6668Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p className="text-neutral-800 font-body text-sm uppercase tracking-wide">
+                  Eventos en Colombia desde el 24 de agosto.
+                </p>
+              </div>
+              <div className="flex items-center gap-4 bg-neutral-100 rounded-lg p-2 flex-1">
+                <svg
+                  className="w-8 h-8 text-neutral-900 flex-shrink-0"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M20.0003 12.6667L14.0003 20.0001L11.3337 17.3334M28.3337 16.0001C28.3337 22.8116 22.8118 28.3334 16.0003 28.3334C9.18881 28.3334 3.66699 22.8116 3.66699 16.0001C3.66699 9.18857 9.18881 3.66675 16.0003 3.66675C22.8118 3.66675 28.3337 9.18857 28.3337 16.0001Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p className="text-neutral-800 font-body text-sm uppercase tracking-wide">
+                  Dejamos por fuera las actividades que no estén alineadas con
+                  nuestro enfoque
+                </p>
+              </div>
             </div>
           </div>
 
