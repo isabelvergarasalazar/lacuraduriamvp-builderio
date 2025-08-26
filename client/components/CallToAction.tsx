@@ -34,8 +34,7 @@ export const CallToAction = ({
         </h2>
         <p
           className="font-body text-neutral-900 font-normal self-stretch
-                      text-[24px] leading-[32px]
-                      lg:max-w-[456px]"
+                      text-[24px] leading-[32px]"
         >
           {subtitle}
         </p>
