@@ -325,7 +325,7 @@ const ComoPublicar = () => {
           {/* CÓMO FUNCIONA Section */}
           <div className="space-y-8">
             <h3 className="text-neutral-900 font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px]">
-              ¿CÓMO FUNCIONA?
+              ��CÓMO FUNCIONA?
             </h3>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
@@ -407,13 +407,13 @@ const ComoPublicar = () => {
           <div className="w-full h-px bg-neutral-100"></div>
 
           {/* POR QUÉ PUBLICAR Section */}
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8 lg:gap-12">
-            <h3 className="text-neutral-900 font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px] lg:max-w-[438px]">
+          <div className="flex flex-col lg:flex-row justify-between items-start w-full">
+            <h3 className="w-full lg:w-[438px] text-neutral-900 font-display text-3xl md:text-4xl lg:text-[48px] lg:leading-[60px] font-bold tracking-[-0.96px] mb-8 lg:mb-0">
               ¿POR QUÉ PUBLICAR?
             </h3>
 
-            <div className="space-y-8 lg:max-w-[667px]">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-col items-start gap-8 flex-1 lg:flex-auto">
+              <div className="flex flex-col items-start gap-2.5 w-full">
                 <svg
                   className="w-6 h-6 text-neutral-900"
                   viewBox="0 0 24 24"
@@ -432,9 +432,11 @@ const ComoPublicar = () => {
                 </h4>
               </div>
 
-              <div className="w-full h-px bg-neutral-900 opacity-10"></div>
+              <svg className="w-full h-0.5 stroke-neutral-900 opacity-10" viewBox="0 0 667 2" fill="none">
+                <path d="M0 1H667" stroke="currentColor" strokeWidth="1" opacity="0.1" />
+              </svg>
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col items-start gap-2.5">
                 <svg
                   className="w-6 h-6 text-neutral-900"
                   viewBox="0 0 24 24"
@@ -453,9 +455,11 @@ const ComoPublicar = () => {
                 </h4>
               </div>
 
-              <div className="w-full h-px bg-neutral-900 opacity-10"></div>
+              <svg className="w-full h-0.5 stroke-neutral-900 opacity-10" viewBox="0 0 667 2" fill="none">
+                <path d="M0 1H667" stroke="currentColor" strokeWidth="1" opacity="0.1" />
+              </svg>
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col items-start gap-2.5 w-full">
                 <svg
                   className="w-6 h-6 text-neutral-900"
                   viewBox="0 0 24 24"
