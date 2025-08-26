@@ -328,7 +328,7 @@ const ComoPublicar = () => {
               ��CÓMO FUNCIONA?
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0 md:space-y-0 lg:gap-0">
+            <div className="flex flex-col gap-0 md:grid md:grid-cols-1 md:gap-0 lg:grid-cols-2 lg:gap-0">
               {/* Card 1 - Verde */}
               <div className="bg-verde-200 rounded-xl p-5 md:pt-20 md:px-4 md:pb-4 lg:p-5 h-[264px] flex items-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
                 <div className="flex justify-between items-end w-full md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between">
