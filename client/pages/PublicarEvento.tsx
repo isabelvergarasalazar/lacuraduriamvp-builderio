@@ -275,8 +275,13 @@ const PublicarEvento = () => {
 
                     {/* Free Event Checkbox */}
                     <div className="flex items-center gap-1.5">
-                      <div className="flex items-center justify-center w-4 h-4 p-1 rounded bg-neutral-100 cursor-pointer">
-                        {/* Checkbox would go here */}
+                      <div
+                        className="flex items-center justify-center w-4 h-4 p-1 rounded bg-neutral-100 cursor-pointer"
+                        onClick={() => handleInputChange("isFreeCb", !formData.isFreeCb)}
+                      >
+                        {formData.isFreeCb && (
+                          <div className="w-2 h-2 bg-dark-green rounded"></div>
+                        )}
                       </div>
                       <span className="text-dark-green font-body text-lg font-normal leading-6">
                         Este evento es gratuito.
