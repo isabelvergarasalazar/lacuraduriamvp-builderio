@@ -330,12 +330,12 @@ const ComoPublicar = () => {
 
             <div className="flex flex-col gap-0 md:grid md:grid-cols-1 md:gap-0 lg:grid-cols-2 lg:gap-0">
               {/* Card 1 - Verde */}
-              <div className="bg-verde-200 rounded-2xl py-20 px-4 md:pt-20 md:px-4 md:pb-4 lg:p-5 h-auto min-h-[320px] md:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
+              <div className="bg-verde-200 rounded-2xl py-12 px-4 md:py-12 md:px-4 lg:p-5 h-auto min-h-[160px] md:h-[160px] lg:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
                 <div className="flex flex-col gap-2 md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between w-full">
                   <div className="text-neutral-900 font-display text-[40px] leading-[40px] tracking-[-0.8px] md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] font-semibold">
                     01
                   </div>
-                  <div className="flex flex-col gap-3 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
+                  <div className="flex flex-col gap-2 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
                     <h4 className="text-neutral-900 font-body text-[24px] leading-[30px] md:text-[24px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Completa el formulario
                     </h4>
@@ -348,12 +348,12 @@ const ComoPublicar = () => {
               </div>
 
               {/* Card 2 - Coral */}
-              <div className="bg-rojo-200 rounded-2xl py-20 px-4 md:py-16 md:px-4 lg:p-5 h-auto min-h-[200px] md:min-h-[180px] lg:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
+              <div className="bg-rojo-200 rounded-2xl py-12 px-4 md:py-12 md:px-4 lg:p-5 h-auto min-h-[160px] md:h-[160px] lg:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
                 <div className="flex flex-col gap-2 md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between w-full">
                   <div className="text-neutral-900 font-display text-[40px] leading-[40px] tracking-[-0.8px] md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] font-semibold">
                     02
                   </div>
-                  <div className="flex flex-col gap-3 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
+                  <div className="flex flex-col gap-2 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
                     <h4 className="text-neutral-900 font-body text-[24px] leading-[30px] md:text-[24px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Revisión editorial
                     </h4>
@@ -366,12 +366,12 @@ const ComoPublicar = () => {
               </div>
 
               {/* Card 3 - Azul */}
-              <div className="bg-azul-200 rounded-2xl py-20 px-4 md:py-16 md:px-4 lg:p-5 h-auto min-h-[200px] md:min-h-[180px] lg:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
+              <div className="bg-azul-200 rounded-2xl py-12 px-4 md:py-12 md:px-4 lg:p-5 h-auto min-h-[160px] md:h-[160px] lg:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
                 <div className="flex flex-col gap-2 md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between w-full">
                   <div className="text-neutral-900 font-display text-[40px] leading-[40px] tracking-[-0.8px] md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] font-semibold">
                     03
                   </div>
-                  <div className="flex flex-col gap-3 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
+                  <div className="flex flex-col gap-2 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
                     <h4 className="text-neutral-900 font-body text-[22px] leading-[30px] md:text-[22px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-bold">
                       Publicación y Promoción
                     </h4>
@@ -385,14 +385,14 @@ const ComoPublicar = () => {
               </div>
 
               {/* Card 4 - Amarillo */}
-              <div className="bg-amarillo-200 rounded-2xl py-20 px-4 md:py-16 md:px-4 lg:p-5 h-auto min-h-[200px] md:min-h-[180px] lg:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
+              <div className="bg-amarillo-200 rounded-2xl py-12 px-4 md:py-12 md:px-4 lg:p-5 h-auto min-h-[160px] md:h-[160px] lg:h-[264px] flex flex-col justify-end md:flex-col md:items-start md:justify-end lg:flex-row lg:items-end lg:justify-between">
                 <div className="flex flex-col gap-2 md:flex-col md:items-start md:gap-2 lg:flex-row lg:items-end lg:justify-between w-full">
                   <div className="text-neutral-900 font-display text-[40px] leading-[40px] tracking-[-0.8px] md:text-[40px] md:leading-[40px] md:tracking-[-0.8px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-1.2px] font-semibold">
                     04
                   </div>
-                  <div className="flex flex-col gap-3 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
+                  <div className="flex flex-col gap-2 max-w-none w-full md:max-w-none md:w-full lg:max-w-[282px]">
                     <h4 className="text-neutral-900 font-body text-[22px] leading-[30px] md:text-[24px] md:leading-[30px] lg:text-[22px] lg:leading-[30px] font-bold">
-                      Difusión y cubrimiento
+                      Difusi��n y cubrimiento
                     </h4>
                     <p className="text-neutral-900 font-body text-lg leading-6 font-normal">
                       Amplificamos el evento en nuestros canales y conectamos
