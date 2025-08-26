@@ -275,7 +275,7 @@ const ComoPublicar = () => {
             </div>
           </div>
 
-          {/* Badge Group */}
+          {/* Badge Group - Updated */}
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex items-center gap-4 bg-neutral-100 rounded-lg p-2 flex-1">
               <svg
